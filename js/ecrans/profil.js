@@ -1,6 +1,7 @@
 // Profil : statistiques, objectif quotidien, sauvegarde et réglages.
 import { $, $$ } from "../util.js";
-import { etat, sauver, serieActive, exporter, importer, reinitialiser } from "../store.js";
+import { etat, sauver, serieActive, exporter, importer, importerTexte, texteSauvegarde, reinitialiser } from "../store.js";
+import { confirmer, informer } from "../dialogue.js";
 import { C } from "../contenu.js";
 import { solide } from "../srs.js";
 import { app, ecrans, ouvrir, entete } from "../nav.js";
@@ -27,8 +28,18 @@ ecrans.profil = function () {
     <div class="sous-titre">Sauvegarde</div>
     <p class="muet petit">Ta progression est enregistrée dans ce navigateur. Exporte-la de temps en temps pour ne jamais la perdre, ou pour la transférer sur un autre appareil.</p>
     <button class="btn" id="exporter">⬇️ Exporter ma progression</button>
+    <div id="zone-export" class="carte zone-sauvegarde" hidden>
+      <p class="petit">Copie ce texte et garde-le (dans tes notes, un e-mail…). Tu pourras le recoller ici pour retrouver ta progression.</p>
+      <textarea id="texte-export" rows="4" readonly></textarea>
+      <div class="rangee"><button class="btn principal" id="copier">Copier</button><button class="btn" id="telecharger">Télécharger le fichier</button></div>
+    </div>
     <button class="btn" id="importer">⬆️ Importer une sauvegarde</button>
-    <input type="file" id="fichier" accept="application/json,.json" hidden>
+    <div id="zone-import" class="carte zone-sauvegarde" hidden>
+      <p class="petit">Colle le texte de ta sauvegarde, ou choisis le fichier exporté.</p>
+      <textarea id="texte-import" rows="4" placeholder="Colle ta sauvegarde ici"></textarea>
+      <div class="rangee"><button class="btn principal" id="importer-texte">Importer le texte</button><button class="btn" id="choisir-fichier">Choisir un fichier</button></div>
+      <input type="file" id="fichier" accept="application/json,.json" hidden>
+    </div>
 
     ${!etat.test ? `<div class="sous-titre">Déjà à l'aise ?</div>
       <p class="muet petit">Si tu maîtrises déjà les bases, tu peux passer le test de positionnement sans finir les Fondations.</p>
@@ -40,19 +51,29 @@ ecrans.profil = function () {
     <div class="centre"><button class="lien rouge" id="reset">Tout remettre à zéro</button></div>`;
 
   $$("[data-xp]").forEach((b) => (b.onclick = () => { etat.profil.objectif = +b.dataset.xp; sauver(); ecrans.profil(); }));
-  $("#exporter").onclick = exporter;
-  $("#importer").onclick = () => $("#fichier").click();
-  $("#fichier").onchange = async (ev) => {
-    const f = ev.target.files[0];
-    if (!f) return;
-    try { await importer(f); alert("Sauvegarde importée !"); ouvrir("accueil"); }
-    catch (e) { alert(e.message); }
+  $("#exporter").onclick = () => {
+    $("#zone-export").hidden = !$("#zone-export").hidden;
+    $("#texte-export").value = texteSauvegarde();
   };
-  $("#test")?.addEventListener("click", () => {
-    if (confirm("Passer le test sans finir les Fondations ? Tu pourras toujours revenir aux modules.")) ouvrir("test");
+  $("#copier").onclick = async () => {
+    const t = $("#texte-export");
+    try { await navigator.clipboard.writeText(t.value); $("#copier").textContent = "Copié ✓"; }
+    catch (e) { t.focus(); t.select(); $("#copier").textContent = "Texte sélectionné"; }
+  };
+  $("#telecharger").onclick = exporter;
+  $("#importer").onclick = () => { $("#zone-import").hidden = !$("#zone-import").hidden; };
+  $("#choisir-fichier").onclick = () => $("#fichier").click();
+  const apresImport = async (action) => {
+    try { await action(); await informer("Sauvegarde importée !"); ouvrir("accueil"); }
+    catch (e) { informer(e.message); }
+  };
+  $("#importer-texte").onclick = () => apresImport(() => importerTexte($("#texte-import").value));
+  $("#fichier").onchange = (ev) => { const f = ev.target.files[0]; if (f) apresImport(() => importer(f)); };
+  $("#test")?.addEventListener("click", async () => {
+    if (await confirmer("Passer le test sans finir les Fondations ? Tu pourras toujours revenir aux modules.", "Passer le test")) ouvrir("test");
   });
-  $("#reset").onclick = () => {
-    if (!confirm("Effacer toute ta progression ? Pense à l'exporter avant si tu veux la garder.")) return;
+  $("#reset").onclick = async () => {
+    if (!(await confirmer("Effacer toute ta progression ? Pense à l'exporter avant si tu veux la garder.", "Tout effacer", true))) return;
     reinitialiser();
     ouvrir("bienvenue");
   };

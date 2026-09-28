@@ -7,6 +7,7 @@ import { aRevoirMaintenant } from "../srs.js";
 import { app, ecrans, ouvrir, raccourcis } from "../nav.js";
 import { NIVEAUX, recommandations } from "../progression.js";
 import { ouvrirElement } from "./accueil.js";
+import { confirmer } from "../dialogue.js";
 
 const SEUIL = 4; // bonnes réponses sur 6 pour valider un niveau
 let questions = [], reponses = [];
@@ -40,7 +41,7 @@ function question(i) {
       ${q.options.map((o, k) => `<button class="option" data-k="${k}"><kbd>${k + 1}</kbd>${echapper(o)}</button>`).join("")}
       <button class="option discret" data-k="-1">🤷 Je ne sais pas</button>
     </div>`;
-  $("#quitter").onclick = () => { if (confirm("Quitter le test ? Tes réponses seront perdues.")) ouvrir("parcours"); };
+  $("#quitter").onclick = async () => { if (await confirmer("Quitter le test ? Tes réponses seront perdues.", "Quitter", true)) ouvrir("parcours"); };
   const repondre = (k) => { reponses[i] = k === q.bonne; question(i + 1); };
   $$(".option").forEach((b) => (b.onclick = () => repondre(+b.dataset.k)));
   raccourcis.touche = (k) => { if (+k <= q.options.length) repondre(+k - 1); };

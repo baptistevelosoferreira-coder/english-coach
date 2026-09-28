@@ -72,8 +72,15 @@ export function exporter() {
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
 
+export const texteSauvegarde = () => JSON.stringify(etat);
+
 export async function importer(fichier) {
-  const donnees = JSON.parse(await fichier.text());
+  return importerTexte(await fichier.text());
+}
+
+export function importerTexte(texte) {
+  let donnees;
+  try { donnees = JSON.parse(texte); } catch (e) { throw new Error("Ce texte n'est pas une sauvegarde English Coach."); }
   if (!donnees || donnees.version !== VERSION || !("cartes" in donnees)) throw new Error("Ce fichier n'est pas une sauvegarde English Coach.");
   etat = { ...etatVide(), ...donnees };
   sauver();

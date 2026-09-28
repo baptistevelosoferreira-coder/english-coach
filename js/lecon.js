@@ -5,6 +5,7 @@ import { parler, silence } from "./voix.js";
 import { noterErreur, sauver } from "./store.js";
 import { noter } from "./srs.js";
 import { app, masquerNav, raccourcis } from "./nav.js";
+import { confirmer } from "./dialogue.js";
 
 let L = null;
 
@@ -35,8 +36,8 @@ function afficher() {
     ${e.type === "decouverte" ? "" : `<h2 class="consigne">${echapper(e.consigne)}</h2>`}
     <div id="corps"></div>
     <div class="bas-fixe" id="bas"><button class="btn principal" id="verifier" disabled>Vérifier</button></div>`;
-  $("#quitter").onclick = () => {
-    if (confirm("Quitter ? Ta progression dans cette leçon sera perdue.")) { silence(); L.onQuitter(); }
+  $("#quitter").onclick = async () => {
+    if (await confirmer("Quitter la leçon ? Ta progression dans cette leçon sera perdue.", "Quitter", true)) { silence(); L.onQuitter(); }
   };
   const btn = $("#verifier");
   let verifier = null;
