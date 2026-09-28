@@ -2,6 +2,7 @@
 // Tous les exercices ont la même forme, puis sont joués par le moteur de leçon (lecon.js).
 import { C } from "./contenu.js";
 import { melanger, hasard, decouper } from "./util.js";
+import { L } from "./langue.js";
 
 const CONSIGNES = {
   choix: "Choisis la bonne réponse",
@@ -13,12 +14,9 @@ const CONSIGNES = {
   paires: "Associe les paires",
 };
 
-// Petits mots-pièges ajoutés aux étiquettes des exercices « remets dans l'ordre »
-const PIEGES = ["do", "does", "did", "is", "are", "was", "were", "have", "has", "will", "to", "the", "a"];
-
 function tuilesAvecPieges(mots, nb = 2) {
   const bas = mots.map((m) => m.toLowerCase());
-  const pieges = melanger(PIEGES.filter((p) => !bas.includes(p))).slice(0, nb);
+  const pieges = melanger(L.pieges.filter((p) => !bas.includes(p))).slice(0, nb); // petits mots-pièges propres à la langue
   return melanger([...mots, ...pieges]);
 }
 
@@ -26,7 +24,7 @@ function tuilesAvecPieges(mots, nb = 2) {
 export function depuisJSON(ex, tag) {
   const base = { tag, consigne: ex.consigne || CONSIGNES[ex.type], explication: ex.explication };
   switch (ex.type) {
-    case "choix": return { ...base, type: "choix", texte: ex.texte, sous: ex.sous, options: ex.options, bonne: ex.options[ex.bonne] };
+    case "choix": return { ...base, type: "choix", texte: ex.texte, sous: ex.sous, options: melanger(ex.options), bonne: ex.options[ex.bonne] };
     case "saisie": return { ...base, type: "saisie", texte: ex.texte, sous: ex.sous, reponses: ex.reponses };
     case "erreur": return { ...base, type: "erreur", mots: ex.texte.split(" "), k: ex.k, correction: ex.correction };
     case "vf": return { ...base, type: "vf", texte: ex.texte, vrai: ex.vrai, correction: ex.correction };
@@ -43,7 +41,7 @@ export function depuisJSON(ex, tag) {
 /* ---------- Exercices de grammaire (format compact de grammaire.json) ---------- */
 export function depuisGrammaire(it, tag) {
   const [t] = it;
-  if (t === "q") return { type: "choix", tag, consigne: CONSIGNES.choix, texte: it[1], options: it[2], bonne: it[2][it[3]], explication: it[4] };
+  if (t === "q") return { type: "choix", tag, consigne: CONSIGNES.choix, texte: it[1], options: melanger(it[2]), bonne: it[2][it[3]], explication: it[4] };
   if (t === "e") return { type: "erreur", tag, consigne: CONSIGNES.erreur, mots: it[1].split(" "), k: it[2], correction: it[3], explication: it[4] };
   if (t === "v") return { type: "vf", tag, consigne: CONSIGNES.vf, texte: it[1], vrai: it[2], correction: it[3], explication: it[4] };
   const mots = decouper(it[1]);
@@ -60,11 +58,11 @@ export const vocab = {
     options: melanger([w, ...autresMots(w, 3)]).map((x) => x.fr), bonne: w.fr, exemple: w,
   }),
   frEn: (w) => ({
-    type: "choix", tag: w.deck, carte: w.id, consigne: "Comment dit-on en anglais ?", texte: w.fr,
+    type: "choix", tag: w.deck, carte: w.id, consigne: `Comment dit-on ${L.en} ?`, texte: w.fr,
     options: melanger([w, ...autresMots(w, 3)]).map((x) => x.en), bonne: w.en, exemple: w,
   }),
   ecrire: (w) => ({
-    type: "saisie", tag: w.deck, carte: w.id, consigne: "Écris en anglais", texte: w.fr,
+    type: "saisie", tag: w.deck, carte: w.id, consigne: `Écris ${L.en}`, texte: w.fr,
     reponses: w.en.split(" / "), tolerance: true, exemple: w,
   }),
   phrase: (w) => {

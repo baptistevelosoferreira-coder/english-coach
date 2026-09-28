@@ -1,0 +1,46 @@
+{
+  "id": "p7",
+  "titre": "Le passé : verbes irréguliers",
+  "ico": "🧳",
+  "niveau": "A2",
+  "objectif": "Raconter un voyage ou une sortie",
+  "dialogue": {
+    "titre": "A viagem ao Porto",
+    "contexte": "Lucas revient d'un week-end à Porto.",
+    "surligner": ["Foste", "Fui", "Estive", "fizeram", "Vimos", "fizemos", "Tiveste", "pude", "Disseram-me"],
+    "lignes": [
+      ["Inês", "Foste ao Porto no fim de semana?", "Tu es allé à Porto ce week-end ?"],
+      ["Lucas", "Fui! Estive lá três dias com uns amigos.", "Oui ! J'y suis resté trois jours avec des amis."],
+      ["Inês", "E o que fizeram?", "Et qu'est-ce que vous avez fait ?"],
+      ["Lucas", "Vimos o rio, fizemos um passeio de barco e comemos uma francesinha.", "On a vu le fleuve, on a fait une balade en bateau et on a mangé une francesinha."],
+      ["Inês", "Tiveste sorte com o tempo?", "Tu as eu de la chance avec la météo ?"],
+      ["Lucas", "Não! Choveu muito e não pude ver o pôr do sol.", "Non ! Il a beaucoup plu et je n'ai pas pu voir le coucher de soleil."],
+      ["Inês", "Disseram-me que o Porto é lindo mesmo com chuva.", "On m'a dit que Porto est magnifique même sous la pluie."]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Les irréguliers du passé (eu · tu · ele · nós · eles)</h4><table><tr><td>ser / ir</td><td>fui, foste, foi, fomos, foram</td></tr><tr><td>estar</td><td>estive, estiveste, esteve, estivemos, estiveram</td></tr><tr><td>ter</td><td>tive, tiveste, teve, tivemos, tiveram</td></tr><tr><td>fazer</td><td>fiz, fizeste, fez, fizemos, fizeram</td></tr><tr><td>poder</td><td>pude, pudeste, pôde, pudemos, puderam</td></tr><tr><td>querer</td><td>quis, quiseste, quis, quisemos, quiseram</td></tr><tr><td>dizer</td><td>disse, disseste, disse, dissemos, disseram</td></tr><tr><td>ver</td><td>vi, viste, viu, vimos, viram</td></tr><tr><td>vir</td><td>vim, vieste, veio, viemos, vieram</td></tr><tr><td>dar</td><td>dei, deste, deu, demos, deram</td></tr><tr><td>saber</td><td>soube, soubeste, soube, soubemos, souberam</td></tr></table></div><div class='astuce'>💡 <b>ser</b> et <b>ir</b> ont exactement les mêmes formes au passé : « Fui ao Porto » (je suis allé à Porto) · « Foi ótimo » (c'était super). Le contexte suffit à les distinguer.</div>",
+  "exercices": [
+    { "type": "choix", "texte": "No sábado eu ___ ao Porto.", "options": ["fui", "foi", "fiz"], "bonne": 0, "explication": "ir → eu fui." },
+    { "type": "choix", "texte": "O que é que vocês ___ ontem?", "options": ["fizeram", "fazeram", "fizemos"], "bonne": 0, "explication": "fazer → vocês fizeram." },
+    { "type": "choix", "texte": "Ela ___ muita sorte.", "options": ["teve", "tive", "tem"], "bonne": 0, "explication": "ter → ela teve." },
+    { "type": "paires", "consigne": "Associe l'infinitif à la forme « eu » au passé", "paires": [["ir", "fui"], ["fazer", "fiz"], ["ter", "tive"], ["ver", "vi"], ["estar", "estive"]] },
+    { "type": "saisie", "texte": "Nós ___ o rio. (ver)", "sous": "Nous avons vu le fleuve.", "reponses": ["vimos"], "explication": "ver → nós vimos." },
+    { "type": "saisie", "texte": "Ele ___ de comboio. (vir)", "sous": "Il est venu en train.", "reponses": ["veio"], "explication": "vir → ele veio." },
+    { "type": "saisie", "texte": "Eu não ___ ir. (poder)", "sous": "Je n'ai pas pu y aller.", "reponses": ["pude"], "explication": "poder → eu pude." },
+    { "type": "erreur", "texte": "Ontem eu fazi o jantar.", "k": 2, "correction": "fiz", "explication": "fazer → eu fiz." },
+    { "type": "vf", "texte": "A festa foi ótima.", "vrai": true, "correction": "", "explication": "foi = passé de ser (c'était)." },
+    { "type": "ordre", "texte": "Disseram-me que o Porto é lindo.", "fr": "On m'a dit que Porto est magnifique." },
+    { "type": "ecoute", "texte": "Estive lá três dias." }
+  ],
+  "production": [
+    { "consigne": "Raconte un voyage ou une sortie en 3 phrases avec des verbes irréguliers (ir, fazer, ver, ter…).", "modele": "No verão, fui a Madrid com a minha família. Vimos muitos museus e fizemos compras. Foi uma viagem ótima!", "verifs": ["J'ai utilisé au moins 2 verbes irréguliers (fui, fiz, vi, tive…)", "foi pour dire « c'était »"] }
+  ],
+  "cartes": [
+    { "id": "p7-1", "texte": "Eu ___ ao Porto. (ir)", "sous": "Je suis allé à Porto.", "reponses": ["fui"] },
+    { "id": "p7-2", "texte": "Nós ___ um passeio. (fazer)", "sous": "Nous avons fait une balade.", "reponses": ["fizemos"] },
+    { "id": "p7-3", "texte": "Ela ___ sorte. (ter)", "sous": "Elle a eu de la chance.", "reponses": ["teve"] },
+    { "id": "p7-4", "texte": "Eu ___ o filme. (ver)", "sous": "J'ai vu le film.", "reponses": ["vi"] },
+    { "id": "p7-5", "texte": "Eles ___ ontem. (vir)", "sous": "Ils sont venus hier.", "reponses": ["vieram"] },
+    { "id": "p7-6", "texte": "Eu ___ em casa. (estar)", "sous": "J'ai été à la maison.", "reponses": ["estive"] }
+  ]
+}

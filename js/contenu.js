@@ -1,8 +1,10 @@
-// Charge tout le contenu (fichiers JSON du dossier contenu/) et construit
+// Charge tout le contenu de la langue choisie (contenu/<langue>/) et construit
 // le registre des cartes de révision : chaque élément appris a un identifiant unique.
 //   f1-3          → carte d'un module des Fondations
 //   g:perfect:2   → exercice d'un point de grammaire
 //   v:es-temps:4  → mot d'un thème de vocabulaire
+
+import { L } from "./langue.js";
 
 export const C = {
   fondations: [],   // modules, dans l'ordre
@@ -14,16 +16,20 @@ export const C = {
   points: {},       // points de grammaire par identifiant
   modules: {},      // modules par identifiant
   cartes: {},       // registre des cartes de révision
+  aVenir: null,     // parties prévues mais pas encore écrites
 };
 
 const lire = async (chemin) => {
-  const r = await fetch("contenu/" + chemin);
+  const r = await fetch(`contenu/${L.code}/${chemin}`);
   if (!r.ok) throw new Error("Impossible de charger " + chemin);
   return r.json();
 };
 
 export async function chargerContenu() {
+  // On repart de zéro (utile quand on change de langue)
+  Object.assign(C, { fondations: [], verbes: [], test: [], grammaire: [], parcoursVocab: [], decks: {}, points: {}, modules: {}, cartes: {}, aVenir: null });
   const s = await lire("sommaire.json");
+  C.aVenir = s.aVenir || null;
   const [fondations, verbes, test, grammaire, vocab] = await Promise.all([
     Promise.all(s.fondations.map(lire)),
     lire(s.verbes),
@@ -38,7 +44,7 @@ export async function chargerContenu() {
     m.cartes.forEach((c) => (C.cartes[c.id] = { type: "f", source: m.id, ...c }));
   });
 
-  C.verbes = verbes.verbes.map(([base, s3, ing, passe, pp, fr]) => ({ base, s3, ing, passe, pp, fr }));
+  C.verbes = L.conj.lireVerbes(verbes);
   C.test = test.questions;
 
   C.grammaire = grammaire.points;

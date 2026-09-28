@@ -1,4 +1,5 @@
 // Petits outils partagés par toute l'application.
+import { L } from "./langue.js";
 
 export const $ = (sel, racine = document) => racine.querySelector(sel);
 export const $$ = (sel, racine = document) => [...racine.querySelectorAll(sel)];
@@ -26,30 +27,11 @@ export function jour(decalage = 0) {
 }
 
 /* ---------------------------------------------------------------
-   Comparaison des réponses tapées
-   On développe les contractions pour que « don't » et « do not »
-   soient acceptés de la même façon, et on ignore majuscules,
-   ponctuation finale et espaces en trop.
+   Comparaison des réponses tapées : chaque langue a sa propre façon
+   de normaliser (contractions en anglais, accents en portugais…).
    --------------------------------------------------------------- */
-export function normaliser(s) {
-  return String(s)
-    .toLowerCase()
-    .replace(/[’‘`´]/g, "'")
-    .replace(/\bcan't\b/g, "can not")
-    .replace(/\bcannot\b/g, "can not")
-    .replace(/\bwon't\b/g, "will not")
-    .replace(/\bshan't\b/g, "shall not")
-    .replace(/n't\b/g, " not")
-    .replace(/'m\b/g, " am")
-    .replace(/'re\b/g, " are")
-    .replace(/'ll\b/g, " will")
-    .replace(/'ve\b/g, " have")
-    .replace(/'d\b/g, " would")
-    .replace(/\b(he|she|it|that|there|what|who|where|how)'s\b/g, "$1 is")
-    .replace(/[.,!?;:"«»()]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+export const normaliser = (s) => L.normaliser(s);
+const sansAccents = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
 // Distance d'édition (nombre de lettres à changer pour passer de a à b)
 export function distance(a, b) {
@@ -65,15 +47,17 @@ export function distance(a, b) {
 
 /* Vérifie une réponse tapée.
    tolerance = true : une faute de frappe d'une lettre est acceptée (vocabulaire).
-   Pour la grammaire on ne tolère rien : « work » au lieu de « works », c'est justement l'erreur. */
+   Pour la grammaire on ne tolère rien : « work » au lieu de « works », c'est justement l'erreur.
+   Une faute d'accent seule est signalée, mais la réponse compte. */
 export function verifierSaisie(tape, reponses, tolerance = false) {
   const t = normaliser(tape);
   const attendus = reponses.map(normaliser);
   if (attendus.includes(t)) return { ok: true, presque: false };
+  if (L.accents && attendus.some((a) => sansAccents(a) === sansAccents(t))) return { ok: true, presque: true, raison: "accents" };
   if (tolerance) {
-    const sansArticle = (s) => s.replace(/^(to|a|an|the) /, "");
+    const sansArticle = (s) => s.replace(L.articles, "");
     if (attendus.some((a) => sansArticle(a) === sansArticle(t))) return { ok: true, presque: false };
-    if (attendus.some((a) => a.length >= 5 && distance(sansArticle(a), sansArticle(t)) === 1)) return { ok: true, presque: true };
+    if (attendus.some((a) => a.length >= 5 && distance(sansAccents(sansArticle(a)), sansAccents(sansArticle(t))) === 1)) return { ok: true, presque: true, raison: "frappe" };
   }
   return { ok: false, presque: false };
 }

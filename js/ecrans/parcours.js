@@ -10,9 +10,6 @@ import {
   deckFini, estRecommande, rang, leconsDeck,
 } from "../progression.js";
 
-// Thèmes prévus pour la partie « vie quotidienne » (prochaine étape du projet)
-const QUOTIDIEN_A_VENIR = ["✈️ À l'aéroport", "🚇 Transports", "🏨 À l'hôtel", "🍽️ Au restaurant", "🛒 Faire ses courses", "💊 Pharmacie & santé", "🆘 Urgences", "💬 Small talk"];
-
 function carteElement(id, { ico, titre, sous, fini, ouvert = true, etoiles }) {
   const reco = !fini && estRecommande(id);
   return `<button class="element ${ouvert ? "" : "verrou"} ${reco ? "reco" : ""}" data-id="${id}" ${ouvert ? "" : "disabled"}>
@@ -60,8 +57,12 @@ ecrans.parcours = function () {
   });
   html += `</div>`;
 
-  html += `<div class="groupe"><h3>🌍 Vie quotidienne UK / US</h3><p class="muet petit">Pour te débrouiller seul en Angleterre ou aux États-Unis. Prochaine étape du projet :</p>
-    <div class="puces">${QUOTIDIEN_A_VENIR.map((t) => `<span class="puce">${t}</span>`).join("")}</div></div></div>`;
+  // Parties prévues mais pas encore écrites (définies dans contenu/<langue>/sommaire.json)
+  if (C.aVenir) {
+    html += `<div class="groupe"><h3>${echapper(C.aVenir.titre)}</h3><p class="muet petit">${echapper(C.aVenir.description)}</p>
+      <div class="puces">${C.aVenir.themes.map((t) => `<span class="puce">${echapper(t)}</span>`).join("")}</div></div>`;
+  }
+  html += `</div>`;
 
   app.innerHTML = html;
   $$("[data-id]").forEach((b) => (b.onclick = () => ouvrirElement(b.dataset.id)));

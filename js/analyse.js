@@ -3,6 +3,7 @@
 // 2) Ailleurs (GitHub Pages…) : correcteur libre LanguageTool (https://languagetool.org).
 // 3) Sans connexion : aucune analyse, on garde le modèle et la liste de vérification.
 import { C } from "./contenu.js";
+import { L } from "./langue.js";
 
 let claudeSample; // promesse mémorisée : la fonction d'appel à Claude, ou null
 function fonctionClaude() {
@@ -21,8 +22,9 @@ function reglesConnues() {
 }
 
 function consigneClaude({ texte, consigne, theme }) {
-  return `Tu es un professeur d'anglais bienveillant et précis. Ton élève est francophone et reprend l'anglais depuis les bases.
-Il a écrit un court texte en anglais pour répondre à cette consigne : « ${consigne} »
+  return `Tu es un professeur ${L.de} bienveillant et précis. Ton élève est francophone et apprend ${L.le} depuis les bases.
+Il a écrit un court texte ${L.en} pour répondre à cette consigne : « ${consigne} »
+${L.consigneAnalyse}
 ${theme ? `Le point de grammaire travaillé est : ${theme}.` : ""}
 
 Texte de l'élève (entre les balises) :
@@ -47,7 +49,7 @@ Règles :
 - "note" : entier de 0 à 10 ; "niveau" : A1, A2, B1, B2 ou C1 selon le texte.
 - Corrige seulement les vraies erreurs (grammaire, conjugaison, vocabulaire, orthographe, tournure pas naturelle). Au plus 8 corrections, les plus importantes d'abord. Si tout est juste, "corrections" est une liste vide.
 - "regle" : l'identifiant de la règle concernée dans la liste ci-dessous, ou null si aucune ne correspond.
-- Si le texte n'est pas en anglais ou ne répond pas à la consigne, dis-le dans "resume" et mets une note de 3 au maximum.
+- Si le texte n'est pas ${L.en} ou ne répond pas à la consigne, dis-le dans "resume" et mets une note de 3 au maximum.
 - Sois encourageant mais honnête.
 
 Règles possibles :
@@ -79,7 +81,7 @@ async function analyseLanguageTool(texte, signal) {
   const rep = await fetch("https://api.languagetool.org/v2/check", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({ text: texte, language: "en-GB", motherTongue: "fr" }),
+    body: new URLSearchParams({ text: texte, language: L.languageTool, motherTongue: "fr" }),
     signal,
   });
   if (!rep.ok) throw new Error("LanguageTool indisponible");

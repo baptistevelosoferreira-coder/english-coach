@@ -1,0 +1,19 @@
+{
+  "fondations": [
+    "fondations/p1-ser.json",
+    "fondations/p2-estar.json",
+    "fondations/p3-presente.json",
+    "fondations/p4-irregulares.json",
+    "fondations/p5-estar-a.json",
+    "fondations/p6-perfeito.json",
+    "fondations/p7-perfeito-irregular.json",
+    "fondations/p8-imperfeito.json"
+  ],
+  "verbes": "verbes.json",
+  "test": "test-positionnement.json",
+  "grammaire": "grammaire.json",
+  "vocabulaire": [
+    "vocabulaire/essenciais.json",
+    "vocabulaire/vida-em-portugal.json"
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "name": "English Coach",
-  "short_name": "English",
-  "description": "Reprends les bases de l'anglais, puis progresse avec un parcours adapté à ton niveau.",
+  "name": "Coach de langues",
+  "short_name": "Langues",
+  "description": "Apprends l'anglais ou le portugais du Portugal, un peu chaque jour.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",

@@ -1,0 +1,45 @@
+{
+  "id": "p8",
+  "titre": "L'imparfait (pretérito imperfeito)",
+  "ico": "🕰️",
+  "niveau": "B1",
+  "objectif": "Décrire le passé, tes habitudes d'avant, et demander poliment",
+  "dialogue": {
+    "titre": "Quando eu era criança",
+    "contexte": "Tiago raconte son enfance à Lucas.",
+    "surligner": ["vivias", "eras", "Vivíamos", "tinha", "ajudava", "estava a lavar"],
+    "lignes": [
+      ["Lucas", "Tiago, onde vivias quando eras criança?", "Tiago, où tu vivais quand tu étais enfant ?"],
+      ["Tiago", "Vivíamos no Algarve. O meu pai tinha um pequeno restaurante.", "On vivait en Algarve. Mon père avait un petit restaurant."],
+      ["Tiago", "Todos os verões, eu ajudava na cozinha.", "Chaque été, j'aidais en cuisine."],
+      ["Lucas", "Por isso cozinhas tão bem!", "C'est pour ça que tu cuisines si bien !"],
+      ["Tiago", "Talvez! Um dia, estava a lavar pratos quando chegou um chef famoso.", "Peut-être ! Un jour, je faisais la vaisselle quand un chef célèbre est arrivé."],
+      ["Tiago", "Ele provou a minha sopa e disse: «Tens talento!»", "Il a goûté ma soupe et il a dit : « Tu as du talent ! »"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Les terminaisons</h4><table><tr><td></td><td>falar</td><td>comer / abrir</td></tr><tr><td>eu</td><td>falava</td><td>comia</td></tr><tr><td>tu</td><td>falavas</td><td>comias</td></tr><tr><td>ele / ela / você</td><td>falava</td><td>comia</td></tr><tr><td>nós</td><td>falávamos</td><td>comíamos</td></tr><tr><td>eles / vocês</td><td>falavam</td><td>comiam</td></tr></table><p class='ex'>Seulement 4 irréguliers : ser → era · ter → tinha · vir → vinha · pôr → punha</p></div><div class='bloc'><h4>Imparfait ou perfeito ?</h4><p class='ex'><b>Imperfeito</b> (comme l'imparfait) : habitude, description, décor. Todos os verões, eu <b>ajudava</b>.</p><p class='ex'><b>Perfeito</b> : événement ponctuel. Um dia, <b>chegou</b> um chef.</p><p class='ex'>Les deux ensemble : <b>Estava a lavar</b> pratos quando <b>chegou</b> um chef.</p></div><div class='astuce'>💡 Au café, on commande à l'imparfait pour être poli : « <b>Queria</b> um café, por favor » = je voudrais un café. Tu l'entendras partout au Portugal.</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Quando era criança, eu ___ no Algarve.", "options": ["vivia", "vivi", "vivo"], "bonne": 0, "explication": "Situation qui durait dans le passé → imperfeito." },
+    { "type": "choix", "texte": "O meu pai ___ um restaurante.", "options": ["tinha", "teve", "tem"], "bonne": 0, "explication": "Description du passé → ter à l'imparfait : tinha." },
+    { "type": "choix", "texte": "Um dia, ___ um chef famoso ao restaurante.", "options": ["chegou", "chegava"], "bonne": 0, "explication": "Événement ponctuel (um dia) → perfeito." },
+    { "type": "saisie", "texte": "Nós ___ todos os verões. (ajudar)", "sous": "Nous aidions chaque été.", "reponses": ["ajudávamos"], "explication": "nós → -ávamos (avec accent)." },
+    { "type": "saisie", "texte": "Tu ___ muito pequeno. (ser)", "sous": "Tu étais très petit.", "reponses": ["eras"], "explication": "ser → tu eras." },
+    { "type": "saisie", "texte": "Eles ___ perto da praia. (morar)", "sous": "Ils habitaient près de la plage.", "reponses": ["moravam"], "explication": "eles → -avam." },
+    { "type": "erreur", "texte": "Todos os dias eu fui à praia.", "k": 4, "correction": "ia", "explication": "Habitude (todos os dias) → imperfeito : ia." },
+    { "type": "choix", "consigne": "Au café, la formule polie pour « Je voudrais un café »", "texte": "Commander", "options": ["Queria um café, por favor.", "Quero um café!", "Quis um café, por favor."], "bonne": 0, "explication": "Queria (imparfait) = je voudrais : la formule polie habituelle au Portugal." },
+    { "type": "vf", "texte": "Eu estava a dormir quando o telefone tocou.", "vrai": true, "correction": "", "explication": "Action en cours (imperfeito) interrompue par un événement (perfeito)." },
+    { "type": "ordre", "texte": "O meu avô contava muitas histórias.", "fr": "Mon grand-père racontait beaucoup d'histoires." },
+    { "type": "ecoute", "texte": "Quando eu era criança, vivia no campo." }
+  ],
+  "production": [
+    { "consigne": "Décris ton enfance en 3 phrases (où tu vivais, ce que tu faisais souvent…).", "modele": "Quando era criança, vivia numa aldeia. Todos os dias, jogava à bola com os meus amigos. Era muito feliz.", "verifs": ["Imparfait (-ava, -ia) pour les habitudes et les descriptions", "era / tinha pour décrire"] }
+  ],
+  "cartes": [
+    { "id": "p8-1", "texte": "Quando eu ___ criança… (ser)", "sous": "Quand j'étais enfant…", "reponses": ["era"] },
+    { "id": "p8-2", "texte": "Nós ___ no Algarve. (viver)", "sous": "Nous vivions en Algarve.", "reponses": ["vivíamos"] },
+    { "id": "p8-3", "texte": "Ele ___ um cão. (ter)", "sous": "Il avait un chien.", "reponses": ["tinha"] },
+    { "id": "p8-4", "texte": "Eu ___ muito. (brincar)", "sous": "Je jouais beaucoup.", "reponses": ["brincava"] },
+    { "id": "p8-5", "texte": "___ um café, por favor. (querer, poli)", "sous": "Je voudrais un café, s'il vous plaît.", "reponses": ["Queria"] },
+    { "id": "p8-6", "texte": "Eles ___ a dormir quando cheguei. (estar)", "sous": "Ils dormaient quand je suis arrivé.", "reponses": ["estavam"] }
+  ]
+}

@@ -1,12 +1,13 @@
 // Sauvegarde de la progression dans le navigateur (localStorage),
 // avec export / import pour ne jamais la perdre.
 import { jour } from "./util.js";
+import { L } from "./langue.js";
 
-const CLE = "english-coach";
 const VERSION = 1;
 
 const etatVide = () => ({
   version: VERSION,
+  langue: L.code,
   profil: null,          // { objectif, debut }
   xp: 0,
   xpJour: 0,
@@ -25,7 +26,7 @@ const etatVide = () => ({
 
 function charger() {
   try {
-    const brut = JSON.parse(localStorage.getItem(CLE));
+    const brut = JSON.parse(localStorage.getItem(L.cleStockage));
     if (brut && brut.version === VERSION) return { ...etatVide(), ...brut };
   } catch (e) { /* stockage indisponible ou abîmé : on repart de zéro */ }
   return etatVide();
@@ -33,8 +34,11 @@ function charger() {
 
 export let etat = charger();
 
+// Recharge la progression de la langue choisie (chaque langue a la sienne)
+export function chargerEtat() { etat = charger(); }
+
 export function sauver() {
-  try { localStorage.setItem(CLE, JSON.stringify(etat)); } catch (e) { /* navigation privée, quota… */ }
+  try { localStorage.setItem(L.cleStockage, JSON.stringify(etat)); } catch (e) { /* navigation privée, quota… */ }
 }
 
 export function reinitialiser() {
@@ -67,7 +71,7 @@ export function exporter() {
   const blob = new Blob([JSON.stringify(etat, null, 1)], { type: "application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = `english-coach-sauvegarde-${jour()}.json`;
+  a.download = `${L.appli.toLowerCase().replace(/ /g, "-")}-sauvegarde-${jour()}.json`;
   a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
@@ -80,8 +84,9 @@ export async function importer(fichier) {
 
 export function importerTexte(texte) {
   let donnees;
-  try { donnees = JSON.parse(texte); } catch (e) { throw new Error("Ce texte n'est pas une sauvegarde English Coach."); }
-  if (!donnees || donnees.version !== VERSION || !("cartes" in donnees)) throw new Error("Ce fichier n'est pas une sauvegarde English Coach.");
+  try { donnees = JSON.parse(texte); } catch (e) { throw new Error("Ce texte n'est pas une sauvegarde de l'appli."); }
+  if (!donnees || donnees.version !== VERSION || !("cartes" in donnees)) throw new Error("Ce texte n'est pas une sauvegarde de l'appli.");
+  if ((donnees.langue || "en") !== L.code) throw new Error(`Cette sauvegarde n'est pas celle ${L.de === "d'anglais" ? "de l'anglais" : "du portugais"}. Change de langue avant de l'importer.`);
   etat = { ...etatVide(), ...donnees };
   sauver();
 }

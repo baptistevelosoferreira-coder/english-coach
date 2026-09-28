@@ -1,0 +1,46 @@
+{
+  "id": "p2",
+  "titre": "Ser ou estar ?",
+  "ico": "⚖️",
+  "niveau": "A1",
+  "objectif": "Dire comment tu te sens et où sont les choses",
+  "dialogue": {
+    "titre": "No café",
+    "contexte": "Lucas et Inês prennent un café près de chez eux.",
+    "surligner": ["Estás", "Estou", "está", "Está", "é", "são"],
+    "lignes": [
+      ["Inês", "Estás bem, Lucas?", "Ça va, Lucas ?"],
+      ["Lucas", "Estou cansado. A casa é muito bonita, mas o meu quarto está frio!", "Je suis fatigué. La maison est très jolie, mais ma chambre est froide !"],
+      ["Inês", "É normal, as casas em Lisboa são frias no inverno.", "C'est normal, les maisons à Lisbonne sont froides en hiver."],
+      ["Lucas", "Onde está o Tiago?", "Où est Tiago ?"],
+      ["Inês", "Está no trabalho. Ele é cozinheiro num restaurante.", "Il est au travail. Il est cuisinier dans un restaurant."],
+      ["Lucas", "Hum, o café está ótimo!", "Mmm, le café est excellent !"],
+      ["Inês", "Os cafés portugueses são os melhores!", "Les cafés portugais sont les meilleurs !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Estar</h4><table><tr><td>eu estou</td><td>je suis</td></tr><tr><td>tu estás</td><td>tu es</td></tr><tr><td>ele / ela / você está</td><td>il / elle est</td></tr><tr><td>nós estamos</td><td>nous sommes</td></tr><tr><td>eles / elas / vocês estão</td><td>ils / elles sont</td></tr></table></div><div class='bloc'><h4>Ser = ce que l'on est</h4><p class='ex'>Identité, nationalité, profession, caractère, matière, heure : Ele <b>é</b> cozinheiro. A casa <b>é</b> bonita.</p></div><div class='bloc'><h4>Estar = comment on est en ce moment</h4><p class='ex'>État passager, humeur, santé : <b>Estou</b> cansado. Estás bem?</p><p class='ex'>Où se trouve quelqu'un ou un objet : Onde <b>está</b> o Tiago? As chaves <b>estão</b> na mesa.</p><p class='ex'>Météo : <b>Está</b> frio. <b>Está</b> sol.</p></div><div class='bloc'><h4>Ça change le sens !</h4><p class='ex'>Ele <b>é</b> aborrecido = il est ennuyeux (de caractère).</p><p class='ex'>Ele <b>está</b> aborrecido = il s'ennuie / il est contrarié (en ce moment).</p></div><div class='astuce'>💡 Pour un lieu fixe (une gare, un musée), on dit souvent « Onde fica…? » : Onde fica a estação?</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Hoje eu ___ cansado.", "options": ["sou", "estou"], "bonne": 1, "explication": "État passager (aujourd'hui) → estar." },
+    { "type": "choix", "texte": "A Inês ___ enfermeira.", "options": ["é", "está"], "bonne": 0, "explication": "Profession → ser." },
+    { "type": "choix", "texte": "Onde ___ o Tiago?", "options": ["é", "está"], "bonne": 1, "explication": "Où se trouve une personne → estar." },
+    { "type": "choix", "texte": "Hoje ___ muito calor.", "options": ["é", "está"], "bonne": 1, "explication": "Météo → estar : está calor." },
+    { "type": "erreur", "texte": "Nós somos muito cansados hoje.", "k": 1, "correction": "estamos", "explication": "Fatigue du moment (hoje) → estar." },
+    { "type": "vf", "texte": "O café está ótimo!", "vrai": true, "correction": "", "explication": "estar pour une impression du moment (le goût de ce café-là)." },
+    { "type": "saisie", "texte": "Vocês ___ bem? (estar)", "sous": "Vous allez bien ?", "reponses": ["estão"], "explication": "vocês → estão." },
+    { "type": "saisie", "texte": "Eu ___ em casa. (estar)", "sous": "Je suis à la maison.", "reponses": ["estou"], "explication": "eu → estou." },
+    { "type": "choix", "consigne": "Quelle phrase veut dire « Il est ennuyeux » (c'est son caractère) ?", "texte": "Caractère", "options": ["Ele é aborrecido.", "Ele está aborrecido."], "bonne": 0, "explication": "Caractère → ser. « Está aborrecido » = il s'ennuie ou il est contrarié en ce moment." },
+    { "type": "ordre", "texte": "A casa é muito bonita.", "fr": "La maison est très jolie." },
+    { "type": "ecoute", "texte": "Estou muito cansado." }
+  ],
+  "production": [
+    { "consigne": "Décris en 3 phrases ta ville ou ton logement (ser) et comment tu te sens aujourd'hui (estar).", "modele": "A minha cidade é pequena e bonita. O meu quarto é grande. Hoje estou um pouco cansado.", "verifs": ["ser pour ce qui ne change pas (la ville, le logement)", "estar pour mon état d'aujourd'hui"] }
+  ],
+  "cartes": [
+    { "id": "p2-1", "texte": "Hoje ___ cansado. (eu)", "sous": "Aujourd'hui je suis fatigué.", "reponses": ["estou"] },
+    { "id": "p2-2", "texte": "Ela ___ médica.", "sous": "Elle est médecin.", "reponses": ["é"] },
+    { "id": "p2-3", "texte": "Onde ___ as chaves?", "sous": "Où sont les clés ?", "reponses": ["estão"] },
+    { "id": "p2-4", "texte": "___ frio hoje.", "sous": "Il fait froid aujourd'hui.", "reponses": ["Está"] },
+    { "id": "p2-5", "texte": "Nós ___ em Lisboa.", "sous": "Nous sommes à Lisbonne.", "reponses": ["estamos"] },
+    { "id": "p2-6", "texte": "Tu ___ bem?", "sous": "Tu vas bien ?", "reponses": ["estás"] }
+  ]
+}

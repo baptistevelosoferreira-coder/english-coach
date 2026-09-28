@@ -1,0 +1,145 @@
+{
+  "id": "essenciais",
+  "titre": "Les essentiels du portugais",
+  "ico": "🔑",
+  "description": "Les mots et expressions les plus utiles au quotidien, à connaître en priorité.",
+  "_info": "Chaque mot : [portugais, français, phrase d'exemple, traduction, remarque facultative]",
+  "decks": [
+    {
+      "id": "pt-verbos", "titre": "Les verbes indispensables", "ico": "⚙️", "niveau": "A1",
+      "mots": [
+        ["ter", "avoir", "Tenho dois irmãos.", "J'ai deux frères."],
+        ["fazer", "faire", "O que fazes amanhã?", "Qu'est-ce que tu fais demain ?"],
+        ["ir", "aller", "Vou ao supermercado.", "Je vais au supermarché."],
+        ["poder", "pouvoir", "Posso entrar?", "Je peux entrer ?"],
+        ["querer", "vouloir", "Quero um café, por favor.", "Je veux un café, s'il te plaît."],
+        ["saber", "savoir", "Não sei a resposta.", "Je ne connais pas la réponse."],
+        ["conhecer", "connaître (une personne, un lieu)", "Conheces o Porto?", "Tu connais Porto ?", "saber = savoir une information ; conhecer = connaître une personne ou un lieu."],
+        ["precisar de", "avoir besoin de", "Preciso de ajuda.", "J'ai besoin d'aide."],
+        ["gostar de", "aimer (bien)", "Gosto muito de café.", "J'aime beaucoup le café.", "Toujours avec de."],
+        ["falar", "parler", "Falas português?", "Tu parles portugais ?"],
+        ["perceber", "comprendre", "Não percebo. Pode repetir?", "Je ne comprends pas. Vous pouvez répéter ?", "Au Portugal, on dit surtout perceber."],
+        ["ficar", "rester, se trouver", "Onde fica a estação?", "Où se trouve la gare ?"]
+      ]
+    },
+    {
+      "id": "pt-perguntas", "titre": "Poser des questions", "ico": "❓", "niveau": "A1",
+      "mots": [
+        ["O quê?", "Quoi ?", "O que é isto?", "Qu'est-ce que c'est ?"],
+        ["Onde?", "Où ?", "Onde moras?", "Où habites-tu ?"],
+        ["Quando?", "Quand ?", "Quando chega o comboio?", "Quand arrive le train ?"],
+        ["Porquê?", "Pourquoi ?", "Porquê? Porque estou cansado.", "Pourquoi ? Parce que je suis fatigué.", "Au Portugal : porquê pour demander, porque pour répondre."],
+        ["Quem?", "Qui ?", "Quem é aquela rapariga?", "Qui est cette fille ?"],
+        ["Como?", "Comment ?", "Como te chamas?", "Comment tu t'appelles ?"],
+        ["Qual?", "Lequel ? Quel ?", "Qual é o teu número?", "Quel est ton numéro ?"],
+        ["Quanto custa?", "Combien ça coûte ?", "Quanto custa este bilhete?", "Combien coûte ce billet ?"],
+        ["Quantos?", "Combien ? (nombre)", "Quantos anos tens?", "Quel âge as-tu ?"],
+        ["A que horas?", "À quelle heure ?", "A que horas abre o museu?", "À quelle heure ouvre le musée ?"],
+        ["Pode repetir?", "Vous pouvez répéter ?", "Desculpe, pode repetir, por favor?", "Pardon, vous pouvez répéter, s'il vous plaît ?"],
+        ["Como se diz…?", "Comment dit-on… ?", "Como se diz « fourchette » em português?", "Comment dit-on « fourchette » en portugais ?"]
+      ]
+    },
+    {
+      "id": "pt-tempo", "titre": "Le temps et les moments", "ico": "📅", "niveau": "A1",
+      "mots": [
+        ["hoje", "aujourd'hui", "Hoje está sol.", "Aujourd'hui il y a du soleil."],
+        ["amanhã", "demain", "Até amanhã!", "À demain !"],
+        ["ontem", "hier", "Ontem fui à praia.", "Hier je suis allé à la plage."],
+        ["agora", "maintenant", "Agora não posso.", "Je ne peux pas maintenant."],
+        ["logo", "tout à l'heure", "Falamos logo!", "On se parle tout à l'heure !", "« Até logo » = à tout à l'heure."],
+        ["cedo", "tôt", "Acordo sempre cedo.", "Je me réveille toujours tôt."],
+        ["tarde", "tard ; l'après-midi", "Já é tarde. À tarde, vou ao ginásio.", "Il est déjà tard. L'après-midi, je vais à la salle."],
+        ["já", "déjà", "Já comeste?", "Tu as déjà mangé ?"],
+        ["ainda", "encore, toujours", "Ainda estás em casa?", "Tu es encore à la maison ?"],
+        ["há dois dias", "il y a deux jours", "Cheguei há dois dias.", "Je suis arrivé il y a deux jours."],
+        ["durante", "pendant", "Durante a aula, não falamos.", "Pendant le cours, on ne parle pas."],
+        ["o fim de semana", "le week-end", "Bom fim de semana!", "Bon week-end !"]
+      ]
+    },
+    {
+      "id": "pt-liaison", "titre": "Les mots de liaison", "ico": "🔗", "niveau": "A2",
+      "mots": [
+        ["porque", "parce que", "Estou cansado porque trabalhei muito.", "Je suis fatigué parce que j'ai beaucoup travaillé."],
+        ["por isso", "c'est pourquoi, donc", "Choveu, por isso ficámos em casa.", "Il a plu, donc nous sommes restés à la maison."],
+        ["mas", "mais", "É pequeno, mas é bonito.", "C'est petit, mais c'est joli."],
+        ["então", "alors", "Então, vamos?", "Alors, on y va ?"],
+        ["também", "aussi", "Eu também gosto.", "Moi aussi, j'aime ça."],
+        ["depois", "après, ensuite", "Primeiro comemos, depois saímos.", "D'abord on mange, ensuite on sort."],
+        ["primeiro", "d'abord", "Primeiro, apresento-me.", "D'abord, je me présente."],
+        ["no entanto", "cependant", "A ideia é boa. No entanto, é cara.", "L'idée est bonne. Cependant, elle coûte cher."],
+        ["apesar de", "malgré", "Apesar da chuva, saímos.", "Malgré la pluie, nous sommes sortis."],
+        ["por exemplo", "par exemple", "Gosto de desporto, por exemplo ténis.", "J'aime le sport, par exemple le tennis."],
+        ["ou seja", "c'est-à-dire", "Chego às seis, ou seja, depois do trabalho.", "J'arrive à six heures, c'est-à-dire après le travail."],
+        ["aliás", "d'ailleurs", "Aliás, o Tiago também vem.", "D'ailleurs, Tiago vient aussi."]
+      ]
+    },
+    {
+      "id": "pt-adjetivos", "titre": "Les adjectifs du quotidien", "ico": "✨", "niveau": "A1",
+      "mots": [
+        ["fácil", "facile", "O exame foi fácil.", "L'examen était facile."],
+        ["difícil", "difficile", "O português é difícil?", "Le portugais est difficile ?"],
+        ["giro", "joli, chouette", "Que casaco tão giro!", "Quelle jolie veste !", "Très courant au Portugal (familier)."],
+        ["simpático", "sympathique, gentil", "O teu irmão é muito simpático.", "Ton frère est très sympa."],
+        ["caro", "cher", "Lisboa está cada vez mais cara.", "Lisbonne est de plus en plus chère."],
+        ["barato", "bon marché", "Este restaurante é barato.", "Ce restaurant n'est pas cher."],
+        ["cansado", "fatigué", "Estou muito cansado.", "Je suis très fatigué."],
+        ["ocupado", "occupé", "Hoje estou ocupado.", "Aujourd'hui je suis occupé."],
+        ["pronto", "prêt", "O jantar está pronto!", "Le dîner est prêt !"],
+        ["livre", "libre", "Estás livre amanhã?", "Tu es libre demain ?"],
+        ["perto", "près", "A praia fica perto.", "La plage est tout près."],
+        ["longe", "loin", "A estação é longe daqui?", "La gare est loin d'ici ?"]
+      ]
+    },
+    {
+      "id": "pt-conversa", "titre": "Expressions pour discuter", "ico": "💬", "niveau": "A2",
+      "mots": [
+        ["Tudo bem?", "Ça va ?", "Olá! Tudo bem?", "Salut ! Ça va ?"],
+        ["Faz favor", "S'il vous plaît (pour interpeller)", "Faz favor, a conta!", "S'il vous plaît, l'addition !", "Très portugais pour appeler un serveur."],
+        ["Obrigado / Obrigada", "Merci", "Muito obrigada pela ajuda!", "Merci beaucoup pour l'aide !", "Un homme dit obrigado, une femme obrigada."],
+        ["De nada", "De rien", "Obrigado! — De nada.", "Merci ! — De rien."],
+        ["Com licença", "Pardon (pour passer)", "Com licença, posso passar?", "Pardon, je peux passer ?"],
+        ["Desculpe", "Excusez-moi", "Desculpe, onde fica o metro?", "Excusez-moi, où est le métro ?"],
+        ["Não faz mal", "Ce n'est pas grave", "Desculpa o atraso! — Não faz mal.", "Désolé pour le retard ! — Ce n'est pas grave."],
+        ["Está bem", "D'accord", "Às oito? Está bem.", "À huit heures ? D'accord."],
+        ["Se calhar", "Peut-être", "Se calhar chove amanhã.", "Il va peut-être pleuvoir demain.", "Expression typique du Portugal."],
+        ["Não percebo", "Je ne comprends pas", "Desculpe, não percebo.", "Pardon, je ne comprends pas."],
+        ["Pois", "Eh oui, c'est vrai", "Está calor hoje! — Pois está.", "Il fait chaud aujourd'hui ! — Ah ça oui.", "Petit mot omniprésent au Portugal."],
+        ["Até já", "À tout de suite", "Vou buscar o casaco, até já!", "Je vais chercher ma veste, à tout de suite !"]
+      ]
+    },
+    {
+      "id": "pt-estudos", "titre": "Études et travail", "ico": "🎓", "niveau": "A2",
+      "mots": [
+        ["o curso", "le cursus, la formation", "Estou no segundo ano do curso.", "Je suis en deuxième année."],
+        ["o estágio", "le stage", "Faço um estágio em Lisboa.", "Je fais un stage à Lisbonne."],
+        ["as propinas", "les frais de scolarité", "As propinas são caras.", "Les frais de scolarité sont chers.", "Faux ami : un pourboire se dit a gorjeta."],
+        ["o exame", "l'examen", "Passei no exame!", "J'ai réussi l'examen !", "passar num exame = réussir un examen."],
+        ["a empresa", "l'entreprise", "Trabalho numa empresa de marketing.", "Je travaille dans une entreprise de marketing."],
+        ["o colega", "le collègue", "Os meus colegas são simpáticos.", "Mes collègues sont sympas."],
+        ["o chefe", "le chef, le patron", "O meu chefe está de férias.", "Mon chef est en vacances."],
+        ["a reunião", "la réunion", "A reunião é às dez.", "La réunion est à dix heures."],
+        ["o ordenado", "le salaire", "O ordenado é pago no fim do mês.", "Le salaire est versé à la fin du mois."],
+        ["as férias", "les vacances", "Vou de férias em agosto.", "Je pars en vacances en août."],
+        ["candidatar-se", "postuler", "Candidatei-me a três empregos.", "J'ai postulé à trois emplois."],
+        ["o emprego", "l'emploi", "Encontrei um emprego!", "J'ai trouvé un emploi !"]
+      ]
+    },
+    {
+      "id": "pt-fauxamis", "titre": "Les faux amis", "ico": "⚠️", "niveau": "A2",
+      "mots": [
+        ["esquisito", "bizarre (pas « exquis »)", "Que cheiro esquisito!", "Quelle odeur bizarre !"],
+        ["o apelido", "le nom de famille (pas « surnom »)", "Qual é o teu apelido?", "Quel est ton nom de famille ?", "Au Portugal, apelido = nom de famille."],
+        ["a prenda", "le cadeau", "Comprei uma prenda para a minha mãe.", "J'ai acheté un cadeau pour ma mère."],
+        ["puxar", "tirer (pas « pousser »)", "Para abrir, puxe a porta.", "Pour ouvrir, tirez la porte.", "Pousser = empurrar."],
+        ["o rato", "la souris (pas « le rat »)", "Há um rato na cozinha!", "Il y a une souris dans la cuisine !", "Le rat = a ratazana."],
+        ["a salsa", "le persil", "Põe salsa na sopa.", "Mets du persil dans la soupe."],
+        ["o polvo", "le poulpe", "O polvo à lagareiro é delicioso.", "Le poulpe « à lagareiro » est délicieux."],
+        ["a borracha", "la gomme", "Emprestas-me a borracha?", "Tu me prêtes ta gomme ?"],
+        ["constipado", "enrhumé (pas « constipé »)", "Estou constipado, tenho febre.", "Je suis enrhumé, j'ai de la fièvre."],
+        ["a esquina", "le coin de la rue", "O café fica na esquina.", "Le café est au coin de la rue."],
+        ["o talho", "la boucherie", "Compro carne no talho.", "J'achète de la viande à la boucherie."],
+        ["a camisola", "le pull (pas « la chemise »)", "Leva uma camisola, está frio.", "Prends un pull, il fait froid.", "La chemise = a camisa."]
+      ]
+    }
+  ]
+}

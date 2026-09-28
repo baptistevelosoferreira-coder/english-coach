@@ -1,0 +1,77 @@
+{
+  "id": "vida-em-portugal",
+  "titre": "Vivre au Portugal",
+  "ico": "🇵🇹",
+  "description": "Pour te débrouiller seul sur place : au café, dans les transports, dans les magasins et pour te loger.",
+  "_info": "Chaque mot : [portugais, français, phrase d'exemple, traduction, remarque facultative]",
+  "decks": [
+    {
+      "id": "pt-cafe", "titre": "Au café et au restaurant", "ico": "☕", "niveau": "A1",
+      "mots": [
+        ["um café", "un expresso", "Um café, faz favor.", "Un café, s'il vous plaît.", "Au Portugal, « um café » = un expresso. À Lisbonne, on dit aussi « uma bica »."],
+        ["um galão", "un grand café au lait (en verre)", "Queria um galão e uma torrada.", "Je voudrais un galão et une tartine grillée."],
+        ["o pequeno-almoço", "le petit-déjeuner", "O pequeno-almoço está incluído?", "Le petit-déjeuner est compris ?"],
+        ["o almoço", "le déjeuner", "O almoço é à uma.", "Le déjeuner est à une heure."],
+        ["o jantar", "le dîner", "Vamos jantar fora?", "On dîne dehors ?"],
+        ["a ementa", "la carte, le menu", "Pode trazer a ementa?", "Vous pouvez apporter la carte ?"],
+        ["o prato do dia", "le plat du jour", "Qual é o prato do dia?", "Quel est le plat du jour ?"],
+        ["a conta", "l'addition", "A conta, faz favor.", "L'addition, s'il vous plaît."],
+        ["uma garrafa de água", "une bouteille d'eau", "Uma garrafa de água fresca, por favor.", "Une bouteille d'eau fraîche, s'il vous plaît."],
+        ["um pastel de nata", "un flan pâtissier portugais", "Dois pastéis de nata, por favor.", "Deux pastéis de nata, s'il vous plaît."],
+        ["a gorjeta", "le pourboire", "Deixei uma gorjeta.", "J'ai laissé un pourboire."],
+        ["para levar", "à emporter", "É para levar.", "C'est à emporter."]
+      ]
+    },
+    {
+      "id": "pt-transportes", "titre": "Les transports", "ico": "🚋", "niveau": "A1",
+      "mots": [
+        ["o autocarro", "le bus", "Apanho o autocarro às oito.", "Je prends le bus à huit heures.", "Au Brésil on dit ônibus ; au Portugal, autocarro."],
+        ["o comboio", "le train", "O comboio para Sintra sai daqui.", "Le train pour Sintra part d'ici."],
+        ["o elétrico", "le tramway", "O elétrico 28 é famoso.", "Le tram 28 est célèbre."],
+        ["o metro", "le métro", "Vou de metro.", "J'y vais en métro."],
+        ["o bilhete", "le billet", "Um bilhete para o Porto, por favor.", "Un billet pour Porto, s'il vous plaît."],
+        ["a paragem", "l'arrêt (bus, tram)", "Onde é a paragem do autocarro?", "Où est l'arrêt de bus ?"],
+        ["a estação", "la gare, la station", "A estação fica perto.", "La gare est tout près."],
+        ["apanhar", "prendre (un transport)", "Temos de apanhar o comboio.", "Nous devons prendre le train."],
+        ["à esquerda", "à gauche", "Vire à esquerda.", "Tournez à gauche."],
+        ["à direita", "à droite", "A farmácia fica à direita.", "La pharmacie est à droite."],
+        ["sempre em frente", "tout droit", "Siga sempre em frente.", "Continuez tout droit."],
+        ["o passe", "l'abonnement (transports)", "Comprei o passe mensal.", "J'ai acheté l'abonnement mensuel."]
+      ]
+    },
+    {
+      "id": "pt-compras", "titre": "Faire ses courses", "ico": "🛒", "niveau": "A2",
+      "mots": [
+        ["o supermercado", "le supermarché", "Vou ao supermercado.", "Je vais au supermarché."],
+        ["a mercearia", "l'épicerie", "Há uma mercearia na esquina.", "Il y a une épicerie au coin de la rue."],
+        ["a farmácia", "la pharmacie", "A farmácia está aberta?", "La pharmacie est ouverte ?"],
+        ["o saco", "le sac", "Quer um saco?", "Vous voulez un sac ?"],
+        ["pagar com cartão", "payer par carte", "Posso pagar com cartão?", "Je peux payer par carte ?"],
+        ["em dinheiro", "en espèces", "Só aceitam pagamento em dinheiro.", "Ils n'acceptent que les espèces."],
+        ["o talão", "le ticket de caisse", "Quer o talão?", "Vous voulez le ticket ?"],
+        ["o contribuinte", "le numéro fiscal (NIF)", "Quer contribuinte na fatura?", "Vous voulez votre numéro fiscal sur la facture ?", "On te pose cette question à presque chaque achat au Portugal !"],
+        ["os saldos", "les soldes", "Os saldos começam em janeiro.", "Les soldes commencent en janvier."],
+        ["experimentar", "essayer (un vêtement)", "Posso experimentar?", "Je peux essayer ?"],
+        ["o provador", "la cabine d'essayage", "Onde é o provador?", "Où est la cabine d'essayage ?"],
+        ["mais barato", "moins cher", "Tem alguma coisa mais barata?", "Vous avez quelque chose de moins cher ?"]
+      ]
+    },
+    {
+      "id": "pt-casa", "titre": "Se loger", "ico": "🏠", "niveau": "A2",
+      "mots": [
+        ["arrendar", "louer", "Quero arrendar um quarto.", "Je veux louer une chambre."],
+        ["o quarto", "la chambre", "O quarto tem janela?", "La chambre a une fenêtre ?"],
+        ["a casa de banho", "la salle de bain, les toilettes", "Onde é a casa de banho?", "Où sont les toilettes ?"],
+        ["a renda", "le loyer", "A renda é de quinhentos euros.", "Le loyer est de cinq cents euros."],
+        ["o senhorio", "le propriétaire (bailleur)", "O senhorio vive no Porto.", "Le propriétaire vit à Porto."],
+        ["as despesas", "les charges", "As despesas estão incluídas?", "Les charges sont comprises ?"],
+        ["o andar", "l'étage ; l'appartement", "Moro no terceiro andar.", "J'habite au troisième étage."],
+        ["o elevador", "l'ascenseur", "O elevador não funciona.", "L'ascenseur ne marche pas."],
+        ["avariado", "en panne", "O esquentador está avariado.", "Le chauffe-eau est en panne."],
+        ["a chave", "la clé", "Perdi a chave!", "J'ai perdu la clé !"],
+        ["o vizinho", "le voisin", "O meu vizinho é simpático.", "Mon voisin est sympa."],
+        ["a loiça", "la vaisselle", "Hoje lavo eu a loiça.", "Aujourd'hui, c'est moi qui fais la vaisselle."]
+      ]
+    }
+  ]
+}

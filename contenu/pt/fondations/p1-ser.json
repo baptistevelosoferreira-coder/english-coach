@@ -1,0 +1,46 @@
+{
+  "id": "p1",
+  "titre": "Le verbe « ser »",
+  "ico": "👋",
+  "niveau": "A1",
+  "objectif": "Te présenter : qui tu es, d'où tu viens, ce que tu fais",
+  "dialogue": {
+    "titre": "Olá, Lisboa!",
+    "contexte": "Lucas, étudiant français, arrive à Lisbonne pour un semestre Erasmus et rencontre sa colocataire.",
+    "surligner": ["sou", "És", "és", "é", "É", "Somos", "somos"],
+    "lignes": [
+      ["Inês", "Olá! Eu sou a Inês. És o Lucas?", "Salut ! Moi, c'est Inês. Tu es Lucas ?"],
+      ["Lucas", "Sim, sou eu. Sou francês, sou de Lyon.", "Oui, c'est moi. Je suis français, je viens de Lyon."],
+      ["Inês", "Bem-vindo! Eu sou de Lisboa. Somos colegas de casa!", "Bienvenue ! Je suis de Lisbonne. Nous sommes colocataires !"],
+      ["Lucas", "Que bom! És estudante também?", "Super ! Tu es étudiante aussi ?"],
+      ["Inês", "Não, não sou estudante. Sou enfermeira.", "Non, je ne suis pas étudiante. Je suis infirmière."],
+      ["Lucas", "E o Tiago? Quem é?", "Et Tiago ? Qui est-ce ?"],
+      ["Inês", "É o meu irmão. Ele é muito simpático.", "C'est mon frère. Il est très sympa."]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Être = ser (identité)</h4><table><tr><td>eu sou</td><td>je suis</td></tr><tr><td>tu és</td><td>tu es</td></tr><tr><td>ele / ela / você é</td><td>il / elle est, vous êtes (poli)</td></tr><tr><td>nós somos</td><td>nous sommes</td></tr><tr><td>eles / elas / vocês são</td><td>ils / elles sont, vous êtes (pluriel)</td></tr></table></div><div class='bloc'><h4>Quand utiliser ser ?</h4><p>Pour dire <b>qui</b> on est : identité, nationalité, origine, profession, caractère.</p><p class='ex'>Sou francês. · Sou <b>de</b> Lyon. · Sou enfermeira.</p><p class='ex'>⚠️ Pas d'article devant une profession : Sou enfermeira (pas « uma enfermeira »).</p></div><div class='bloc'><h4>Négation et question</h4><p class='ex'>Négation : <b>não</b> juste avant le verbe → Não sou estudante.</p><p class='ex'>Question : même ordre que l'affirmation, seule l'intonation monte → És francês?</p></div><div class='bloc'><h4>Spécial Portugal</h4><p class='ex'>On met souvent un article devant les prénoms : <b>a</b> Inês, <b>o</b> Lucas.</p><p class='ex'>Entre jeunes et amis on dit <b>tu</b>. Avec un inconnu plus âgé, on préfère <b>o senhor / a senhora</b>.</p></div><div class='astuce'>💡 Le pronom sujet est souvent omis : la terminaison suffit. « Sou francês » est plus naturel que « Eu sou francês ».</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Eu ___ estudante.", "options": ["sou", "és", "é"], "bonne": 0, "explication": "Avec eu → sou." },
+    { "type": "choix", "texte": "A Inês ___ de Lisboa.", "options": ["são", "é", "és"], "bonne": 1, "explication": "A Inês = ela → é." },
+    { "type": "choix", "texte": "Nós ___ colegas de casa.", "options": ["somos", "são", "sou"], "bonne": 0, "explication": "Nós → somos." },
+    { "type": "erreur", "texte": "Eles é muito simpáticos.", "k": 1, "correction": "são", "explication": "Eles → são." },
+    { "type": "vf", "texte": "Tu és francês?", "vrai": true, "correction": "", "explication": "Une question garde l'ordre de l'affirmation : seule l'intonation change." },
+    { "type": "saisie", "texte": "Vocês ___ portugueses?", "sous": "Vous êtes portugais ?", "reponses": ["são"], "explication": "Vocês → são (comme eles)." },
+    { "type": "saisie", "consigne": "Mets la phrase à la forme négative", "texte": "Eu sou médico.", "reponses": ["Eu não sou médico.", "Não sou médico."], "explication": "não se place juste avant le verbe." },
+    { "type": "choix", "consigne": "Comment dit-on « Je suis infirmière » ?", "texte": "Profession", "options": ["Sou enfermeira.", "Sou uma enfermeira.", "Estou enfermeira."], "bonne": 0, "explication": "Profession → ser, et pas d'article devant la profession." },
+    { "type": "ordre", "texte": "O Tiago é o meu irmão.", "fr": "Tiago est mon frère." },
+    { "type": "saisie", "consigne": "Traduis en portugais", "texte": "Je suis français, de Lyon.", "reponses": ["Sou francês, de Lyon.", "Eu sou francês, de Lyon.", "Sou francês, sou de Lyon.", "Eu sou francês, sou de Lyon.", "Sou francesa, de Lyon.", "Eu sou francesa, de Lyon."], "explication": "Nationalité et origine → ser (sou … de …)." },
+    { "type": "ecoute", "texte": "Eu sou de Lisboa." }
+  ],
+  "production": [
+    { "consigne": "Présente-toi en 2 ou 3 phrases : ton prénom, ta nationalité, d'où tu viens et ce que tu fais.", "modele": "Olá! Sou o Lucas. Sou francês, de Lyon. Sou estudante de marketing.", "verifs": ["J'ai utilisé sou (et pas estou) pour dire qui je suis", "Pas d'article devant ma profession"] }
+  ],
+  "cartes": [
+    { "id": "p1-1", "texte": "Eu ___ estudante.", "sous": "Je suis étudiant.", "reponses": ["sou"] },
+    { "id": "p1-2", "texte": "Nós ___ amigos.", "sous": "Nous sommes amis.", "reponses": ["somos"] },
+    { "id": "p1-3", "texte": "___ francês? (tu)", "sous": "Tu es français ?", "reponses": ["És"] },
+    { "id": "p1-4", "texte": "Eles ___ de Lisboa.", "sous": "Ils sont de Lisbonne.", "reponses": ["são"] },
+    { "id": "p1-5", "texte": "Ela ___ enfermeira.", "sous": "Elle est infirmière.", "reponses": ["é"] },
+    { "id": "p1-6", "texte": "Eu ___ sou médico.", "sous": "Je ne suis pas médecin.", "reponses": ["não"] }
+  ]
+}

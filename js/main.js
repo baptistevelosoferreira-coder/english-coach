@@ -1,6 +1,7 @@
 // Point d'entrée : charge le contenu, enregistre les écrans et ouvre le bon écran.
 import { chargerContenu } from "./contenu.js";
 import { etat } from "./store.js";
+import { langueChoisie } from "./langue.js";
 import { app, ouvrir } from "./nav.js";
 import "./ecrans/bienvenue.js";
 import "./ecrans/accueil.js";
@@ -14,6 +15,8 @@ import "./ecrans/jeux.js";
 import "./ecrans/profil.js";
 
 async function demarrer() {
+  // Première visite : on commence par choisir la langue
+  if (!langueChoisie) return ouvrir("langues");
   try {
     await chargerContenu();
   } catch (e) {

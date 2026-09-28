@@ -1,7 +1,7 @@
 // Service worker : permet d'utiliser l'appli sans connexion.
 // Stratégie « réseau d'abord » : on prend toujours la dernière version en ligne,
 // et on se rabat sur la copie enregistrée quand il n'y a pas de réseau.
-const CACHE = "english-coach-v1";
+const CACHE = "coach-langues-v2";
 
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => {

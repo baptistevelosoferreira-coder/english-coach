@@ -1,0 +1,46 @@
+{
+  "id": "p3",
+  "titre": "Le présent des verbes réguliers",
+  "ico": "🔁",
+  "niveau": "A1",
+  "objectif": "Décrire ta journée et tes habitudes",
+  "dialogue": {
+    "titre": "A rotina da Inês",
+    "contexte": "Inês explique sa semaine à Lucas.",
+    "surligner": ["trabalhas", "Trabalho", "como", "bebo", "estudo", "cozinha", "cozinho", "lavo", "dividimos"],
+    "lignes": [
+      ["Lucas", "A que horas trabalhas?", "À quelle heure tu travailles ?"],
+      ["Inês", "Trabalho no hospital das oito às quatro.", "Je travaille à l'hôpital de huit heures à seize heures."],
+      ["Inês", "Normalmente, como na cantina e bebo um café com os colegas.", "D'habitude, je mange à la cantine et je bois un café avec les collègues."],
+      ["Lucas", "E à noite?", "Et le soir ?"],
+      ["Inês", "À noite, estudo inglês e o Tiago cozinha para nós.", "Le soir, j'étudie l'anglais et Tiago cuisine pour nous."],
+      ["Lucas", "Eu não cozinho bem, mas lavo a loiça!", "Je ne cuisine pas bien, mais je fais la vaisselle !"],
+      ["Inês", "Combinado! Nós dividimos as tarefas.", "Marché conclu ! On partage les tâches."]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Trois groupes de verbes</h4><table><tr><td></td><td>falar (-ar)</td><td>comer (-er)</td><td>abrir (-ir)</td></tr><tr><td>eu</td><td>falo</td><td>como</td><td>abro</td></tr><tr><td>tu</td><td>falas</td><td>comes</td><td>abres</td></tr><tr><td>ele / ela / você</td><td>fala</td><td>come</td><td>abre</td></tr><tr><td>nós</td><td>falamos</td><td>comemos</td><td>abrimos</td></tr><tr><td>eles / vocês</td><td>falam</td><td>comem</td><td>abrem</td></tr></table></div><div class='bloc'><h4>Négation et questions</h4><p class='ex'>Não cozinho bem. · Falas português? · A que horas trabalhas?</p></div><div class='bloc'><h4>Gostar de</h4><p class='ex'>« Aimer » se dit gostar <b>de</b>, toujours avec de : Gosto <b>de</b> café. Gostas <b>do</b> Porto? (de + o = do)</p></div><div class='astuce'>💡 Retiens la voyelle de chaque groupe : -ar → a (falas, fala), -er et -ir → e (comes, abre). Seul nós garde la voyelle de l'infinitif : falamos, comemos, abrimos.</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Eu ___ português.", "options": ["falo", "fala", "falas"], "bonne": 0, "explication": "eu → -o : falo." },
+    { "type": "choix", "texte": "Nós ___ num restaurante.", "options": ["comemos", "comem", "como"], "bonne": 0, "explication": "nós → -emos pour les verbes en -er." },
+    { "type": "choix", "texte": "Eles ___ em Lisboa.", "options": ["vivem", "vive", "vivemos"], "bonne": 0, "explication": "eles → -em pour les verbes en -er et -ir." },
+    { "type": "saisie", "texte": "Tu ___ muito café. (beber)", "sous": "Tu bois beaucoup de café.", "reponses": ["bebes"], "explication": "tu → -es pour les verbes en -er." },
+    { "type": "saisie", "texte": "A Inês ___ no hospital. (trabalhar)", "sous": "Inês travaille à l'hôpital.", "reponses": ["trabalha"], "explication": "ela → -a pour les verbes en -ar." },
+    { "type": "saisie", "texte": "Vocês ___ a janela? (abrir)", "sous": "Vous ouvrez la fenêtre ?", "reponses": ["abrem"], "explication": "vocês → -em." },
+    { "type": "erreur", "texte": "Eu gosto café.", "k": 1, "correction": "gosto de", "explication": "gostar s'emploie toujours avec de : gosto de café." },
+    { "type": "erreur", "texte": "Nós estuda à noite.", "k": 1, "correction": "estudamos", "explication": "nós → -amos : estudamos." },
+    { "type": "saisie", "consigne": "Mets la phrase à la forme négative", "texte": "Eu cozinho bem.", "reponses": ["Eu não cozinho bem.", "Não cozinho bem."], "explication": "não juste avant le verbe." },
+    { "type": "ordre", "texte": "Nós dividimos as tarefas.", "fr": "Nous partageons les tâches." },
+    { "type": "ecoute", "texte": "Trabalho das oito às quatro." }
+  ],
+  "production": [
+    { "consigne": "Décris ta journée type en 3 phrases (avec des verbes en -ar, -er et -ir).", "modele": "Normalmente, estudo de manhã. Almoço na universidade e bebo um café. À noite, janto em casa.", "verifs": ["La terminaison correspond au sujet (-o pour eu, -as / -es pour tu…)", "não est juste avant le verbe"] }
+  ],
+  "cartes": [
+    { "id": "p3-1", "texte": "Eu ___ português. (falar)", "sous": "Je parle portugais.", "reponses": ["falo"] },
+    { "id": "p3-2", "texte": "Tu ___ café? (beber)", "sous": "Tu bois du café ?", "reponses": ["bebes"] },
+    { "id": "p3-3", "texte": "Nós ___ em Lisboa. (viver)", "sous": "Nous vivons à Lisbonne.", "reponses": ["vivemos"] },
+    { "id": "p3-4", "texte": "Ela ___ muito. (trabalhar)", "sous": "Elle travaille beaucoup.", "reponses": ["trabalha"] },
+    { "id": "p3-5", "texte": "Eles ___ a porta. (abrir)", "sous": "Ils ouvrent la porte.", "reponses": ["abrem"] },
+    { "id": "p3-6", "texte": "Eu gosto ___ chocolate.", "sous": "J'aime le chocolat.", "reponses": ["de"] }
+  ]
+}

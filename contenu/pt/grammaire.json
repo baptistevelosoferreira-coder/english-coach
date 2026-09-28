@@ -1,0 +1,173 @@
+{
+  "_info": "Points de grammaire. Formats : [\"q\", phrase, choix, bonne, explication] · [\"e\", phrase, index du mot faux, correction, explication] · [\"v\", phrase, vrai?, correction, explication] · [\"o\", phrase, traduction]",
+  "points": [
+    {
+      "id": "artigos", "niveau": "A1", "ico": "🔗", "titre": "Articles et contractions", "resume": "o, a, do, na, ao, pelo…",
+      "fiche": "<div class='bloc'><h4>Les articles</h4><table><tr><td>o / a</td><td>le / la</td></tr><tr><td>os / as</td><td>les</td></tr><tr><td>um / uma</td><td>un / une</td></tr></table></div><div class='bloc'><h4>Les contractions (obligatoires)</h4><table><tr><td>de + o / a</td><td>do / da</td></tr><tr><td>em + o / a</td><td>no / na</td></tr><tr><td>a + o / a</td><td>ao / à</td></tr><tr><td>por + o / a</td><td>pelo / pela</td></tr><tr><td>em + um / uma</td><td>num / numa</td></tr></table><p class='ex'>Venho <b>do</b> supermercado. · Estou <b>na</b> praia. · Vou <b>ao</b> cinema.</p></div><div class='bloc'><h4>Spécial Portugal</h4><p class='ex'>Article devant le possessif : <b>a</b> minha casa. Et souvent devant les prénoms : <b>a</b> Inês.</p><p class='ex'>Pas d'article devant la plupart des villes : em Lisboa, mas <b>no</b> Porto (o Porto).</p></div>",
+      "items": [
+        ["q", "Eu moro ___ Lisboa.", ["em", "no", "na"], 0, "Pas d'article devant Lisboa : em Lisboa."],
+        ["q", "O livro está ___ mesa.", ["na", "em a", "no"], 0, "em + a = na."],
+        ["q", "Venho ___ supermercado.", ["do", "de o", "da"], 0, "de + o = do."],
+        ["q", "Vou ___ cinema.", ["ao", "à", "a o"], 0, "a + o = ao."],
+        ["e", "Ele mora em o Porto.", 2, "no", "em + o = no : ele mora no Porto."],
+        ["e", "Esta é minha casa.", 2, "a minha", "Au Portugal, on met l'article devant le possessif : a minha casa."],
+        ["v", "A Inês vive no Porto.", true, "", "Article devant le prénom (a Inês) : très courant au Portugal."],
+        ["o", "Vamos à praia amanhã.", "On va à la plage demain."]
+      ]
+    },
+    {
+      "id": "genero", "niveau": "A1", "ico": "🔤", "titre": "Masculin, féminin et pluriel", "resume": "o problema, as cidades, os hotéis",
+      "fiche": "<div class='bloc'><h4>Le genre</h4><p class='ex'>En général : -o masculin (o livro), -a féminin (a casa).</p><p class='ex'>Exceptions : les mots en -ma sont souvent masculins : <b>o</b> problema, <b>o</b> sistema, <b>o</b> tema. Et o dia, o mapa.</p><p class='ex'>Certains genres diffèrent du français : <b>a</b> árvore (l'arbre), <b>o</b> leite (le lait, comme en français), <b>a</b> viagem (le voyage), <b>o</b> sal.</p></div><div class='bloc'><h4>Le pluriel</h4><table><tr><td>voyelle → +s</td><td>casa → casas</td></tr><tr><td>-m → -ns</td><td>homem → homens</td></tr><tr><td>-r, -s, -z → +es</td><td>mulher → mulheres, país → países</td></tr><tr><td>-l → -is</td><td>hotel → hotéis, animal → animais</td></tr><tr><td>-ão → -ões (le plus souvent)</td><td>estação → estações</td></tr></table></div>",
+      "items": [
+        ["q", "Duas ___ (cidade)", ["cidades", "cidadees", "cidads"], 0, "Mot terminé par une voyelle → + s."],
+        ["q", "Dois ___ (hotel)", ["hotéis", "hotels", "hoteles"], 0, "-el → -éis : hotéis."],
+        ["q", "Três ___ (animal)", ["animais", "animals", "animales"], 0, "-al → -ais."],
+        ["q", "Duas ___ (estação)", ["estações", "estaçãos", "estaçães"], 0, "-ção → -ções."],
+        ["q", "___ problema é sério.", ["O", "A"], 0, "problema est masculin, comme beaucoup de mots en -ma."],
+        ["e", "O árvore é muito alta.", 0, "A", "árvore est féminin en portugais : a árvore."],
+        ["v", "Os homens são simpáticos.", true, "", "homem → homens (-m devient -ns)."],
+        ["o", "As lições são interessantes.", "Les leçons sont intéressantes."]
+      ]
+    },
+    {
+      "id": "possessivos", "niveau": "A1", "ico": "👜", "titre": "Les possessifs", "resume": "o meu, a minha, dele…",
+      "fiche": "<div class='bloc'><h4>Le possessif s'accorde avec l'objet possédé</h4><table><tr><td>à moi</td><td>o meu, a minha, os meus, as minhas</td></tr><tr><td>à toi</td><td>o teu, a tua, os teus, as tuas</td></tr><tr><td>à nous</td><td>o nosso, a nossa…</td></tr><tr><td>à lui / à elle</td><td>o seu, a sua… ou <b>dele / dela</b> après le nom</td></tr></table></div><div class='bloc'><h4>Pour éviter l'ambiguïté</h4><p class='ex'>O carro <b>dele</b> = sa voiture (à lui). · A casa <b>dela</b> = sa maison (à elle).</p><p>« o seu » peut aussi vouloir dire « votre » (vous de politesse) : on préfère souvent dele / dela.</p></div><div class='astuce'>💡 Au Portugal, on garde l'article : <b>a</b> minha mãe, <b>o</b> meu irmão.</div>",
+      "items": [
+        ["q", "___ irmão chama-se Tiago.", ["O meu", "A minha", "Meu o"], 0, "irmão est masculin : o meu irmão."],
+        ["q", "Onde estão ___ chaves?", ["as minhas", "os meus", "a minha"], 0, "chaves est féminin pluriel : as minhas."],
+        ["q", "Esta é a casa ___ Inês.", ["da", "de a", "do"], 0, "de + a = da."],
+        ["q", "O carro ___ é azul. (à lui)", ["dele", "dela", "seu dele"], 0, "de + ele = dele : o carro dele."],
+        ["e", "A meu irmão é médico.", 0, "O", "irmão est masculin : o meu irmão."],
+        ["e", "Ela perdeu o seu telemóvel dele.", 5, "(à supprimer)", "« o telemóvel dele » ou « o seu telemóvel », pas les deux."],
+        ["v", "Os teus amigos são simpáticos.", true, "", "teu → os teus au pluriel."],
+        ["o", "A minha mãe é professora.", "Ma mère est professeure."]
+      ]
+    },
+    {
+      "id": "preposicoes", "niveau": "A2", "ico": "🧭", "titre": "Les prépositions", "resume": "em, a, para, por, de",
+      "fiche": "<div class='bloc'><table><tr><td>em</td><td>dans, à, sur (lieu où l'on est) : em casa, na mesa</td></tr><tr><td>a</td><td>vers (court séjour), heure : vou ao Porto, às oito</td></tr><tr><td>para</td><td>vers (destination, pour y rester), pour (but, destinataire) : vou para casa, é para ti</td></tr><tr><td>por</td><td>par, pour (cause), à travers : passei por Coimbra, obrigado pela ajuda</td></tr><tr><td>de</td><td>de, en (transport) : sou de Lyon, vou de comboio</td></tr></table></div><div class='astuce'>💡 On remercie avec <b>por</b> : obrigado <b>por</b> tudo, obrigado <b>pela</b> ajuda.</div>",
+      "items": [
+        ["q", "Vou ___ casa, estou cansado.", ["para", "em", "de"], 0, "Destination où l'on reste → para : vou para casa."],
+        ["q", "Obrigado ___ ajuda!", ["pela", "para a", "da"], 0, "obrigado por + a = pela."],
+        ["q", "Este presente é ___ ti.", ["para", "por", "a"], 0, "Destinataire → para."],
+        ["q", "Passei ___ Coimbra.", ["por", "para", "em"], 0, "Passer par → por."],
+        ["q", "Moro ___ Rua Augusta.", ["na", "em a", "à"], 0, "em + a = na."],
+        ["e", "Obrigado para tudo!", 1, "por", "On remercie avec por : obrigado por tudo."],
+        ["v", "Vou de autocarro para o trabalho.", true, "", "Moyen de transport → de : de autocarro, de comboio (mais a pé)."],
+        ["o", "Vamos a pé para a praia.", "Allons à pied à la plage."]
+      ]
+    },
+    {
+      "id": "comparativos", "niveau": "A2", "ico": "📏", "titre": "Comparer", "resume": "mais… do que, tão… como, melhor",
+      "fiche": "<div class='bloc'><table><tr><td>plus … que</td><td>mais … do que</td></tr><tr><td>moins … que</td><td>menos … do que</td></tr><tr><td>aussi … que</td><td>tão … como</td></tr><tr><td>autant de … que</td><td>tanto(s) / tanta(s) … como</td></tr></table></div><div class='bloc'><h4>Irréguliers</h4><p class='ex'>bom → <b>melhor</b> · mau → <b>pior</b> · grande → <b>maior</b> · pequeno → <b>menor</b> (ou mais pequeno, très courant au Portugal)</p><p class='ex'>Le meilleur : <b>o melhor</b> restaurante da cidade.</p></div>",
+      "items": [
+        ["q", "O Porto é ___ pequeno do que Lisboa.", ["mais", "muito", "tão"], 0, "Comparatif : mais … do que."],
+        ["q", "O comboio é ___ rápido como o autocarro?", ["tão", "tanto", "mais"], 0, "Égalité avec un adjectif : tão … como."],
+        ["q", "Este café é ___ do que o outro. (bom)", ["melhor", "mais bom", "bomo"], 0, "bom → melhor."],
+        ["q", "É o ___ restaurante da cidade.", ["melhor", "mais bom", "bom"], 0, "Le meilleur : o melhor."],
+        ["e", "Este hotel é mais mau do que o outro.", 3, "pior", "mau → pior (on ne dit pas « mais mau »)."],
+        ["e", "Tenho tão livros como tu.", 1, "tantos", "Avec un nom : tanto(s) / tanta(s) … como."],
+        ["v", "A Inês é mais velha do que o Tiago.", true, "", "mais + adjectif + do que."],
+        ["o", "O metro é mais rápido do que o autocarro.", "Le métro est plus rapide que le bus."]
+      ]
+    },
+    {
+      "id": "imperativo", "niveau": "A2", "ico": "👉", "titre": "L'impératif", "resume": "fala, não fales, diga-me",
+      "fiche": "<div class='bloc'><h4>Avec tu</h4><p class='ex'>Affirmatif = présent de ele : fala, come, abre → <b>Fala</b> mais devagar!</p><p class='ex'>Négatif = não + subjonctif : <b>não fales</b>, não comas, não abras.</p></div><div class='bloc'><h4>Forme polie (você, o senhor)</h4><p class='ex'>fale, coma, abra · Irréguliers : diga, faça, venha, traga, seja, vá.</p><p class='ex'>Desculpe, <b>diga-me</b> onde fica a estação.</p></div><div class='bloc'><h4>Le pronom après l'impératif affirmatif</h4><p class='ex'>Diz-<b>me</b> · Ajuda-<b>me</b> · Dá-<b>me</b> (avec un tiret)</p></div><div class='astuce'>💡 Pour appeler un serveur ou demander poliment, on dit « <b>faz favor</b> » : Faz favor, a conta!</div>",
+      "items": [
+        ["q", "___ a porta, por favor! (fechar, tu)", ["Fecha", "Feche", "Fechas"], 0, "tu, affirmatif : comme le présent de ele : fecha."],
+        ["q", "Não ___ tarde! (chegar, tu)", ["chegues", "chega", "chegas"], 0, "tu, négatif : não + subjonctif : não chegues."],
+        ["q", "Desculpe, ___-me onde fica a estação. (dizer, poli)", ["diga", "diz", "dizes"], 0, "Forme polie : diga-me."],
+        ["q", "___ por aqui, faz favor. (vir, poli)", ["Venha", "Vem", "Vens"], 0, "vir → venha (poli)."],
+        ["e", "Não fala tão alto!", 1, "fales", "Impératif négatif avec tu : não fales."],
+        ["e", "Diz me a verdade.", 0, "Diz-me", "Le pronom suit l'impératif avec un tiret : diz-me."],
+        ["v", "Faz favor, traga a conta.", true, "", "« Faz favor » = s'il vous plaît ; traga = impératif poli de trazer."],
+        ["o", "Vira à esquerda na segunda rua.", "Tourne à gauche à la deuxième rue."]
+      ]
+    },
+    {
+      "id": "pronomes", "niveau": "B1", "ico": "🔄", "titre": "Pronoms complément et leur place", "resume": "chamo-me, não o vejo",
+      "fiche": "<div class='bloc'><h4>Les pronoms</h4><table><tr><td>me, te</td><td>me, te</td></tr><tr><td>o, a, os, as</td><td>le, la, les</td></tr><tr><td>lhe, lhes</td><td>lui, leur</td></tr><tr><td>nos, vos</td><td>nous, vous</td></tr></table></div><div class='bloc'><h4>La règle du Portugal : après le verbe</h4><p class='ex'>Dans une phrase affirmative simple, le pronom se place <b>après</b> le verbe, avec un tiret : Chamo-<b>me</b> Lucas. Conheço-<b>a</b>. Dá-<b>me</b> o livro.</p></div><div class='bloc'><h4>Il passe avant le verbe après…</h4><p class='ex'>une négation (não, nunca) : Não <b>a</b> conheço.</p><p class='ex'>un mot interrogatif : Como <b>te</b> chamas?</p><p class='ex'>que, já, também, ainda, só : Já <b>o</b> vi. Acho que <b>te</b> conheço.</p></div><div class='astuce'>💡 « Eu te amo » et « Me chamo… » sont brésiliens. Au Portugal : amo-<b>te</b>, chamo-<b>me</b>.</div>",
+      "items": [
+        ["q", "Conheces a Inês? — Sim, ___.", ["conheço-a", "a conheço", "conheço ela"], 0, "Phrase affirmative : le pronom après le verbe, avec un tiret."],
+        ["q", "Não ___ conheço.", ["a", "-a", "ela"], 0, "Après não, le pronom passe avant le verbe : não a conheço."],
+        ["q", "Como ___ chamas?", ["te", "-te", "tu"], 0, "Après un mot interrogatif, le pronom se place avant : como te chamas?"],
+        ["q", "Chamo-___ Lucas.", ["me", "eu", "mim"], 0, "Chamo-me = je m'appelle."],
+        ["e", "Eu te amo.", 1, "amo-te", "Au Portugal, le pronom se place après le verbe : amo-te."],
+        ["e", "Ajuda eu, por favor!", 1, "Ajuda-me", "Pronom complément : ajuda-me (pas « eu »)."],
+        ["v", "Já o vi.", true, "", "Après já, le pronom se place avant le verbe."],
+        ["o", "Dá-me o teu número.", "Donne-moi ton numéro."]
+      ]
+    },
+    {
+      "id": "composto", "niveau": "B1", "ico": "🔁", "titre": "Le « faux ami » tenho feito", "resume": "pretérito perfeito composto",
+      "fiche": "<div class='bloc'><h4>ter (présent) + participe passé</h4><p class='ex'>Tenho trabalhado · Tens dormido · Tem chovido</p></div><div class='bloc'><h4>⚠️ Ce n'est pas le passé composé français !</h4><p>Il exprime une action qui <b>se répète ou dure jusqu'à maintenant</b> :</p><p class='ex'><b>Tenho trabalhado</b> muito = je travaille beaucoup ces temps-ci.</p><p class='ex'>Pour « j'ai travaillé » (action terminée) → pretérito perfeito : <b>trabalhei</b>.</p></div><div class='bloc'><h4>Le participe passé</h4><p class='ex'>-ar → -ado (falado) · -er / -ir → -ido (comido, dormido)</p><p class='ex'>Irréguliers : feito, dito, visto, vindo, escrito, aberto, posto.</p></div>",
+      "items": [
+        ["q", "Ultimamente, ___ muito.", ["tenho trabalhado", "trabalhei", "tenho trabalhei"], 0, "Action répétée jusqu'à maintenant → tenho trabalhado."],
+        ["q", "Ontem ___ muito.", ["trabalhei", "tenho trabalhado"], 0, "Moment précis et terminé (ontem) → trabalhei."],
+        ["q", "Tens ___ bem? (dormir)", ["dormido", "dormiu", "dorme"], 0, "Participe de dormir : dormido."],
+        ["q", "Eles têm ___ muitos filmes. (ver)", ["visto", "vido", "viram"], 0, "ver → visto (irrégulier)."],
+        ["e", "Tenho fazido exercício.", 1, "feito", "fazer → feito (irrégulier)."],
+        ["e", "Ontem tenho visto o Tiago.", 1, "vi", "Moment précis (ontem) → pretérito perfeito : vi."],
+        ["v", "Tem chovido muito este mês.", true, "", "Action qui se répète jusqu'à maintenant."],
+        ["o", "Temos estudado muito esta semana.", "Nous étudions beaucoup cette semaine."]
+      ]
+    },
+    {
+      "id": "futuro", "niveau": "B1", "ico": "🔮", "titre": "Futur simple et conditionnel", "resume": "farei, gostaria, podia…",
+      "fiche": "<div class='bloc'><h4>Futur simple : infinitif + terminaison</h4><p class='ex'>-ei, -ás, -á, -emos, -ão : falarei, comerás, partirá…</p><p class='ex'>Irréguliers : fazer → <b>farei</b>, dizer → <b>direi</b>, trazer → <b>trarei</b>.</p><p>À l'oral, on préfère le futur proche : vou fazer.</p></div><div class='bloc'><h4>Conditionnel : infinitif + -ia</h4><p class='ex'>gostaria, compraria, faria, diria</p><p class='ex'>Se tivesse tempo, <b>iria</b> contigo.</p></div><div class='astuce'>💡 Au Portugal, l'imparfait remplace très souvent le conditionnel pour être poli : <b>Podia</b> ajudar-me? · <b>Gostava</b> de visitar o Brasil.</div>",
+      "items": [
+        ["q", "No próximo ano, ___ em Lisboa. (eu, viver)", ["viverei", "vivirei", "vivo-rei"], 0, "Futur : infinitif + ei."],
+        ["q", "Eles ___ amanhã. (chegar)", ["chegarão", "chegaram", "chegam"], 0, "chegarão (futur) ≠ chegaram (passé)."],
+        ["q", "Eu ___ o trabalho amanhã. (fazer)", ["farei", "fazerei", "faria"], 0, "fazer → farei (irrégulier)."],
+        ["q", "___ ajudar-me? (poder, poli)", ["Podia", "Poderá", "Pode-ria"], 0, "L'imparfait sert de forme polie : Podia ajudar-me?"],
+        ["q", "Se tivesse dinheiro, ___ uma casa. (comprar)", ["compraria", "comprarei", "comprava-ria"], 0, "Conditionnel : infinitif + ia."],
+        ["e", "Amanhã eu fazerei o jantar.", 2, "farei", "fazer → farei."],
+        ["v", "Gostava de visitar o Brasil.", true, "", "Gostava de… = j'aimerais… (très courant au Portugal)."],
+        ["o", "Um dia viajaremos juntos.", "Un jour, nous voyagerons ensemble."]
+      ]
+    },
+    {
+      "id": "conjuntivo", "niveau": "B1", "ico": "🙏", "titre": "Le subjonctif présent", "resume": "espero que, talvez, é importante que",
+      "fiche": "<div class='bloc'><h4>Formation</h4><p class='ex'>On part du « eu » du présent, et on échange les voyelles : -ar → -e (falo → fale), -er / -ir → -a (como → coma, abro → abra).</p><p class='ex'>Irréguliers : ser → seja · estar → esteja · ter → tenha · ir → vá · fazer → faça · saber → saiba · dar → dê.</p></div><div class='bloc'><h4>Quand l'utiliser ?</h4><p class='ex'>Après un souhait, un doute, une émotion + que : Espero que <b>gostes</b>. Duvido que ele <b>saiba</b>.</p><p class='ex'>Après talvez (placé avant le verbe) : Talvez ele <b>venha</b>.</p><p class='ex'>Mais après achar que / pensar que à l'affirmatif → indicatif : Acho que ele <b>tem</b> razão.</p></div>",
+      "items": [
+        ["q", "Espero que ___ bom tempo. (fazer)", ["faça", "faz", "fará"], 0, "Après espero que → subjonctif : faça."],
+        ["q", "É importante que tu ___ cedo. (chegar)", ["chegues", "chegas", "chegaste"], 0, "chegar → que tu chegues."],
+        ["q", "Quero que vocês ___ felizes. (ser)", ["sejam", "são", "serão"], 0, "ser → que sejam."],
+        ["q", "Talvez ele ___ amanhã. (vir)", ["venha", "vem", "virá"], 0, "Après talvez placé avant le verbe → subjonctif : venha."],
+        ["q", "Acho que ele ___ razão. (ter)", ["tem", "tenha"], 0, "achar que à l'affirmatif → indicatif : tem."],
+        ["e", "Espero que tu estás bem.", 3, "estejas", "Après espero que → subjonctif : estejas."],
+        ["v", "Duvido que ele saiba a resposta.", true, "", "duvidar que → subjonctif (saiba)."],
+        ["o", "Espero que gostes do presente.", "J'espère que le cadeau te plaira."]
+      ]
+    },
+    {
+      "id": "relativos", "niveau": "B1", "ico": "🧩", "titre": "Que, quem, onde, cujo", "resume": "les pronoms relatifs",
+      "fiche": "<div class='bloc'><table><tr><td>que</td><td>qui, que (personnes et choses) : o livro que comprei</td></tr><tr><td>quem</td><td>qui, après une préposition, pour une personne : a pessoa com quem falei</td></tr><tr><td>onde</td><td>où (lieu) : a cidade onde nasci</td></tr><tr><td>cujo / cuja</td><td>dont (possession), s'accorde avec ce qui suit : o homem cuja filha…</td></tr></table></div><div class='astuce'>💡 « Qui » sujet se dit <b>que</b>, pas « quem » : a rapariga <b>que</b> vive aqui.</div>",
+      "items": [
+        ["q", "O livro ___ comprei é ótimo.", ["que", "quem", "onde"], 0, "Chose, complément → que."],
+        ["q", "A cidade ___ nasci é pequena.", ["onde", "que", "cujo"], 0, "Lieu → onde."],
+        ["q", "A pessoa com ___ falei é simpática.", ["quem", "que", "onde"], 0, "Après une préposition, pour une personne → quem."],
+        ["q", "O homem ___ filha é médica.", ["cuja", "cujo", "que"], 0, "cujo s'accorde avec ce qui suit : cuja filha."],
+        ["e", "A rapariga quem vive aqui é francesa.", 2, "que", "Sujet → que (quem seulement après une préposition)."],
+        ["e", "O restaurante que jantámos é caro.", 2, "onde", "Lieu → onde (ou em que)."],
+        ["v", "É a amiga de quem te falei.", true, "", "Après la préposition de, pour une personne → quem."],
+        ["o", "A casa onde moro é antiga.", "La maison où j'habite est ancienne."]
+      ]
+    },
+    {
+      "id": "infinitivo", "niveau": "B2", "ico": "🇵🇹", "titre": "L'infinitif personnel", "resume": "para fazermos, antes de saíres",
+      "fiche": "<div class='bloc'><h4>Une particularité du portugais</h4><p>L'infinitif peut se conjuguer pour préciser <b>qui</b> fait l'action :</p><table><tr><td>eu</td><td>sair</td></tr><tr><td>tu</td><td>saíres</td></tr><tr><td>ele / ela / você</td><td>sair</td></tr><tr><td>nós</td><td>sairmos</td></tr><tr><td>eles / vocês</td><td>saírem</td></tr></table></div><div class='bloc'><h4>Quand l'utiliser ?</h4><p class='ex'>Après une préposition (para, antes de, depois de, até, sem, por) : Trouxe comida para <b>comermos</b>.</p><p class='ex'>Après é melhor, é importante… : É melhor <b>irmos</b> agora.</p></div><div class='astuce'>💡 Il remplace souvent une subordonnée au subjonctif en français : « avant que tu sortes » = antes de <b>saíres</b>.</div>",
+      "items": [
+        ["q", "É melhor ___ agora. (nós, sair)", ["sairmos", "saímos", "sair nós"], 0, "Infinitif personnel : sair + mos."],
+        ["q", "Trouxe comida para vocês ___. (comer)", ["comerem", "comem", "comer-vos"], 0, "para + infinitif personnel : para vocês comerem."],
+        ["q", "Antes de ___, liga-me. (tu, sair)", ["saíres", "sais", "saíste"], 0, "antes de + infinitif personnel : antes de saíres."],
+        ["q", "É importante ___ a verdade. (eles, dizer)", ["dizerem", "dizem", "digam"], 0, "Sujet eles → dizerem."],
+        ["e", "Depois de nós jantamos, vamos sair.", 3, "jantarmos", "Après depois de → infinitif personnel : depois de jantarmos."],
+        ["v", "Obrigado por teres vindo.", true, "", "por + infinitif personnel (teres)."],
+        ["q", "Estou à espera de os resultados ___. (sair)", ["saírem", "saem", "saiam"], 0, "de + infinitif personnel : de os resultados saírem."],
+        ["o", "Vamos esperar até eles chegarem.", "Attendons qu'ils arrivent."]
+      ]
+    }
+  ]
+}

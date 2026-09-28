@@ -1,0 +1,31 @@
+{
+  "_info": "Verbes de la machine à conjuguer. Les réguliers sont conjugués automatiquement. Pour les irréguliers, chaque temps donne les 5 formes : eu, tu, ele/ela/você, nós, eles/elas/vocês (un temps absent = formes régulières).",
+  "reguliers": [
+    ["falar", "parler"], ["trabalhar", "travailler"], ["morar", "habiter"], ["estudar", "étudier"],
+    ["comprar", "acheter"], ["gostar", "aimer"], ["tomar", "prendre"], ["jantar", "dîner"],
+    ["visitar", "visiter"], ["viajar", "voyager"], ["cozinhar", "cuisiner"], ["ajudar", "aider"],
+    ["esperar", "attendre"], ["levar", "emporter"], ["pensar", "penser"], ["andar", "marcher"],
+    ["comer", "manger"], ["beber", "boire"], ["viver", "vivre"], ["aprender", "apprendre"],
+    ["escrever", "écrire"], ["correr", "courir"], ["vender", "vendre"], ["responder", "répondre"],
+    ["receber", "recevoir"], ["perceber", "comprendre"],
+    ["abrir", "ouvrir"], ["partir", "partir, casser"], ["decidir", "décider"], ["assistir", "assister"],
+    ["discutir", "discuter"], ["dividir", "partager"]
+  ],
+  "irreguliers": {
+    "ser": { "fr": "être (identité)", "presente": ["sou", "és", "é", "somos", "são"], "perfeito": ["fui", "foste", "foi", "fomos", "foram"], "imperfeito": ["era", "eras", "era", "éramos", "eram"] },
+    "estar": { "fr": "être (état, lieu)", "presente": ["estou", "estás", "está", "estamos", "estão"], "perfeito": ["estive", "estiveste", "esteve", "estivemos", "estiveram"] },
+    "ter": { "fr": "avoir", "presente": ["tenho", "tens", "tem", "temos", "têm"], "perfeito": ["tive", "tiveste", "teve", "tivemos", "tiveram"], "imperfeito": ["tinha", "tinhas", "tinha", "tínhamos", "tinham"] },
+    "ir": { "fr": "aller", "presente": ["vou", "vais", "vai", "vamos", "vão"], "perfeito": ["fui", "foste", "foi", "fomos", "foram"] },
+    "fazer": { "fr": "faire", "presente": ["faço", "fazes", "faz", "fazemos", "fazem"], "perfeito": ["fiz", "fizeste", "fez", "fizemos", "fizeram"] },
+    "poder": { "fr": "pouvoir", "presente": ["posso", "podes", "pode", "podemos", "podem"], "perfeito": ["pude", "pudeste", "pôde", "pudemos", "puderam"] },
+    "querer": { "fr": "vouloir", "presente": ["quero", "queres", "quer", "queremos", "querem"], "perfeito": ["quis", "quiseste", "quis", "quisemos", "quiseram"] },
+    "dizer": { "fr": "dire", "presente": ["digo", "dizes", "diz", "dizemos", "dizem"], "perfeito": ["disse", "disseste", "disse", "dissemos", "disseram"] },
+    "ver": { "fr": "voir", "presente": ["vejo", "vês", "vê", "vemos", "veem"], "perfeito": ["vi", "viste", "viu", "vimos", "viram"] },
+    "vir": { "fr": "venir", "presente": ["venho", "vens", "vem", "vimos", "vêm"], "perfeito": ["vim", "vieste", "veio", "viemos", "vieram"], "imperfeito": ["vinha", "vinhas", "vinha", "vínhamos", "vinham"] },
+    "dar": { "fr": "donner", "presente": ["dou", "dás", "dá", "damos", "dão"], "perfeito": ["dei", "deste", "deu", "demos", "deram"] },
+    "saber": { "fr": "savoir", "presente": ["sei", "sabes", "sabe", "sabemos", "sabem"], "perfeito": ["soube", "soubeste", "soube", "soubemos", "souberam"] },
+    "pôr": { "fr": "mettre", "presente": ["ponho", "pões", "põe", "pomos", "põem"], "perfeito": ["pus", "puseste", "pôs", "pusemos", "puseram"], "imperfeito": ["punha", "punhas", "punha", "púnhamos", "punham"] },
+    "ler": { "fr": "lire", "presente": ["leio", "lês", "lê", "lemos", "leem"], "perfeito": ["li", "leste", "leu", "lemos", "leram"] },
+    "sair": { "fr": "sortir", "presente": ["saio", "sais", "sai", "saímos", "saem"], "perfeito": ["saí", "saíste", "saiu", "saímos", "saíram"], "imperfeito": ["saía", "saías", "saía", "saíamos", "saíam"] }
+  }
+}

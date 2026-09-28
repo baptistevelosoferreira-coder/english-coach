@@ -6,6 +6,7 @@ import { noterErreur, sauver } from "./store.js";
 import { noter } from "./srs.js";
 import { app, masquerNav, raccourcis } from "./nav.js";
 import { confirmer } from "./dialogue.js";
+import { L as langue } from "./langue.js";
 
 let L = null;
 
@@ -92,13 +93,14 @@ const RENDUS = {
 
   saisie(e, corps, pret) {
     corps.innerHTML = `<div class="question"><div><div class="texte">${echapper(e.texte)}</div>${e.sous ? `<div class="sous">${echapper(e.sous)}</div>` : ""}</div></div>
-      <textarea id="saisie" rows="2" placeholder="Écris ta réponse en anglais" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>`;
+      <textarea id="saisie" rows="2" placeholder="Écris ta réponse ${langue.en}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>`;
     const t = $("#saisie");
     t.focus();
     t.oninput = () => pret(t.value.trim() ? () => {
       t.disabled = true;
       const r = verifierSaisie(t.value, e.reponses, e.tolerance);
-      return { ok: r.ok, presque: r.presque, bonne: e.reponses[0], note: r.presque ? "Petite faute d'orthographe. On écrit : " + e.reponses[0] : null };
+      const note = r.raison === "accents" ? "Attention aux accents. On écrit : " + e.reponses[0] : r.raison === "frappe" ? "Petite faute d'orthographe. On écrit : " + e.reponses[0] : null;
+      return { ok: r.ok, presque: r.presque, bonne: e.reponses[0], note };
     } : null);
     t.onkeydown = (ev) => { if (ev.key === "Enter") { ev.preventDefault(); if (!$("#verifier").disabled) $("#verifier").click(); } };
   },

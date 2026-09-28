@@ -1,0 +1,46 @@
+{
+  "id": "p6",
+  "titre": "Le passé : pretérito perfeito régulier",
+  "ico": "⏪",
+  "niveau": "A2",
+  "objectif": "Raconter ce que tu as fait",
+  "dialogue": {
+    "titre": "Segunda de manhã",
+    "contexte": "Lundi matin, Inês demande à Lucas comment s'est passée la journée à Sintra.",
+    "surligner": ["gostaste", "Adorei", "Visitámos", "almoçámos", "Cozinhou", "bebemos", "comemos", "voltaram", "Voltámos", "dormi", "trabalhei"],
+    "lignes": [
+      ["Inês", "Então, Lucas, gostaste de Sintra?", "Alors Lucas, tu as aimé Sintra ?"],
+      ["Lucas", "Adorei! Visitámos o palácio e almoçámos no jardim.", "J'ai adoré ! On a visité le palais et on a déjeuné dans le jardin."],
+      ["Inês", "E o Tiago? Cozinhou bem?", "Et Tiago ? Il a bien cuisiné ?"],
+      ["Lucas", "Sim, e bebemos o café todo e comemos tudo!", "Oui, et on a bu tout le café et on a tout mangé !"],
+      ["Inês", "E voltaram a que horas?", "Et vous êtes rentrés à quelle heure ?"],
+      ["Lucas", "Voltámos às nove. Depois, dormi dez horas!", "On est rentrés à neuf heures. Après, j'ai dormi dix heures !"],
+      ["Inês", "Eu trabalhei o fim de semana inteiro…", "Moi, j'ai travaillé tout le week-end…"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Les terminaisons</h4><table><tr><td></td><td>falar</td><td>comer</td><td>abrir</td></tr><tr><td>eu</td><td>falei</td><td>comi</td><td>abri</td></tr><tr><td>tu</td><td>falaste</td><td>comeste</td><td>abriste</td></tr><tr><td>ele / ela / você</td><td>falou</td><td>comeu</td><td>abriu</td></tr><tr><td>nós</td><td>falámos</td><td>comemos</td><td>abrimos</td></tr><tr><td>eles / vocês</td><td>falaram</td><td>comeram</td><td>abriram</td></tr></table></div><div class='bloc'><h4>Quand l'utiliser ?</h4><p>Pour une action <b>terminée</b> : ontem, no sábado, há dois dias, em 2020.</p><p class='ex'>Il correspond au passé composé français : trabalhei = j'ai travaillé.</p></div><div class='bloc'><h4>Orthographe</h4><p class='ex'>chegar → che<b>gu</b>ei · ficar → fi<b>qu</b>ei · começar → come<b>c</b>ei (seulement avec eu)</p></div><div class='astuce'>💡 Au Portugal, nós au passé des verbes en -ar prend un accent : falámos (passé) ≠ falamos (présent).</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Ontem eu ___ muito. (trabalhar)", "options": ["trabalhei", "trabalhou", "trabalho"], "bonne": 0, "explication": "eu, passé, verbe en -ar → -ei." },
+    { "type": "choix", "texte": "Ela ___ o almoço. (preparar)", "options": ["preparou", "preparei", "prepara"], "bonne": 0, "explication": "ela, passé → -ou." },
+    { "type": "choix", "texte": "Nós ___ tudo! (comer)", "options": ["comemos", "comeram", "comi"], "bonne": 0, "explication": "nós, verbe en -er → comemos (même forme qu'au présent)." },
+    { "type": "saisie", "texte": "Tu ___ de Sintra? (gostar)", "sous": "Tu as aimé Sintra ?", "reponses": ["gostaste"], "explication": "tu, passé → -aste." },
+    { "type": "saisie", "texte": "Eles ___ às nove. (voltar)", "sous": "Ils sont rentrés à neuf heures.", "reponses": ["voltaram"], "explication": "eles, passé → -aram." },
+    { "type": "saisie", "texte": "Eu ___ dez horas. (dormir)", "sous": "J'ai dormi dix heures.", "reponses": ["dormi"], "explication": "eu, verbe en -ir → -i." },
+    { "type": "saisie", "texte": "Ontem eu ___ tarde. (chegar)", "sous": "Hier je suis arrivé tard.", "reponses": ["cheguei"], "explication": "chegar → cheguei (on ajoute u pour garder le son g)." },
+    { "type": "erreur", "texte": "Ontem eu trabalho muito.", "k": 2, "correction": "trabalhei", "explication": "Ontem → passé : trabalhei." },
+    { "type": "vf", "texte": "Nós visitámos o museu no domingo.", "vrai": true, "correction": "", "explication": "Au Portugal, nós au passé des verbes en -ar s'écrit -ámos." },
+    { "type": "ordre", "texte": "Ela abriu a janela.", "fr": "Elle a ouvert la fenêtre." },
+    { "type": "ecoute", "texte": "Almoçámos no jardim." }
+  ],
+  "production": [
+    { "consigne": "Raconte ton dernier week-end en 3 phrases au passé (verbes réguliers).", "modele": "No sábado, visitei um museu. Almocei com amigos e à noite dormi cedo.", "verifs": ["Verbes en -ar : -ei, -aste, -ou, -ámos, -aram", "Verbes en -er / -ir : eu -i, ele -eu / -iu"] }
+  ],
+  "cartes": [
+    { "id": "p6-1", "texte": "Ontem eu ___ muito. (trabalhar)", "sous": "Hier j'ai beaucoup travaillé.", "reponses": ["trabalhei"] },
+    { "id": "p6-2", "texte": "Ela ___ o jantar. (preparar)", "sous": "Elle a préparé le dîner.", "reponses": ["preparou"] },
+    { "id": "p6-3", "texte": "Nós ___ tudo. (comer)", "sous": "Nous avons tout mangé.", "reponses": ["comemos"] },
+    { "id": "p6-4", "texte": "Tu ___ a porta? (abrir)", "sous": "Tu as ouvert la porte ?", "reponses": ["abriste"] },
+    { "id": "p6-5", "texte": "Eles ___ tarde. (chegar)", "sous": "Ils sont arrivés tard.", "reponses": ["chegaram"] },
+    { "id": "p6-6", "texte": "Eu ___ às dez. (chegar)", "sous": "Je suis arrivé à dix heures.", "reponses": ["cheguei"] }
+  ]
+}

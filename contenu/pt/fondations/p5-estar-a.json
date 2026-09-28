@@ -1,0 +1,46 @@
+{
+  "id": "p5",
+  "titre": "Estar a + infinitif et le futur proche",
+  "ico": "📱",
+  "niveau": "A2",
+  "objectif": "Dire ce que tu es en train de faire et ce que tu vas faire",
+  "dialogue": {
+    "titre": "Ao telefone",
+    "contexte": "Lucas appelle Inês un soir de semaine.",
+    "surligner": ["estás a fazer", "Estou a preparar", "Estou a estudar", "está a ver", "vamos jantar", "Vou reservar", "vai ser"],
+    "lignes": [
+      ["Lucas", "Olá, Inês! O que estás a fazer?", "Salut Inês ! Qu'est-ce que tu fais ?"],
+      ["Inês", "Estou a preparar o jantar. E tu?", "Je prépare le dîner. Et toi ?"],
+      ["Lucas", "Estou a estudar para o exame de amanhã.", "Je révise pour l'examen de demain."],
+      ["Inês", "Coragem! O Tiago está a ver o jogo do Benfica.", "Courage ! Tiago regarde le match du Benfica."],
+      ["Lucas", "Amanhã à noite vamos jantar fora?", "Demain soir, on va dîner dehors ?"],
+      ["Inês", "Boa ideia! Vou reservar uma mesa.", "Bonne idée ! Je vais réserver une table."],
+      ["Lucas", "Perfeito, vai ser ótimo!", "Parfait, ça va être super !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Ce qui se passe maintenant : estar a + infinitif</h4><p class='ex'><b>Estou a estudar.</b> = je suis en train d'étudier.</p><p class='ex'>O que <b>estás a fazer</b>? · Eles <b>estão a dormir</b>.</p><p>⚠️ Au Brésil on dit « estou estudando ». Au Portugal, c'est <b>estar a + infinitif</b>.</p></div><div class='bloc'><h4>Le futur proche : ir + infinitif</h4><p class='ex'><b>Vou reservar</b> uma mesa. · <b>Vamos jantar</b> fora. · <b>Vai chover</b>.</p><p>Pas de préposition entre ir et l'infinitif : vamos jantar (pas « vamos a jantar »).</p></div><div class='astuce'>💡 À l'oral, le futur proche (vou fazer) est bien plus courant que le futur simple (farei), qui sonne plus formel.</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Neste momento, eu ___ a trabalhar.", "options": ["estou", "sou", "vou"], "bonne": 0, "explication": "Action en cours → estar a + infinitif." },
+    { "type": "choix", "texte": "O Tiago está a ___ o jogo.", "options": ["ver", "vendo", "vê"], "bonne": 0, "explication": "Au Portugal : estar a + infinitif (ver)." },
+    { "type": "choix", "texte": "Amanhã nós ___ viajar.", "options": ["vamos", "estamos", "somos"], "bonne": 0, "explication": "Futur proche : ir + infinitif." },
+    { "type": "saisie", "texte": "Eles ___ a dormir. (estar)", "sous": "Ils sont en train de dormir.", "reponses": ["estão"], "explication": "eles → estão." },
+    { "type": "saisie", "texte": "Eu ___ reservar uma mesa. (ir)", "sous": "Je vais réserver une table.", "reponses": ["vou"], "explication": "ir → eu vou." },
+    { "type": "saisie", "texte": "O que estás a ___? (fazer)", "sous": "Qu'est-ce que tu fais ?", "reponses": ["fazer"], "explication": "Après estar a → infinitif." },
+    { "type": "erreur", "texte": "Estou fazendo o jantar.", "k": 1, "correction": "a fazer", "explication": "Au Portugal : estou a fazer (fazendo est brésilien)." },
+    { "type": "erreur", "texte": "Nós vamos a jantar fora.", "k": 2, "correction": "(à supprimer)", "explication": "ir + infinitif, sans a : vamos jantar." },
+    { "type": "vf", "texte": "Vou estudar amanhã.", "vrai": true, "correction": "", "explication": "Futur proche : vou + infinitif." },
+    { "type": "ordre", "texte": "Estamos a ver um filme.", "fr": "Nous sommes en train de regarder un film." },
+    { "type": "ecoute", "texte": "O que estás a fazer?" }
+  ],
+  "production": [
+    { "consigne": "Écris ce que tu es en train de faire maintenant et ce que tu vas faire ce week-end (3 phrases).", "modele": "Agora estou a estudar português. No sábado vou visitar um museu. No domingo vamos almoçar com amigos.", "verifs": ["estar a + infinitif pour ce qui se passe maintenant", "ir + infinitif (sans a) pour le futur proche"] }
+  ],
+  "cartes": [
+    { "id": "p5-1", "texte": "Eu ___ a estudar. (estar)", "sous": "Je suis en train d'étudier.", "reponses": ["estou"] },
+    { "id": "p5-2", "texte": "Ela está ___ cozinhar.", "sous": "Elle est en train de cuisiner.", "reponses": ["a"] },
+    { "id": "p5-3", "texte": "Nós ___ sair logo. (ir)", "sous": "Nous allons sortir tout à l'heure.", "reponses": ["vamos"] },
+    { "id": "p5-4", "texte": "Eles ___ a ver televisão.", "sous": "Ils regardent la télévision.", "reponses": ["estão"] },
+    { "id": "p5-5", "texte": "Amanhã ___ chover. (ir)", "sous": "Il va pleuvoir demain.", "reponses": ["vai"] },
+    { "id": "p5-6", "texte": "O que ___ a fazer? (tu)", "sous": "Qu'est-ce que tu fais ?", "reponses": ["estás"] }
+  ]
+}

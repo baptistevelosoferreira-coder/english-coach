@@ -1,0 +1,46 @@
+{
+  "id": "p4",
+  "titre": "Les verbes irréguliers essentiels",
+  "ico": "🚆",
+  "niveau": "A2",
+  "objectif": "Proposer une sortie, dire ce que tu veux, peux ou dois faire",
+  "dialogue": {
+    "titre": "Um sábado em Sintra?",
+    "contexte": "Tiago propose une excursion à Sintra.",
+    "surligner": ["Tenho", "vamos", "Vamos", "faço", "Posso", "Quero", "vem", "posso", "tenho de", "dizem", "vemos"],
+    "lignes": [
+      ["Tiago", "Tenho uma ideia: vamos a Sintra no sábado?", "J'ai une idée : on va à Sintra samedi ?"],
+      ["Lucas", "Boa! Como é que vamos?", "Super ! On y va comment ?"],
+      ["Tiago", "Vamos de comboio. Eu faço sanduíches para todos.", "On y va en train. Je fais des sandwichs pour tout le monde."],
+      ["Lucas", "Posso levar a minha câmara? Quero tirar fotografias.", "Je peux emporter mon appareil photo ? Je veux prendre des photos."],
+      ["Tiago", "Claro! A Inês também vem?", "Bien sûr ! Inês vient aussi ?"],
+      ["Inês", "Não posso, tenho de trabalhar. Mas dizem que Sintra é linda!", "Je ne peux pas, je dois travailler. Mais on dit que Sintra est magnifique !"],
+      ["Lucas", "Então vemos o palácio e trazemos fotografias para ti!", "Alors on voit le palais et on te ramène des photos !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Les plus utiles (eu · tu · ele · nós · eles)</h4><table><tr><td>ter</td><td>tenho, tens, tem, temos, têm</td></tr><tr><td>ir</td><td>vou, vais, vai, vamos, vão</td></tr><tr><td>fazer</td><td>faço, fazes, faz, fazemos, fazem</td></tr><tr><td>poder</td><td>posso, podes, pode, podemos, podem</td></tr><tr><td>querer</td><td>quero, queres, quer, queremos, querem</td></tr><tr><td>dizer</td><td>digo, dizes, diz, dizemos, dizem</td></tr><tr><td>ver</td><td>vejo, vês, vê, vemos, veem</td></tr><tr><td>vir</td><td>venho, vens, vem, vimos, vêm</td></tr><tr><td>saber</td><td>sei, sabes, sabe, sabemos, sabem</td></tr><tr><td>dar</td><td>dou, dás, dá, damos, dão</td></tr></table></div><div class='bloc'><h4>Expressions à connaître</h4><p class='ex'><b>ter de</b> + infinitif = devoir : Tenho de trabalhar.</p><p class='ex'>Aller <b>en</b> transport = ir <b>de</b> : de comboio, de autocarro, de carro (mais a pé).</p></div><div class='astuce'>💡 Ne confonds pas <b>vir</b> (venir : venho, vens, vem) et <b>ver</b> (voir : vejo, vês, vê).</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Eu ___ uma ideia.", "options": ["tenho", "tem", "tens"], "bonne": 0, "explication": "ter → eu tenho." },
+    { "type": "choix", "texte": "Nós ___ a Sintra no sábado.", "options": ["vamos", "vão", "vai"], "bonne": 0, "explication": "ir → nós vamos." },
+    { "type": "choix", "texte": "Eu ___ o jantar hoje.", "options": ["faço", "fazo", "faz"], "bonne": 0, "explication": "fazer → eu faço." },
+    { "type": "saisie", "texte": "Tu ___ vir connosco? (poder)", "sous": "Tu peux venir avec nous ?", "reponses": ["podes"], "explication": "poder → tu podes." },
+    { "type": "saisie", "texte": "Eles ___ um café. (querer)", "sous": "Ils veulent un café.", "reponses": ["querem"], "explication": "querer → eles querem." },
+    { "type": "saisie", "texte": "Eu ___ de trabalhar. (ter)", "sous": "Je dois travailler.", "reponses": ["tenho"], "explication": "ter de + infinitif = devoir." },
+    { "type": "paires", "consigne": "Associe l'infinitif à la forme « eu »", "paires": [["ter", "tenho"], ["fazer", "faço"], ["poder", "posso"], ["ver", "vejo"], ["vir", "venho"]] },
+    { "type": "erreur", "texte": "Eu sabo a resposta.", "k": 1, "correction": "sei", "explication": "saber → eu sei." },
+    { "type": "vf", "texte": "Ela vem de comboio.", "vrai": true, "correction": "", "explication": "vir → ela vem, et « de comboio » = en train." },
+    { "type": "ordre", "texte": "Vamos de autocarro para a praia.", "fr": "Nous allons à la plage en bus." },
+    { "type": "ecoute", "texte": "Não posso, tenho de trabalhar." }
+  ],
+  "production": [
+    { "consigne": "Propose une sortie à un ami en 3 phrases (avec ir, poder, querer, ter de…).", "modele": "Queres ir à praia no domingo? Podemos ir de comboio. Tenho de trabalhar de manhã, mas à tarde posso.", "verifs": ["ter de + infinitif pour dire ce que je dois faire", "Mes verbes irréguliers ont la bonne forme (tenho, posso, quero…)"] }
+  ],
+  "cartes": [
+    { "id": "p4-1", "texte": "Eu ___ de estudar. (ter)", "sous": "Je dois étudier.", "reponses": ["tenho"] },
+    { "id": "p4-2", "texte": "Nós ___ ao cinema. (ir)", "sous": "Nous allons au cinéma.", "reponses": ["vamos"] },
+    { "id": "p4-3", "texte": "Tu ___ o jantar? (fazer)", "sous": "Tu fais le dîner ?", "reponses": ["fazes"] },
+    { "id": "p4-4", "texte": "Eu não ___ ir. (poder)", "sous": "Je ne peux pas y aller.", "reponses": ["posso"] },
+    { "id": "p4-5", "texte": "Ela ___ um café. (querer)", "sous": "Elle veut un café.", "reponses": ["quer"] },
+    { "id": "p4-6", "texte": "Eu não ___. (saber)", "sous": "Je ne sais pas.", "reponses": ["sei"] }
+  ]
+}

@@ -328,3 +328,7 @@ textarea:focus { outline: none; border-color: var(--bleu); }
 .correction s { color: var(--rouge-ombre); }
 .correction b { color: var(--primaire-ombre); }
 .regle { font-size: 12px; font-weight: 700; color: var(--violet); margin-top: 2px; }
+
+/* ============ Choix de la langue ============ */
+.drapeau { font-size: 34px; line-height: 1; }
+.logo-mini { font-size: 16px; padding: 4px 0; }

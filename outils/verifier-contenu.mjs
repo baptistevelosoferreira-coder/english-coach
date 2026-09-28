@@ -1,12 +1,15 @@
-// Vérifie que les fichiers du dossier contenu/ sont bien formés.
+// Vérifie que les fichiers du dossier contenu/ sont bien formés, pour chaque langue.
 // À lancer après avoir ajouté du contenu :   node outils/verifier-contenu.mjs
 import fs from "fs";
 
-const lire = (p) => JSON.parse(fs.readFileSync(new URL("../contenu/" + p, import.meta.url)));
 const problemes = [];
 const signaler = (ou, msg) => problemes.push(`${ou} : ${msg}`);
+const langues = fs.readdirSync(new URL("../contenu/", import.meta.url));
+
+for (const langue of langues) {
+const lire = (p) => JSON.parse(fs.readFileSync(new URL(`../contenu/${langue}/${p}`, import.meta.url)));
 const ids = new Set();
-const idUnique = (id, ou) => { if (ids.has(id)) signaler(ou, `identifiant en double « ${id} »`); ids.add(id); };
+const idUnique = (id, ou) => { if (ids.has(id)) signaler(`${langue}/${ou}`, `identifiant en double « ${id} »`); ids.add(id); };
 
 const s = lire("sommaire.json");
 
@@ -40,8 +43,9 @@ for (const f of s.vocabulaire) {
 }
 
 for (const q of lire(s.test).questions) {
-  if (!(q.bonne < q.options.length)) signaler("test", `bonne réponse invalide : ${q.texte}`);
-  if (!ids.has(q.lien)) signaler("test", `lien inconnu « ${q.lien} » : ${q.texte}`);
+  if (!(q.bonne < q.options.length)) signaler(`${langue}/test`, `bonne réponse invalide : ${q.texte}`);
+  if (!ids.has(q.lien)) signaler(`${langue}/test`, `lien inconnu « ${q.lien} » : ${q.texte}`);
+}
 }
 
 if (problemes.length) {

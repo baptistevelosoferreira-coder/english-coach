@@ -1,0 +1,32 @@
+{
+  "_info": "Test de positionnement : 6 questions par niveau (A1 → B2). « lien » = module des Fondations, point de grammaire ou thème de vocabulaire à recommander si la question est ratée.",
+  "questions": [
+    { "niveau": "A1", "texte": "Eu ___ francês.", "options": ["sou", "estou", "é"], "bonne": 0, "lien": "p1" },
+    { "niveau": "A1", "texte": "Hoje ___ muito cansado. (eu)", "options": ["estou", "sou", "é"], "bonne": 0, "lien": "p2" },
+    { "niveau": "A1", "texte": "Nós ___ em Lisboa. (morar)", "options": ["moramos", "moram", "moro"], "bonne": 0, "lien": "p3" },
+    { "niveau": "A1", "texte": "Eu ___ dois irmãos.", "options": ["tenho", "tem", "tens"], "bonne": 0, "lien": "p4" },
+    { "niveau": "A1", "texte": "Moro ___ Porto.", "options": ["no", "em", "na"], "bonne": 0, "lien": "artigos" },
+    { "niveau": "A1", "texte": "___ irmã chama-se Ana.", "options": ["A minha", "Minha a", "O meu"], "bonne": 0, "lien": "possessivos" },
+
+    { "niveau": "A2", "texte": "Agora estou ___ trabalhar.", "options": ["a", "de", "em"], "bonne": 0, "lien": "p5" },
+    { "niveau": "A2", "texte": "Ontem eu ___ muito. (trabalhar)", "options": ["trabalhei", "trabalhou", "trabalho"], "bonne": 0, "lien": "p6" },
+    { "niveau": "A2", "texte": "No sábado ___ ao cinema. (eu, ir)", "options": ["fui", "foi", "vou"], "bonne": 0, "lien": "p7" },
+    { "niveau": "A2", "texte": "O Porto é ___ pequeno do que Lisboa.", "options": ["mais", "muito", "tão"], "bonne": 0, "lien": "comparativos" },
+    { "niveau": "A2", "texte": "Obrigado ___ ajuda!", "options": ["pela", "para a", "da"], "bonne": 0, "lien": "preposicoes" },
+    { "niveau": "A2", "texte": "Não ___ tarde! (tu, chegar)", "options": ["chegues", "chega", "chegas"], "bonne": 0, "lien": "imperativo" },
+
+    { "niveau": "B1", "texte": "Quando era criança, ___ no Algarve. (viver)", "options": ["vivia", "vivi", "vivo"], "bonne": 0, "lien": "p8" },
+    { "niveau": "B1", "texte": "Conheces a Inês? — Não, não ___ conheço.", "options": ["a", "-a", "ela"], "bonne": 0, "lien": "pronomes" },
+    { "niveau": "B1", "texte": "Ultimamente, ___ muito. (trabalhar)", "options": ["tenho trabalhado", "trabalhei", "tenho trabalhei"], "bonne": 0, "lien": "composto" },
+    { "niveau": "B1", "texte": "Espero que ___ bom tempo amanhã. (fazer)", "options": ["faça", "faz", "fará"], "bonne": 0, "lien": "conjuntivo" },
+    { "niveau": "B1", "texte": "A cidade ___ nasci é pequena.", "options": ["onde", "que", "cujo"], "bonne": 0, "lien": "relativos" },
+    { "niveau": "B1", "texte": "« Que cheiro esquisito! » Esquisito veut dire…", "options": ["bizarre", "exquis", "délicieux"], "bonne": 0, "lien": "pt-fauxamis" },
+
+    { "niveau": "B2", "texte": "É melhor ___ agora. (nós, sair)", "options": ["sairmos", "saímos", "sair nós"], "bonne": 0, "lien": "infinitivo" },
+    { "niveau": "B2", "texte": "Se tivesse tempo, ___ contigo. (ir)", "options": ["iria", "irei", "fui"], "bonne": 0, "lien": "futuro" },
+    { "niveau": "B2", "texte": "O homem ___ filha é médica.", "options": ["cuja", "cujo", "que"], "bonne": 0, "lien": "relativos" },
+    { "niveau": "B2", "texte": "Talvez ele ___ amanhã. (vir)", "options": ["venha", "vem", "virá"], "bonne": 0, "lien": "conjuntivo" },
+    { "niveau": "B2", "texte": "Antes de ___, liga-me. (tu, sair)", "options": ["saíres", "sais", "saíste"], "bonne": 0, "lien": "infinitivo" },
+    { "niveau": "B2", "texte": "« Apesar da chuva, saímos. » Apesar de veut dire…", "options": ["malgré", "parce que", "donc"], "bonne": 0, "lien": "pt-liaison" }
+  ]
+}

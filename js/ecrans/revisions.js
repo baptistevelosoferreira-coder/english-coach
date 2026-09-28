@@ -7,6 +7,7 @@ import { exerciceDeCarte } from "../exercices.js";
 import { lancerLecon, ecranFin } from "../lecon.js";
 import { app, ecrans, ouvrir, entete } from "../nav.js";
 import { moduleFini } from "../progression.js";
+import { L } from "../langue.js";
 
 const MAX_SEANCE = 25;
 
@@ -14,7 +15,8 @@ ecrans.revisions = function () {
   const dues = cartesDues();
   const prochaine = prochaineRevision();
   const carnet = Object.entries(etat.erreurs).filter(([id]) => C.modules[id] || C.points[id] || C.decks[id]).sort((a, b) => b[1] - a[1]).slice(0, 8);
-  const machineOuverte = moduleFini("f2"), chronoOuvert = moduleFini("f1");
+  const premierTemps = L.conj.TEMPS[0].module;
+  const machineOuverte = moduleFini(premierTemps), chronoOuvert = moduleFini(C.fondations[0].id);
 
   app.innerHTML = entete() + `<h1 class="titre-page">🔁 Révisions</h1>
     <div class="carte revision-du-jour">
@@ -28,7 +30,7 @@ ecrans.revisions = function () {
 
     <div class="sous-titre">🎮 S'entraîner en jouant</div>
     <button class="jeu ${machineOuverte ? "" : "verrou"}" id="machine" ${machineOuverte ? "" : "disabled"}>
-      <span class="ico">🎰</span><span class="flex"><b>Machine à conjuguer</b><small>${machineOuverte ? `Un sujet, un verbe, un temps : à toi de conjuguer ! Record : ${etat.records.machine}` : "Se débloque avec le module 2"}</small></span></button>
+      <span class="ico">🎰</span><span class="flex"><b>Machine à conjuguer</b><small>${machineOuverte ? `Un sujet, un verbe, un temps : à toi de conjuguer ! Record : ${etat.records.machine}` : `Se débloque avec le module ${C.fondations.findIndex((m) => m.id === premierTemps) + 1}`}</small></span></button>
     <button class="jeu chaud ${chronoOuvert ? "" : "verrou"}" id="chrono" ${chronoOuvert ? "" : "disabled"}>
       <span class="ico">⚡</span><span class="flex"><b>Défi chrono</b><small>${chronoOuvert ? `60 secondes, un max de bonnes réponses. Record : ${etat.records.chrono}` : "Se débloque avec le module 1"}</small></span></button>
 

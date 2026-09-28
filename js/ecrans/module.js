@@ -10,6 +10,7 @@ import { ajouterCartes } from "../srs.js";
 import { depuisJSON } from "../exercices.js";
 import { lancerLecon, ecranFin } from "../lecon.js";
 import { app, ecrans, ouvrir } from "../nav.js";
+import { L } from "../langue.js";
 
 const ETAPES = ["Découvrir", "Comprendre", "S'entraîner", "Produire"];
 let resultatEntrainement = null;
@@ -83,7 +84,7 @@ function produire(m, n) {
     <div class="carte">
       <b>✍️ À toi d'écrire</b>
       <p>${echapper(p.consigne)}</p>
-      <textarea id="texte" rows="5" placeholder="Écris en anglais…" spellcheck="false"></textarea>
+      <textarea id="texte" rows="5" placeholder="Écris ${L.en}…" spellcheck="false"></textarea>
     </div>
     <div id="analyse"></div>
     <div id="comparaison"></div>

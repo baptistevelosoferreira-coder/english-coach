@@ -15,5 +15,19 @@
   "vocabulaire": [
     "vocabulaire/essentiels.json",
     "vocabulaire/marketing.json"
-  ]
+  ],
+  "aVenir": {
+    "titre": "🌍 Vie quotidienne UK / US",
+    "description": "Pour te débrouiller seul en Angleterre ou aux États-Unis. Prochaine étape du projet :",
+    "themes": [
+      "✈️ À l'aéroport",
+      "🚇 Transports",
+      "🏨 À l'hôtel",
+      "🍽️ Au restaurant",
+      "🛒 Faire ses courses",
+      "💊 Pharmacie & santé",
+      "🆘 Urgences",
+      "💬 Small talk"
+    ]
+  }
 }

@@ -7,7 +7,8 @@ import { solide } from "../srs.js";
 import { app, ecrans, ouvrir, entete } from "../nav.js";
 import { nbModulesFinis } from "../progression.js";
 import { OBJECTIFS } from "./bienvenue.js";
-import { syntheseDisponible } from "../voix.js";
+import { syntheseDisponible, voixTrouvee } from "../voix.js";
+import { L } from "../langue.js";
 
 ecrans.profil = function () {
   const cartes = Object.keys(etat.cartes);
@@ -21,6 +22,9 @@ ecrans.profil = function () {
       <div class="stat"><span class="ico">📚</span><div><b>${mots}</b><small>mots appris</small></div></div>
       <div class="stat"><span class="ico">🧠</span><div><b>${cartes.filter(solide).length} / ${cartes.length}</b><small>cartes bien ancrées</small></div></div>
     </div>
+
+    <div class="sous-titre">Langue étudiée</div>
+    <button class="element" data-aller-langue><span class="ico">${L.drapeau}</span><span class="flex"><b>${L.nom.charAt(0).toUpperCase() + L.nom.slice(1)}</b><small>Toucher pour changer de langue (chaque langue garde sa progression)</small></span><span class="fleche">›</span></button>
 
     <div class="sous-titre">Objectif quotidien</div>
     <div class="grille deux">${OBJECTIFS.map((o) => `<button class="choix-carte ${o.xp === etat.profil.objectif ? "choisi" : ""}" data-xp="${o.xp}"><span><b>${o.nom}</b><small>${o.xp} XP · ${o.desc}</small></span></button>`).join("")}</div>
@@ -46,7 +50,7 @@ ecrans.profil = function () {
       <button class="btn" id="test">🎯 Passer le test maintenant</button>` : ""}
 
     <div class="sous-titre">À propos</div>
-    <p class="muet petit">${syntheseDisponible() ? "" : "⚠️ Ton navigateur ne propose pas de voix anglaise : la prononciation ne fonctionnera pas. "}
+    <p class="muet petit">${!syntheseDisponible() ? "⚠️ Ton navigateur ne sait pas lire à voix haute : la prononciation ne fonctionnera pas. " : voixTrouvee() ? "" : `⚠️ Aucune voix ${L.adjectif} trouvée sur cet appareil : la prononciation risque d'être approximative. `}
       Révision espacée : algorithme FSRS (<a href="https://github.com/open-spaced-repetition/ts-fsrs" target="_blank" rel="noopener">ts-fsrs</a>, licence MIT).</p>
     <div class="centre"><button class="lien rouge" id="reset">Tout remettre à zéro</button></div>`;
 

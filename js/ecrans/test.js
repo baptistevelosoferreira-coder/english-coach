@@ -33,18 +33,19 @@ ecrans.test = function () {
 function question(i) {
   if (i >= questions.length) return resultat();
   const q = questions[i];
+  const ordre = melanger(q.options.map((o, k) => ({ o, k }))); // l'ordre des choix change à chaque fois
   app.innerHTML = `<div class="lecon-haut"><button class="fermer" id="quitter">✕</button>
       <div class="barre bleu"><i style="width:${(i / questions.length) * 100}%"></i></div><span class="muet">${i + 1} / ${questions.length}</span></div>
     <h2 class="consigne">Choisis la bonne réponse</h2>
     <div class="question"><div class="texte">${echapper(q.texte)}</div></div>
     <div class="options">
-      ${q.options.map((o, k) => `<button class="option" data-k="${k}"><kbd>${k + 1}</kbd>${echapper(o)}</button>`).join("")}
+      ${ordre.map((x, i) => `<button class="option" data-k="${x.k}"><kbd>${i + 1}</kbd>${echapper(x.o)}</button>`).join("")}
       <button class="option discret" data-k="-1">🤷 Je ne sais pas</button>
     </div>`;
   $("#quitter").onclick = async () => { if (await confirmer("Quitter le test ? Tes réponses seront perdues.", "Quitter", true)) ouvrir("parcours"); };
   const repondre = (k) => { reponses[i] = k === q.bonne; question(i + 1); };
   $$(".option").forEach((b) => (b.onclick = () => repondre(+b.dataset.k)));
-  raccourcis.touche = (k) => { if (+k <= q.options.length) repondre(+k - 1); };
+  raccourcis.touche = (k) => { if (+k <= ordre.length) repondre(ordre[+k - 1].k); };
 }
 
 function resultat() {

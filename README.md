@@ -1,25 +1,33 @@
-# 🇬🇧 English Coach
+# 🇬🇧 🇵🇹 Coach de langues (English Coach · Coach Português)
 
-Une application web pour **reprendre l'anglais sur des bases solides**, puis progresser avec un
-parcours adapté à son niveau. Elle fonctionne sur téléphone et sur ordinateur, s'installe sur l'écran
+Une application web pour **apprendre l'anglais ou le portugais du Portugal sur des bases solides**,
+puis progresser avec un parcours adapté à son niveau. On choisit la langue au premier lancement, et on
+peut en changer à tout moment en touchant le drapeau : chaque langue garde sa propre progression. Elle fonctionne sur téléphone et sur ordinateur, s'installe sur l'écran
 d'accueil et marche même sans connexion.
 
 ## Le parcours
 
-1. **🧱 Les Fondations** : 8 modules sur les verbes et les temps (to be, présent simple, do/does,
-   présent en -ing, can/could, passé, verbes irréguliers, futur). Ils sont dans l'ordre où on les
-   acquiert naturellement. Chaque module se déroule en 4 étapes :
+1. **🧱 Les Fondations** : 8 modules sur les verbes et les temps, dans l'ordre où on les acquiert.
+   - Anglais : to be, présent simple, do/does, présent en -ing, can/could, passé, verbes irréguliers, futur.
+   - Portugais du Portugal : ser, ser ou estar, présent régulier, verbes irréguliers, estar a + infinitif
+     et futur proche, passé régulier et irrégulier (pretérito perfeito), imparfait.
+
+   Chaque module se déroule en 4 étapes :
    - **Découvrir** : un dialogue, avec l'audio et les formes étudiées surlignées ;
    - **Comprendre** : le cours en une minute, avec les pièges pour les francophones ;
    - **S'entraîner** : du plus facile au plus dur (reconnaître → compléter → transformer → écrire) ;
-   - **Produire** : écrire quelques phrases sur soi, puis les comparer à un modèle.
+   - **Produire** : écrire quelques phrases sur soi. Le texte est **analysé automatiquement** : une note,
+     tes points forts, chaque erreur corrigée et expliquée, ton texte corrigé et un conseil. Les erreurs
+     rejoignent le carnet d'erreurs. Sur claude.ai, c'est Claude qui analyse, en français. Ailleurs,
+     l'appli utilise le correcteur libre [LanguageTool](https://languagetool.org), et il faut une connexion internet.
 2. **🎯 Le test de positionnement** : 24 questions (A1 → B2). Il évalue le niveau et recommande
    ce qu'il faut travailler en priorité.
 3. **🚀 Le parcours personnalisé**, débloqué après le test :
-   - **Les essentiels de l'anglais** : 8 thèmes, 96 mots et expressions parmi les plus utiles ;
-   - **Anglais pro · Marketing & business** : 6 thèmes, 72 mots ;
-   - **Grammaire** : 15 points du A1 au B2 ;
-   - **Vie quotidienne UK / US** : *prochaine étape du projet*.
+   - Anglais : **les essentiels** (96 mots et expressions), **anglais pro · marketing & business**
+     (72 mots), **grammaire** (15 points du A1 au B2), **vie quotidienne UK / US** (*prochaine étape*) ;
+   - Portugais : **les essentiels** (96 mots et expressions), **vivre au Portugal** (48 mots : café,
+     transports, courses, logement), **grammaire** (12 points du A1 au B2, dont la place des pronoms
+     et l'infinitif personnel).
 
 Et tout au long du parcours :
 
@@ -69,14 +77,14 @@ js/
   srs.js                   révision espacée (FSRS)
   lecon.js                 moteur de leçon (8 types d'exercices)
   exercices.js             fabrication des exercices à partir du contenu
-  conjugaison.js           conjugaison automatique (machine à conjuguer)
   store.js                 sauvegarde, XP, série de jours, export / import
   voix.js                  prononciation (synthèse vocale du navigateur)
   nav.js, util.js          navigation, petits outils
   ecrans/                  un fichier par écran
-contenu/                   TOUT le contenu pédagogique, modifiable sans toucher au code
+js/langue.js, js/langues/   ce qui est propre à chaque langue : textes, voix, comparaison des réponses, conjugaison
+contenu/en/, contenu/pt/   TOUT le contenu pédagogique de chaque langue, modifiable sans toucher au code
   sommaire.json            la liste des fichiers de contenu
-  fondations/f1-be.json …  les 8 modules des Fondations
+  fondations/*.json        les 8 modules des Fondations
   grammaire.json           les points de grammaire
   vocabulaire/*.json       les thèmes de vocabulaire
   test-positionnement.json
@@ -89,10 +97,10 @@ outils/verifier-contenu.mjs  vérifie le contenu après une modification
 ## Ajouter du contenu
 
 - **Un mot** : ajoute une ligne `["anglais", "français", "phrase d'exemple", "traduction"]` dans
-  un thème de `contenu/vocabulaire/`. Un 5ᵉ élément facultatif sert de remarque (faux ami…).
+  un thème de `contenu/<langue>/vocabulaire/`. Un 5ᵉ élément facultatif sert de remarque (faux ami…).
 - **Un thème de vocabulaire** : copie un bloc de `decks` en changeant son `id`.
 - **Un nouveau fichier de vocabulaire** (ex. vie quotidienne) : crée-le sur le modèle de
-  `essentiels.json`, puis ajoute son chemin dans `contenu/sommaire.json`.
+  `essentiels.json`, puis ajoute son chemin dans le `sommaire.json` de la langue.
 
 Après chaque modification, lance la vérification (Node.js requis) :
 

@@ -2,6 +2,7 @@
 import { $, $$ } from "./util.js";
 import { etat, serieActive } from "./store.js";
 import { jour } from "./util.js";
+import { L } from "./langue.js";
 
 export const app = document.getElementById("app");
 const nav = document.getElementById("nav");
@@ -13,6 +14,7 @@ const ONGLETS = ["accueil", "parcours", "revisions", "profil"];
 export function ouvrir(nom, ...args) {
   raccourcis.touche = null;
   window.scrollTo(0, 0);
+  if (typeof speechSynthesis !== "undefined") speechSynthesis.cancel();
   if (ONGLETS.includes(nom)) {
     nav.hidden = false;
     $$("button", nav).forEach((b) => b.classList.toggle("actif", b.dataset.onglet === nom));
@@ -20,6 +22,8 @@ export function ouvrir(nom, ...args) {
     nav.hidden = true;
   }
   ecrans[nom](...args);
+  // Le drapeau de l'en-tête ouvre le choix de la langue
+  app.querySelectorAll("[data-aller-langue]").forEach((b) => (b.onclick = () => ouvrir("langues")));
 }
 
 export const masquerNav = () => { nav.hidden = true; };
@@ -31,7 +35,7 @@ export function entete() {
   const s = serieActive();
   const allumee = s && etat.dernierJour === jour();
   return `<header class="entete">
-    <div class="logo-mini">🇬🇧 <b>English Coach</b></div>
+    <button class="logo-mini" data-aller-langue title="Changer de langue">${L.drapeau} <b>${L.appli}</b> <span class="muet">▾</span></button>
     <div class="pastilles">
       <span class="pastille feu ${allumee ? "" : "eteint"}" title="Jours d'affilée">🔥 ${s}</span>
       <span class="pastille xp" title="Points d'expérience">⚡ ${etat.xp}</span>

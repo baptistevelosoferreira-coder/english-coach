@@ -3,19 +3,16 @@
 import { $, $$, echapper, hasard, melanger, verifierSaisie } from "../util.js";
 import { etat, sauver, gagnerXP, noterErreur } from "../store.js";
 import { C } from "../contenu.js";
-import { conjuguer, SUJETS, TEMPS, NOMS_FORMES } from "../conjugaison.js";
+import { L } from "../langue.js";
 import { app, ecrans, ouvrir, raccourcis } from "../nav.js";
 import { moduleFini } from "../progression.js";
-
-// Verbes d'état : jamais au présent en -ing
-const ETATS = ["need", "want", "like", "know", "understand"];
 
 /* =============== Machine à conjuguer =============== */
 const MANCHES = 10;
 let M = null;
 
 ecrans.machine = function () {
-  const temps = TEMPS.filter((t) => moduleFini(t.module));
+  const temps = L.conj.TEMPS.filter((t) => moduleFini(t.module));
   M = { temps, manche: 0, score: 0, combo: 0, bonnes: 0 };
   manche();
 };
@@ -23,14 +20,13 @@ ecrans.machine = function () {
 function tirage() {
   const t = hasard(M.temps);
   const forme = hasard(t.formes);
-  const verbes = C.verbes.filter((v) => !(t.id === "continu" && ETATS.includes(v.base)));
-  return { t, forme, v: hasard(verbes), s: hasard(SUJETS) };
+  return { t, forme, v: hasard(L.conj.verbesPossibles(C.verbes, t)), s: hasard(L.conj.SUJETS) };
 }
 
 function manche() {
   if (M.manche >= MANCHES) return finMachine();
   const q = tirage();
-  const attendu = conjuguer(q.v, q.s, q.t.id, q.forme);
+  const attendu = L.conj.conjuguer(q.v, q.s, q.t.id, q.forme);
   app.innerHTML = `<div class="lecon-haut"><button class="fermer" id="quitter">✕</button>
       <div class="barre"><i style="width:${(M.manche / MANCHES) * 100}%"></i></div><span class="muet">${M.manche + 1} / ${MANCHES}</span></div>
     <div class="score-jeu"><span class="points">${M.score}</span><span class="combo">${M.combo >= 3 ? `🔥 x${multiplicateur()}` : M.combo ? `${M.combo} d'affilée` : ""}</span></div>
@@ -40,14 +36,14 @@ function manche() {
       <div class="rouleau" id="r2"><small>temps</small><b>…</b></div>
       <div class="rouleau" id="r3"><small>forme</small><b>…</b></div>
     </div>
-    <textarea id="saisie" rows="2" placeholder="Écris la phrase : sujet + verbe" disabled autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
-    <p class="muet petit centre">Exemple : she · work · négation → <i>She doesn't work</i></p>
+    <textarea id="saisie" rows="2" placeholder="${L.conj.aide}" disabled autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+    <p class="muet petit centre">Exemple : <i>${echapper(L.conj.exemple)}</i></p>
     <div class="bas-fixe" id="bas"><button class="btn principal" id="verifier" disabled>Vérifier</button></div>`;
   $("#quitter").onclick = () => ouvrir("revisions");
 
   // Petite animation de « machine à sous » avant d'afficher le tirage
-  const valeurs = [q.s.en, `to ${q.v.base}`, q.t.nom, NOMS_FORMES[q.forme]];
-  const hasards = [SUJETS.map((s) => s.en), C.verbes.map((v) => "to " + v.base), M.temps.map((t) => t.nom), Object.values(NOMS_FORMES)];
+  const valeurs = [q.s.texte, q.v.infinitif, q.t.nom, L.conj.FORMES[q.forme]];
+  const hasards = [L.conj.SUJETS.map((s) => s.texte), C.verbes.map((v) => v.infinitif), M.temps.map((t) => t.nom), Object.values(L.conj.FORMES)];
   let tours = 0;
   const anim = setInterval(() => {
     if (!document.getElementById("r0")) return clearInterval(anim); // l'écran a été quitté
@@ -69,12 +65,13 @@ function manche() {
   const verifier = () => {
     const t = $("#saisie");
     t.disabled = true;
-    const ok = verifierSaisie(t.value, [attendu.phrase]).ok;
+    const verif = verifierSaisie(t.value, attendu.reponses);
+    const ok = verif.ok;
     if (ok) { M.score += 10 * multiplicateur(); M.combo++; M.bonnes++; }
     else { M.combo = 0; noterErreur(q.t.module); sauver(); }
     const bas = $("#bas");
     bas.className = "retour " + (ok ? "ok" : "ko");
-    bas.innerHTML = `<div><h3>${ok ? "✅ Bien joué !" : "❌ Pas tout à fait…"}</h3>
+    bas.innerHTML = `<div><h3>${ok ? (verif.raison === "accents" ? "✅ Presque ! Attention aux accents : " + echapper(attendu.phrase) : "✅ Bien joué !") : "❌ Pas tout à fait…"}</h3>
       <div class="detail">${ok ? "" : `Bonne réponse : <b>${echapper(attendu.phrase)}</b>`}${attendu.astuce ? `<div class="expl">💡 ${echapper(attendu.astuce)}</div>` : ""}</div>
       <button class="btn ${ok ? "principal" : "rouge"}" id="continuer">Continuer</button></div>`;
     const suite = () => { M.manche++; manche(); };

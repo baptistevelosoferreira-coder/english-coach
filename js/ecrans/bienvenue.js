@@ -1,8 +1,11 @@
-// Premier lancement : présentation du parcours et choix de l'objectif quotidien.
-import { $, $$ } from "../util.js";
-import { etat, sauver } from "../store.js";
+// Premier lancement : choix de la langue, présentation du parcours et objectif quotidien.
+// Contient aussi l'écran « Changer de langue ».
+import { $, $$, echapper, jour } from "../util.js";
+import { etat, sauver, chargerEtat } from "../store.js";
+import { chargerContenu } from "../contenu.js";
+import { choisirVoix } from "../voix.js";
+import { L, LANGUES, choisirLangue, langueChoisie } from "../langue.js";
 import { app, ecrans, ouvrir } from "../nav.js";
-import { jour } from "../util.js";
 
 export const OBJECTIFS = [
   { xp: 20, nom: "Tranquille", desc: "≈ 5 min / jour" },
@@ -13,15 +16,50 @@ export const OBJECTIFS = [
 
 let objectif = 40;
 
+// Résumé de la progression d'une langue (lu directement dans sa sauvegarde)
+function resume(langue) {
+  try {
+    const e = JSON.parse(localStorage.getItem(langue.cleStockage));
+    if (e && e.profil) {
+      const n = Object.keys(e.modules || {}).length;
+      return `⚡ ${e.xp} XP · ${n} module${n > 1 ? "s" : ""} terminé${n > 1 ? "s" : ""}`;
+    }
+  } catch (e) { /* rien */ }
+  return "Pas encore commencé";
+}
+
+ecrans.langues = function () {
+  const premiere = !langueChoisie;
+  app.innerHTML = `${premiere ? "" : `<button class="retour-haut" id="retour">← Retour</button>`}
+    <div class="etape-onb">
+      ${premiere ? `<div class="logo centre">🌍</div>` : ""}
+      <h2>${premiere ? "Quelle langue veux-tu apprendre ?" : "Changer de langue"}</h2>
+      <p class="muet">Chaque langue a sa propre progression : tu peux passer de l'une à l'autre sans rien perdre.</p>
+      <div class="grille">${Object.values(LANGUES).map((l) => `<button class="choix-carte ${!premiere && l.code === L.code ? "choisi" : ""}" data-langue="${l.code}">
+          <span class="drapeau">${l.drapeau}</span>
+          <span class="flex"><b>${echapper(l.nom.charAt(0).toUpperCase() + l.nom.slice(1))}${l.code === "pt" ? " du Portugal" : ""}</b><small>${echapper(resume(l))}</small></span>
+        </button>`).join("")}</div>
+    </div>`;
+  $("#retour")?.addEventListener("click", () => ouvrir("accueil"));
+  $$("[data-langue]").forEach((b) => (b.onclick = async () => {
+    b.disabled = true;
+    choisirLangue(b.dataset.langue);
+    chargerEtat();
+    choisirVoix();
+    await chargerContenu();
+    ouvrir(etat.profil ? "accueil" : "bienvenue");
+  }));
+};
+
 ecrans.bienvenue = function () {
   app.innerHTML = `<div class="intro">
-      <div class="logo">🇬🇧</div>
-      <h1>English Coach</h1>
-      <p class="muet grand">Reprends l'anglais sur des bases solides, un peu chaque jour.</p>
+      <div class="logo">${L.drapeau}</div>
+      <h1>${echapper(L.appli)}</h1>
+      <p class="muet grand">${echapper(L.intro.accroche)}</p>
       <ol class="etapes-intro">
         <li><b>🧱 Les Fondations</b><span>8 modules pour maîtriser les verbes et les temps essentiels.</span></li>
         <li><b>🎯 Le test de positionnement</b><span>Il mesure ton niveau et choisit ce que tu dois travailler.</span></li>
-        <li><b>🚀 Ton parcours personnalisé</b><span>Vocabulaire essentiel, grammaire, anglais pro, puis vie quotidienne.</span></li>
+        <li><b>🚀 Ton parcours personnalisé</b><span>${echapper(L.intro.etape3)}</span></li>
       </ol>
       <p class="muet petit">Tout ce que tu apprends revient en révision juste avant que tu l'oublies : c'est la méthode la plus efficace pour retenir sur le long terme.</p>
     </div>
