@@ -1,0 +1,45 @@
+{
+  "id": "f4",
+  "titre": "Le présent en -ing",
+  "ico": "🏃",
+  "niveau": "A2",
+  "objectif": "Dire ce qui se passe en ce moment et sur quoi tu travailles",
+  "dialogue": {
+    "titre": "A busy afternoon",
+    "contexte": "Emma appelle Priya, qui travaille de chez elle.",
+    "surligner": ["are you doing", "I'm writing", "is designing", "Is he helping", "he's analysing", "is walking", "is working"],
+    "lignes": [
+      ["Emma", "Hi Priya! What are you doing?", "Salut Priya ! Qu'est-ce que tu fais ?"],
+      ["Priya", "I'm writing the posts for the cosmetics brand.", "J'écris les posts pour la marque de cosmétiques."],
+      ["Emma", "Great. Sam is designing the new logo right now.", "Super. Sam est en train de dessiner le nouveau logo."],
+      ["Priya", "And Lucas? Is he helping you?", "Et Lucas ? Il t'aide ?"],
+      ["Emma", "Yes, he's analysing the competitors this week.", "Oui, il analyse les concurrents cette semaine."],
+      ["Priya", "Perfect. Sorry, my cat is walking on my keyboard!", "Parfait. Désolée, mon chat marche sur mon clavier !"],
+      ["Emma", "Ha! Your cat is working harder than me!", "Ha ! Ton chat travaille plus que moi !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>be + verbe-ing</h4><p>Pour une action <b>en cours</b> (now, right now, at the moment, Look!) ou <b>temporaire</b> (this week, this month).</p><p class='ex'>I<b>'m writing</b> the posts. · She<b>'s working</b> from home this week.</p><p class='ex'>Négation : I'm <b>not</b> listening. · Question : <b>Are</b> you work<b>ing</b>?</p></div><div class='bloc'><h4>Orthographe</h4><p class='ex'>write → writ<b>ing</b> (e disparaît) · run → ru<b>nning</b> · plan → pla<b>nning</b> · lie → l<b>ying</b></p></div><div class='bloc'><h4>Habitude ou maintenant ?</h4><p class='ex'>I <b>work</b> in marketing. <i>(ma situation, mon habitude)</i></p><p class='ex'>I<b>'m working</b> on a new project. <i>(en ce moment)</i></p></div><div class='astuce'>💡 Certains verbes ne se mettent jamais en -ing car ce sont des états : like, love, hate, want, need, know, understand, believe. → I <b>want</b> a coffee (pas « I'm wanting »).</div>",
+  "exercices": [
+    { "type": "choix", "texte": "Look! Sam ___ the logo.", "options": ["designs", "is designing", "design"], "bonne": 1, "explication": "Look! → ça se passe maintenant → is designing." },
+    { "type": "choix", "texte": "Priya usually ___ from home on Fridays.", "options": ["works", "is working"], "bonne": 0, "explication": "usually = habitude → présent simple." },
+    { "type": "choix", "texte": "I ___ the answer.", "options": ["know", "am knowing"], "bonne": 0, "explication": "know est un verbe d'état : jamais en -ing." },
+    { "type": "saisie", "texte": "They ___ the presentation right now. (prepare)", "sous": "Ils préparent la présentation en ce moment.", "reponses": ["are preparing"], "explication": "They → are + preparing (e disparaît)." },
+    { "type": "saisie", "texte": "She ___ a blog post at the moment. (write)", "sous": "Elle écrit un article de blog en ce moment.", "reponses": ["is writing"], "explication": "write → writing." },
+    { "type": "saisie", "texte": "We ___ a campaign this month. (run)", "sous": "Nous menons une campagne ce mois-ci.", "reponses": ["are running"], "explication": "run → running (on double le n)." },
+    { "type": "erreur", "texte": "What do you doing?", "k": 1, "correction": "are", "explication": "be + -ing → What are you doing?" },
+    { "type": "vf", "texte": "I am wanting a coffee.", "vrai": false, "correction": "I want a coffee.", "explication": "want est un verbe d'état." },
+    { "type": "ordre", "texte": "Is he working on the new campaign?", "fr": "Est-ce qu'il travaille sur la nouvelle campagne ?" },
+    { "type": "ecoute", "texte": "We're working on a new project." }
+  ],
+  "production": [
+    { "consigne": "Décris en 2 ou 3 phrases ce que tu es en train de faire cette semaine (cours, projets, stage…).", "modele": "This week, I'm preparing a presentation. I'm also studying for a marketing exam.", "verifs": ["J'ai utilisé am / is / are + verbe en -ing", "Pas de -ing avec want, like, know, need…"] }
+  ],
+  "cartes": [
+    { "id": "f4-1", "texte": "Sam ___ the logo right now. (design)", "sous": "Sam dessine le logo en ce moment.", "reponses": ["is designing"] },
+    { "id": "f4-2", "texte": "We ___ a campaign this month. (run)", "sous": "Nous menons une campagne ce mois-ci.", "reponses": ["are running"] },
+    { "id": "f4-3", "texte": "I usually ___ from home on Fridays. (work)", "sous": "En général, je travaille de chez moi le vendredi.", "reponses": ["work"], "explication": "usually = habitude → présent simple." },
+    { "id": "f4-4", "texte": "What ___ you doing?", "sous": "Qu'est-ce que tu fais ?", "reponses": ["are"] },
+    { "id": "f4-5", "texte": "She ___. (not / listen)", "sous": "Elle n'écoute pas.", "reponses": ["isn't listening", "is not listening"] },
+    { "id": "f4-6", "texte": "I ___ what you mean. (understand)", "sous": "Je comprends ce que tu veux dire.", "reponses": ["understand"], "explication": "understand est un verbe d'état : jamais en -ing." }
+  ]
+}

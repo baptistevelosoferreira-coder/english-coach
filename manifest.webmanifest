@@ -1,0 +1,16 @@
+{
+  "name": "English Coach",
+  "short_name": "English",
+  "description": "Reprends les bases de l'anglais, puis progresse avec un parcours adapté à ton niveau.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2dbd6e",
+  "icons": [
+    { "src": "icones/icone-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icones/icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icones/icone.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

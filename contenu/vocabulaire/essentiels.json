@@ -1,0 +1,169 @@
+{
+  "id": "essentiels",
+  "titre": "Les essentiels de l'anglais",
+  "ico": "🔑",
+  "description": "Les mots et expressions les plus utiles au quotidien, à connaître en priorité.",
+  "_info": "Chaque mot : [anglais, français, phrase d'exemple, traduction, remarque facultative]",
+  "decks": [
+    {
+      "id": "es-verbes",
+      "titre": "Les verbes indispensables",
+      "ico": "⚙️",
+      "niveau": "A1",
+      "mots": [
+        ["to get", "obtenir, recevoir, devenir", "I got your message. It's getting cold.", "J'ai reçu ton message. Il commence à faire froid.", "Le verbe le plus polyvalent de l'anglais : son sens dépend du contexte."],
+        ["to make", "faire, fabriquer", "She made a cake. You made a mistake.", "Elle a fait un gâteau. Tu as fait une erreur."],
+        ["to take", "prendre", "I take the bus every morning.", "Je prends le bus tous les matins."],
+        ["to know", "savoir, connaître", "Do you know the answer?", "Tu connais la réponse ?"],
+        ["to think", "penser, croire", "I think it's a good idea.", "Je pense que c'est une bonne idée."],
+        ["to want", "vouloir", "What do you want to eat?", "Qu'est-ce que tu veux manger ?"],
+        ["to need", "avoir besoin de", "I need more time.", "J'ai besoin de plus de temps."],
+        ["to use", "utiliser", "Can I use your phone?", "Je peux utiliser ton téléphone ?"],
+        ["to find", "trouver", "I can't find my keys.", "Je ne trouve pas mes clés."],
+        ["to ask", "demander", "Can I ask you a question?", "Je peux te poser une question ?"],
+        ["to try", "essayer", "Try again, you can do it!", "Réessaie, tu peux y arriver !"],
+        ["to feel", "se sentir, ressentir", "I feel much better today.", "Je me sens beaucoup mieux aujourd'hui."]
+      ]
+    },
+    {
+      "id": "es-questions",
+      "titre": "Poser des questions",
+      "ico": "❓",
+      "niveau": "A1",
+      "mots": [
+        ["What?", "Quoi ? Que ?", "What is your name?", "Comment tu t'appelles ?"],
+        ["Where?", "Où ?", "Where do you live?", "Où est-ce que tu habites ?"],
+        ["When?", "Quand ?", "When does the shop open?", "Quand est-ce que le magasin ouvre ?"],
+        ["Why?", "Pourquoi ?", "Why are you late?", "Pourquoi es-tu en retard ?"],
+        ["Who?", "Qui ?", "Who is your teacher?", "Qui est ton professeur ?"],
+        ["How?", "Comment ?", "How do you say this in English?", "Comment on dit ça en anglais ?"],
+        ["Which?", "Lequel ? Quel ?", "Which bus goes to the station?", "Quel bus va à la gare ?"],
+        ["How much?", "Combien ? (indénombrable, prix)", "How much is this jacket?", "Combien coûte cette veste ?"],
+        ["How many?", "Combien ? (dénombrable)", "How many people are coming?", "Combien de personnes viennent ?"],
+        ["How long?", "Combien de temps ?", "How long does it take?", "Combien de temps ça prend ?"],
+        ["How often?", "À quelle fréquence ?", "How often do you go to the gym?", "Tu vas à la salle tous les combien ?"],
+        ["What time?", "À quelle heure ?", "What time is the meeting?", "À quelle heure est la réunion ?"]
+      ]
+    },
+    {
+      "id": "es-temps",
+      "titre": "Le temps et les moments",
+      "ico": "📅",
+      "niveau": "A1",
+      "mots": [
+        ["today", "aujourd'hui", "I'm very busy today.", "Je suis très occupé aujourd'hui."],
+        ["tomorrow", "demain", "See you tomorrow!", "À demain !"],
+        ["yesterday", "hier", "I called her yesterday.", "Je l'ai appelée hier."],
+        ["soon", "bientôt", "The results will be ready soon.", "Les résultats seront bientôt prêts."],
+        ["early", "tôt, en avance", "I get up early on weekdays.", "Je me lève tôt en semaine."],
+        ["late", "tard, en retard", "Sorry, I'm late!", "Désolé, je suis en retard !"],
+        ["already", "déjà", "I've already finished.", "J'ai déjà fini."],
+        ["still", "encore, toujours", "Are you still at work?", "Tu es encore au travail ?"],
+        ["yet", "encore (négation), déjà (question)", "I haven't finished yet.", "Je n'ai pas encore fini."],
+        ["ago", "il y a (dans le passé)", "I moved here two years ago.", "J'ai emménagé ici il y a deux ans.", "Se place après la durée : two years ago."],
+        ["during", "pendant", "Don't use your phone during the meeting.", "N'utilise pas ton téléphone pendant la réunion."],
+        ["until", "jusqu'à", "The shop is open until 8 pm.", "Le magasin est ouvert jusqu'à 20 h."]
+      ]
+    },
+    {
+      "id": "es-liaison",
+      "titre": "Les mots de liaison",
+      "ico": "🔗",
+      "niveau": "A2",
+      "mots": [
+        ["because", "parce que", "I'm tired because I worked late.", "Je suis fatigué parce que j'ai travaillé tard."],
+        ["so", "donc, alors", "It was raining, so we stayed home.", "Il pleuvait, donc nous sommes restés à la maison."],
+        ["but", "mais", "It's small but very nice.", "C'est petit mais très sympa."],
+        ["however", "cependant", "The idea is good. However, it's too expensive.", "L'idée est bonne. Cependant, c'est trop cher."],
+        ["although", "bien que", "Although it was late, she kept working.", "Bien qu'il soit tard, elle a continué à travailler."],
+        ["also", "aussi", "I also speak Spanish.", "Je parle aussi espagnol."],
+        ["then", "ensuite, puis", "First we eat, then we go.", "D'abord on mange, ensuite on y va."],
+        ["first", "d'abord", "First, let me introduce myself.", "D'abord, laissez-moi me présenter."],
+        ["finally", "enfin, finalement", "Finally, I want to thank you all.", "Enfin, je veux tous vous remercier."],
+        ["for example", "par exemple", "I love sports, for example tennis.", "J'adore le sport, par exemple le tennis."],
+        ["instead", "à la place", "Let's take the train instead.", "Prenons plutôt le train."],
+        ["actually", "en fait", "Actually, I don't agree.", "En fait, je ne suis pas d'accord.", "Faux ami : « actuellement » se dit currently."]
+      ]
+    },
+    {
+      "id": "es-adjectifs",
+      "titre": "Les adjectifs du quotidien",
+      "ico": "✨",
+      "niveau": "A1",
+      "mots": [
+        ["easy", "facile", "The exam was easy.", "L'examen était facile."],
+        ["hard", "difficile, dur", "This exercise is hard.", "Cet exercice est difficile."],
+        ["important", "important", "This meeting is very important.", "Cette réunion est très importante."],
+        ["available", "disponible", "Are you available on Monday?", "Tu es disponible lundi ?"],
+        ["busy", "occupé", "Sorry, I'm busy right now.", "Désolé, je suis occupé en ce moment."],
+        ["ready", "prêt", "Dinner is ready!", "Le dîner est prêt !"],
+        ["sure", "sûr", "Are you sure?", "Tu es sûr ?"],
+        ["useful", "utile", "This app is really useful.", "Cette appli est vraiment utile."],
+        ["expensive", "cher", "London is an expensive city.", "Londres est une ville chère."],
+        ["cheap", "bon marché, pas cher", "This restaurant is cheap and good.", "Ce restaurant est bon et pas cher."],
+        ["free", "gratuit, libre", "The museum is free on Sundays.", "Le musée est gratuit le dimanche."],
+        ["tired", "fatigué", "I'm too tired to go out.", "Je suis trop fatigué pour sortir."]
+      ]
+    },
+    {
+      "id": "es-conversation",
+      "titre": "Expressions pour discuter",
+      "ico": "💬",
+      "niveau": "A2",
+      "mots": [
+        ["Could you repeat that, please?", "Pourriez-vous répéter, s'il vous plaît ?", "Sorry, could you repeat that, please?", "Pardon, pourriez-vous répéter, s'il vous plaît ?"],
+        ["What does … mean?", "Que veut dire… ?", "What does « deadline » mean?", "Que veut dire « deadline » ?"],
+        ["How do you say … in English?", "Comment dit-on… en anglais ?", "How do you say « stage » in English?", "Comment dit-on « stage » en anglais ?"],
+        ["I'm not sure.", "Je ne suis pas sûr.", "I'm not sure. Let me check.", "Je ne suis pas sûr. Je vérifie."],
+        ["It depends.", "Ça dépend.", "It depends on the price.", "Ça dépend du prix."],
+        ["I don't mind.", "Ça m'est égal.", "Tea or coffee? — I don't mind.", "Thé ou café ? — Ça m'est égal."],
+        ["No worries.", "Pas de souci.", "Sorry I'm late! — No worries.", "Désolé pour le retard ! — Pas de souci."],
+        ["Sounds good!", "Ça me va ! Bonne idée !", "Lunch at noon? — Sounds good!", "Déjeuner à midi ? — Ça me va !"],
+        ["Let me think.", "Laisse-moi réfléchir.", "Hmm, let me think about it.", "Hmm, laisse-moi y réfléchir."],
+        ["By the way", "Au fait", "By the way, did you call Tom?", "Au fait, tu as appelé Tom ?"],
+        ["That makes sense.", "C'est logique.", "Ah, that makes sense now.", "Ah, c'est logique maintenant."],
+        ["I'm looking forward to it.", "J'ai hâte.", "The trip is next week. I'm looking forward to it!", "Le voyage est la semaine prochaine. J'ai hâte !"]
+      ]
+    },
+    {
+      "id": "es-etudes",
+      "titre": "Études et travail",
+      "ico": "🎓",
+      "niveau": "A2",
+      "mots": [
+        ["a degree", "un diplôme (universitaire)", "She has a degree in marketing.", "Elle a un diplôme en marketing."],
+        ["an internship", "un stage", "I'm looking for an internship in London.", "Je cherche un stage à Londres.", "Faux ami : a stage = une scène de théâtre."],
+        ["a course", "un cours, une formation", "I'm taking an English course.", "Je suis un cours d'anglais."],
+        ["an exam", "un examen", "I passed my exam!", "J'ai réussi mon examen !", "Faux ami : to pass an exam = réussir (pas « passer »)."],
+        ["a skill", "une compétence", "Teamwork is an important skill.", "Le travail d'équipe est une compétence importante."],
+        ["to apply for", "postuler à", "I applied for three jobs.", "J'ai postulé à trois emplois."],
+        ["a company", "une entreprise", "He works for a big company.", "Il travaille pour une grande entreprise."],
+        ["a colleague", "un collègue", "My colleagues are really nice.", "Mes collègues sont vraiment sympas."],
+        ["a meeting", "une réunion", "I have a meeting at 10.", "J'ai une réunion à 10 h."],
+        ["a schedule", "un emploi du temps, un planning", "My schedule is full this week.", "Mon planning est plein cette semaine."],
+        ["experience", "l'expérience", "I have two years of experience.", "J'ai deux ans d'expérience."],
+        ["a salary", "un salaire", "The salary is good.", "Le salaire est bon."]
+      ]
+    },
+    {
+      "id": "es-fauxamis",
+      "titre": "Les faux amis",
+      "ico": "⚠️",
+      "niveau": "A2",
+      "mots": [
+        ["eventually", "finalement (pas « éventuellement »)", "Eventually, we found the hotel.", "Finalement, nous avons trouvé l'hôtel."],
+        ["currently", "actuellement", "I'm currently living in Lyon.", "J'habite actuellement à Lyon."],
+        ["a library", "une bibliothèque (pas « librairie »)", "I study at the library.", "J'étudie à la bibliothèque.", "Une librairie = a bookshop."],
+        ["sensible", "raisonnable (pas « sensible »)", "That's a sensible decision.", "C'est une décision raisonnable.", "Sensible (émotif) = sensitive."],
+        ["a journey", "un trajet, un voyage (pas « une journée »)", "The journey took three hours.", "Le trajet a pris trois heures."],
+        ["to pretend", "faire semblant (pas « prétendre »)", "He pretends to be busy.", "Il fait semblant d'être occupé."],
+        ["a lecture", "un cours magistral (pas « une lecture »)", "The lecture starts at 9.", "Le cours magistral commence à 9 h."],
+        ["to realise", "se rendre compte (pas « réaliser un projet »)", "I realised I was wrong.", "Je me suis rendu compte que j'avais tort."],
+        ["to support", "soutenir (pas « supporter »)", "My family supports me.", "Ma famille me soutient.", "Supporter (tolérer) = to stand : I can't stand him."],
+        ["a coin", "une pièce de monnaie (pas « un coin »)", "I need a coin for the machine.", "J'ai besoin d'une pièce pour la machine."],
+        ["gentle", "doux (pas « gentil »)", "Be gentle with the baby.", "Sois doux avec le bébé.", "Gentil = nice, kind."],
+        ["to attend", "assister à (pas « attendre »)", "Did you attend the conference?", "Tu as assisté à la conférence ?", "Attendre = to wait."]
+      ]
+    }
+  ]
+}

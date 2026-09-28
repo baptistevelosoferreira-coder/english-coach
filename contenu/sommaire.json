@@ -1,0 +1,19 @@
+{
+  "fondations": [
+    "fondations/f1-be.json",
+    "fondations/f2-present.json",
+    "fondations/f3-do.json",
+    "fondations/f4-ing.json",
+    "fondations/f5-can.json",
+    "fondations/f6-passe.json",
+    "fondations/f7-irreguliers.json",
+    "fondations/f8-futur.json"
+  ],
+  "verbes": "verbes.json",
+  "test": "test-positionnement.json",
+  "grammaire": "grammaire.json",
+  "vocabulaire": [
+    "vocabulaire/essentiels.json",
+    "vocabulaire/marketing.json"
+  ]
+}

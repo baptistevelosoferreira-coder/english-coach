@@ -1,0 +1,496 @@
+{
+  "id": "marketing",
+  "titre": "Anglais pro · Marketing & business",
+  "ico": "💼",
+  "description": "Le vocabulaire des études de commerce et du monde de l'entreprise.",
+  "_info": "Chaque mot : [anglais, français, phrase d'exemple, traduction, remarque facultative]",
+  "decks": [
+    {
+      "id": "mk-bases",
+      "titre": "Les bases du marketing",
+      "ico": "📊",
+      "niveau": "A2",
+      "mots": [
+        [
+          "the market",
+          "le marché",
+          "The market is very competitive.",
+          "Le marché est très concurrentiel."
+        ],
+        [
+          "a customer",
+          "un client (qui achète)",
+          "Our customers love the new flavour.",
+          "Nos clients adorent le nouveau parfum."
+        ],
+        [
+          "a brand",
+          "une marque",
+          "Nike is a global brand.",
+          "Nike est une marque mondiale."
+        ],
+        [
+          "a competitor",
+          "un concurrent",
+          "Our main competitor is cheaper.",
+          "Notre principal concurrent est moins cher."
+        ],
+        [
+          "the target audience",
+          "le public cible",
+          "Our target audience is 18 to 25.",
+          "Notre public cible a entre 18 et 25 ans."
+        ],
+        [
+          "market research",
+          "l'étude de marché",
+          "We did some market research before the launch.",
+          "Nous avons fait une étude de marché avant le lancement.",
+          "Indénombrable : pas de « a », pas de s."
+        ],
+        [
+          "a strategy",
+          "une stratégie",
+          "We need a clear strategy for next year.",
+          "Il nous faut une stratégie claire pour l'an prochain."
+        ],
+        [
+          "to sell",
+          "vendre",
+          "We only sell online.",
+          "Nous vendons uniquement en ligne."
+        ],
+        [
+          "sales",
+          "les ventes",
+          "Sales went up in December.",
+          "Les ventes ont augmenté en décembre."
+        ],
+        [
+          "a need",
+          "un besoin",
+          "Our product answers a real need.",
+          "Notre produit répond à un vrai besoin."
+        ],
+        [
+          "the price",
+          "le prix",
+          "We can't change the price now.",
+          "Nous ne pouvons pas changer le prix maintenant."
+        ],
+        [
+          "a client",
+          "un client (d'une agence, B2B)",
+          "The agency has twenty clients.",
+          "L'agence a vingt clients.",
+          "client = client d'un service (agence, avocat) ; customer = client qui achète un produit."
+        ]
+      ]
+    },
+    {
+      "id": "mk-digital",
+      "titre": "Digital & réseaux sociaux",
+      "ico": "📱",
+      "niveau": "A2",
+      "mots": [
+        [
+          "a post",
+          "une publication",
+          "This post got 2,000 likes.",
+          "Cette publication a eu 2 000 j'aime."
+        ],
+        [
+          "a follower",
+          "un abonné",
+          "We gained 500 followers this week.",
+          "Nous avons gagné 500 abonnés cette semaine."
+        ],
+        [
+          "engagement",
+          "l'engagement (les interactions)",
+          "Engagement is higher on TikTok.",
+          "L'engagement est plus élevé sur TikTok."
+        ],
+        [
+          "reach",
+          "la portée",
+          "The video had a reach of 50,000 people.",
+          "La vidéo a touché 50 000 personnes."
+        ],
+        [
+          "an influencer",
+          "un influenceur",
+          "We work with three influencers.",
+          "Nous travaillons avec trois influenceurs."
+        ],
+        [
+          "content",
+          "le contenu",
+          "We create content every day.",
+          "Nous créons du contenu tous les jours.",
+          "Indénombrable : « some content », pas « a content »."
+        ],
+        [
+          "an ad",
+          "une publicité",
+          "We ran an ad on Instagram.",
+          "Nous avons diffusé une pub sur Instagram."
+        ],
+        [
+          "a landing page",
+          "une page d'atterrissage",
+          "The landing page converts well.",
+          "La page d'atterrissage convertit bien."
+        ],
+        [
+          "SEO",
+          "le référencement naturel",
+          "Good SEO brings free traffic.",
+          "Un bon référencement apporte du trafic gratuit."
+        ],
+        [
+          "traffic",
+          "le trafic (les visites)",
+          "Our website traffic doubled.",
+          "Le trafic de notre site a doublé."
+        ],
+        [
+          "to go viral",
+          "devenir viral",
+          "Nobody knows which video will go viral.",
+          "Personne ne sait quelle vidéo va devenir virale."
+        ],
+        [
+          "a newsletter",
+          "une lettre d'information",
+          "We send a newsletter every Tuesday.",
+          "Nous envoyons une newsletter chaque mardi."
+        ]
+      ]
+    },
+    {
+      "id": "mk-marque",
+      "titre": "Marque & communication",
+      "ico": "🎨",
+      "niveau": "B1",
+      "mots": [
+        [
+          "brand awareness",
+          "la notoriété de la marque",
+          "The campaign increased brand awareness.",
+          "La campagne a augmenté la notoriété de la marque."
+        ],
+        [
+          "a campaign",
+          "une campagne",
+          "The summer campaign starts in June.",
+          "La campagne d'été commence en juin."
+        ],
+        [
+          "a launch",
+          "un lancement",
+          "The launch is planned for March.",
+          "Le lancement est prévu pour mars."
+        ],
+        [
+          "a tagline",
+          "une signature (slogan de marque)",
+          "« Just do it » is a famous tagline.",
+          "« Just do it » est une signature célèbre."
+        ],
+        [
+          "brand identity",
+          "l'identité de marque",
+          "Our colours are part of our brand identity.",
+          "Nos couleurs font partie de notre identité de marque."
+        ],
+        [
+          "positioning",
+          "le positionnement",
+          "Our positioning is premium but friendly.",
+          "Notre positionnement est haut de gamme mais accessible."
+        ],
+        [
+          "to stand out",
+          "se démarquer",
+          "We need to stand out from the competition.",
+          "Nous devons nous démarquer de la concurrence."
+        ],
+        [
+          "word of mouth",
+          "le bouche-à-oreille",
+          "Most new customers come from word of mouth.",
+          "La plupart des nouveaux clients viennent du bouche-à-oreille."
+        ],
+        [
+          "a press release",
+          "un communiqué de presse",
+          "We sent a press release to twenty journalists.",
+          "Nous avons envoyé un communiqué de presse à vingt journalistes."
+        ],
+        [
+          "packaging",
+          "l'emballage",
+          "The new packaging is eco-friendly.",
+          "Le nouvel emballage est écologique."
+        ],
+        [
+          "a testimonial",
+          "un témoignage client",
+          "Customer testimonials build trust.",
+          "Les témoignages clients créent la confiance."
+        ],
+        [
+          "consistent",
+          "cohérent",
+          "Our message must be consistent on every channel.",
+          "Notre message doit être cohérent sur tous les canaux."
+        ]
+      ]
+    },
+    {
+      "id": "mk-chiffres",
+      "titre": "Chiffres & performance",
+      "ico": "📈",
+      "niveau": "B1",
+      "mots": [
+        [
+          "revenue",
+          "le chiffre d'affaires",
+          "Our revenue grew by 15% this year.",
+          "Notre chiffre d'affaires a augmenté de 15 % cette année."
+        ],
+        [
+          "profit",
+          "le bénéfice",
+          "The product sells well but the profit is low.",
+          "Le produit se vend bien mais le bénéfice est faible."
+        ],
+        [
+          "a budget",
+          "un budget",
+          "The marketing budget is €50,000.",
+          "Le budget marketing est de 50 000 €."
+        ],
+        [
+          "ROI (return on investment)",
+          "le retour sur investissement",
+          "This campaign had a great ROI.",
+          "Cette campagne a eu un excellent retour sur investissement."
+        ],
+        [
+          "a KPI",
+          "un indicateur clé de performance",
+          "Our main KPI is the conversion rate.",
+          "Notre principal indicateur est le taux de conversion."
+        ],
+        [
+          "a conversion rate",
+          "un taux de conversion",
+          "The conversion rate is 3%.",
+          "Le taux de conversion est de 3 %."
+        ],
+        [
+          "growth",
+          "la croissance",
+          "We expect strong growth next year.",
+          "Nous prévoyons une forte croissance l'an prochain."
+        ],
+        [
+          "to increase",
+          "augmenter",
+          "We want to increase sales by 10%.",
+          "Nous voulons augmenter les ventes de 10 %."
+        ],
+        [
+          "to decrease",
+          "diminuer",
+          "Costs decreased last quarter.",
+          "Les coûts ont diminué le trimestre dernier."
+        ],
+        [
+          "a quarter",
+          "un trimestre",
+          "The results for the second quarter are good.",
+          "Les résultats du deuxième trimestre sont bons."
+        ],
+        [
+          "a survey",
+          "une enquête, un sondage",
+          "We sent a survey to our customers.",
+          "Nous avons envoyé un sondage à nos clients."
+        ],
+        [
+          "market share",
+          "la part de marché",
+          "Our market share is 12%.",
+          "Notre part de marché est de 12 %."
+        ]
+      ]
+    },
+    {
+      "id": "mk-reunions",
+      "titre": "Réunions & présentations",
+      "ico": "🗣️",
+      "niveau": "B1",
+      "mots": [
+        [
+          "an agenda",
+          "un ordre du jour",
+          "What's on the agenda today?",
+          "Qu'est-ce qu'il y a à l'ordre du jour aujourd'hui ?",
+          "Faux ami : un agenda (carnet) se dit a diary ou a planner."
+        ],
+        [
+          "to schedule a meeting",
+          "planifier une réunion",
+          "Can we schedule a meeting for Tuesday?",
+          "Peut-on planifier une réunion mardi ?"
+        ],
+        [
+          "to attend",
+          "assister à",
+          "Ten people attended the presentation.",
+          "Dix personnes ont assisté à la présentation.",
+          "Faux ami : attendre se dit to wait."
+        ],
+        [
+          "a deadline",
+          "une date limite",
+          "The deadline is Friday at noon.",
+          "La date limite est vendredi midi."
+        ],
+        [
+          "a slide",
+          "une diapositive",
+          "Let's move to the next slide.",
+          "Passons à la diapositive suivante."
+        ],
+        [
+          "to brainstorm",
+          "faire un brainstorming",
+          "Let's brainstorm some ideas for the name.",
+          "Faisons un brainstorming pour trouver le nom."
+        ],
+        [
+          "feedback",
+          "un retour, des commentaires",
+          "Thanks for your feedback!",
+          "Merci pour ton retour !",
+          "Indénombrable : « some feedback », pas « a feedback »."
+        ],
+        [
+          "to agree",
+          "être d'accord",
+          "I agree with you.",
+          "Je suis d'accord avec toi.",
+          "Pas de be : « I agree », jamais « I am agree »."
+        ],
+        [
+          "to disagree",
+          "ne pas être d'accord",
+          "I'm afraid I disagree.",
+          "Je crains de ne pas être d'accord."
+        ],
+        [
+          "to follow up",
+          "faire le suivi, relancer",
+          "I'll follow up with the client tomorrow.",
+          "Je relancerai le client demain."
+        ],
+        [
+          "to sum up",
+          "pour résumer",
+          "To sum up, the campaign was a success.",
+          "Pour résumer, la campagne a été un succès."
+        ],
+        [
+          "to share your screen",
+          "partager son écran",
+          "Can you share your screen, please?",
+          "Tu peux partager ton écran, s'il te plaît ?"
+        ]
+      ]
+    },
+    {
+      "id": "mk-emails",
+      "titre": "E-mails professionnels",
+      "ico": "✉️",
+      "niveau": "B1",
+      "mots": [
+        [
+          "I hope you are well",
+          "J'espère que vous allez bien",
+          "Dear Ms Smith, I hope you are well.",
+          "Chère Madame Smith, j'espère que vous allez bien."
+        ],
+        [
+          "I am writing to…",
+          "Je vous écris pour…",
+          "I am writing to confirm our meeting.",
+          "Je vous écris pour confirmer notre réunion."
+        ],
+        [
+          "Please find attached…",
+          "Veuillez trouver ci-joint…",
+          "Please find attached the proposal.",
+          "Veuillez trouver ci-joint la proposition."
+        ],
+        [
+          "an attachment",
+          "une pièce jointe",
+          "The attachment is too big.",
+          "La pièce jointe est trop lourde."
+        ],
+        [
+          "Could you let me know…?",
+          "Pourriez-vous me dire… ?",
+          "Could you let me know your availability?",
+          "Pourriez-vous me donner vos disponibilités ?"
+        ],
+        [
+          "as soon as possible",
+          "dès que possible",
+          "Please reply as soon as possible.",
+          "Merci de répondre dès que possible."
+        ],
+        [
+          "to reach out",
+          "prendre contact",
+          "I'm reaching out about your offer.",
+          "Je vous contacte au sujet de votre offre."
+        ],
+        [
+          "a reminder",
+          "un rappel",
+          "Just a quick reminder about tomorrow's meeting.",
+          "Petit rappel concernant la réunion de demain."
+        ],
+        [
+          "a quote",
+          "un devis",
+          "Could you send us a quote?",
+          "Pourriez-vous nous envoyer un devis ?"
+        ],
+        [
+          "an invoice",
+          "une facture",
+          "The invoice is due in 30 days.",
+          "La facture est payable sous 30 jours."
+        ],
+        [
+          "I look forward to hearing from you",
+          "Dans l'attente de votre réponse",
+          "I look forward to hearing from you.",
+          "Dans l'attente de votre réponse."
+        ],
+        [
+          "Best regards",
+          "Cordialement",
+          "Best regards, Lucas",
+          "Cordialement, Lucas"
+        ]
+      ]
+    }
+  ]
+}

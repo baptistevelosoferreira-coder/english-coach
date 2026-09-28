@@ -1,0 +1,1210 @@
+{
+ "_info": "Points de grammaire. Formats : [\"q\", phrase, choix, bonne, explication] · [\"e\", phrase, index du mot faux, correction, explication] · [\"v\", phrase, vrai?, correction, explication] · [\"o\", phrase, traduction]",
+ "points": [
+  {
+   "id": "articles",
+   "niveau": "A1",
+   "ico": "🍎",
+   "titre": "A, an, the et le pluriel",
+   "resume": "articles et pluriels",
+   "fiche": "<div class='bloc'><h4>a ou an ?</h4><p>On regarde le <b>son</b>, pas la lettre :</p><p class='ex'><b>a</b> car · <b>a</b> university (son « you ») · <b>an</b> apple · <b>an</b> hour (h muet)</p></div><div class='bloc'><h4>Pas d'article pour les généralités</h4><p class='ex'>I love music. · Cats are cute. <i>(J'adore <b>la</b> musique.)</i></p><p class='ex'>Mais un métier prend toujours a/an : She is <b>a</b> doctor.</p></div><div class='bloc'><h4>Le pluriel</h4><p class='ex'>car → cars · box → box<b>es</b> · city → cit<b>ies</b></p><p class='ex'>Irréguliers : man → <b>men</b>, woman → <b>women</b>, child → <b>children</b>, person → <b>people</b>, foot → <b>feet</b></p></div>",
+   "items": [
+    [
+     "q",
+     "I eat ___ apple every day.",
+     [
+      "a",
+      "an",
+      "the"
+     ],
+     1,
+     "« apple » commence par un son voyelle → an."
+    ],
+    [
+     "q",
+     "She is ___ doctor.",
+     [
+      "a",
+      "an",
+      "(rien)"
+     ],
+     0,
+     "Métier → a/an obligatoire : She is a doctor."
+    ],
+    [
+     "q",
+     "We waited for ___ hour.",
+     [
+      "a",
+      "an"
+     ],
+     1,
+     "Le h de « hour » ne se prononce pas → an."
+    ],
+    [
+     "q",
+     "I have three ___.",
+     [
+      "child",
+      "childs",
+      "children"
+     ],
+     2,
+     "child → children (pluriel irrégulier)."
+    ],
+    [
+     "q",
+     "I love ___ music.",
+     [
+      "the",
+      "a",
+      "(rien)"
+     ],
+     2,
+     "Généralité → pas d'article : I love music."
+    ],
+    [
+     "e",
+     "There are two womans.",
+     3,
+     "women",
+     "woman → women."
+    ],
+    [
+     "e",
+     "He is an teacher.",
+     2,
+     "a",
+     "« teacher » commence par un son consonne → a."
+    ],
+    [
+     "v",
+     "I bought three boxes.",
+     true,
+     "",
+     "box → boxes (on ajoute -es après x)."
+    ]
+   ]
+  },
+  {
+   "id": "pronoms",
+   "niveau": "A1",
+   "ico": "👥",
+   "titre": "Pronoms et possessifs",
+   "resume": "my, his, her, their…",
+   "fiche": "<div class='bloc'><table><tr><td>I → me</td><td>my → mine</td></tr><tr><td>you → you</td><td>your → yours</td></tr><tr><td>he → him</td><td>his → his</td></tr><tr><td>she → her</td><td>her → hers</td></tr><tr><td>it → it</td><td>its</td></tr><tr><td>we → us</td><td>our → ours</td></tr><tr><td>they → them</td><td>their → theirs</td></tr></table></div><div class='bloc'><h4>Son / sa : ça dépend du propriétaire !</h4><p class='ex'>Tom and <b>his</b> sister · Sarah and <b>her</b> brother</p><p><i>En français, on regarde l'objet (son frère, sa sœur). En anglais, on regarde à qui il appartient.</i></p></div><div class='astuce'>💡 <b>its</b> (son, pour une chose) n'a pas d'apostrophe. <b>it's</b> = it is.</div>",
+   "items": [
+    [
+     "q",
+     "Tom loves ___ dog.",
+     [
+      "her",
+      "his",
+      "its"
+     ],
+     1,
+     "Le propriétaire est Tom → his."
+    ],
+    [
+     "q",
+     "Sarah is with ___ father.",
+     [
+      "his",
+      "her",
+      "their"
+     ],
+     1,
+     "Le propriétaire est Sarah → her."
+    ],
+    [
+     "q",
+     "Call ___ tomorrow, please.",
+     [
+      "I",
+      "me",
+      "my"
+     ],
+     1,
+     "Après le verbe → pronom complément : me."
+    ],
+    [
+     "q",
+     "This book is ___.",
+     [
+      "my",
+      "mine",
+      "me"
+     ],
+     1,
+     "Seul, à la fin → mine (le mien)."
+    ],
+    [
+     "e",
+     "Me and Paul live in Lyon.",
+     0,
+     "Paul and I",
+     "En sujet → « Paul and I live… »."
+    ],
+    [
+     "e",
+     "The children love theirs teacher.",
+     3,
+     "their",
+     "Devant un nom → their (theirs s'emploie seul)."
+    ],
+    [
+     "v",
+     "The dog wants its ball.",
+     true,
+     "",
+     "its = son/sa pour une chose ou un animal."
+    ],
+    [
+     "o",
+     "I like her new car.",
+     "J'aime sa nouvelle voiture (à elle)."
+    ]
+   ]
+  },
+  {
+   "id": "thereis",
+   "niveau": "A1",
+   "ico": "📍",
+   "titre": "There is / there are",
+   "resume": "il y a + prépositions de lieu",
+   "fiche": "<div class='bloc'><h4>Il y a</h4><p class='ex'><b>There is</b> a cat. <i>(singulier)</i> · <b>There are</b> two cats. <i>(pluriel)</i></p><p class='ex'>There <b>isn't</b> any milk. · <b>Are there</b> any shops?</p></div><div class='bloc'><h4>Où ?</h4><table><tr><td>in</td><td>dans</td></tr><tr><td>on</td><td>sur</td></tr><tr><td>under</td><td>sous</td></tr><tr><td>next to</td><td>à côté de</td></tr><tr><td>between</td><td>entre</td></tr><tr><td>behind</td><td>derrière</td></tr><tr><td>in front of</td><td>devant</td></tr></table></div><div class='astuce'>💡 Ne dis jamais « it has » pour « il y a » : c'est toujours <b>there is / there are</b>.</div>",
+   "items": [
+    [
+     "q",
+     "There ___ a cat in the garden.",
+     [
+      "is",
+      "are",
+      "has"
+     ],
+     0,
+     "Singulier → there is."
+    ],
+    [
+     "q",
+     "There ___ many people here.",
+     [
+      "is",
+      "are",
+      "has"
+     ],
+     1,
+     "« people » est pluriel → there are."
+    ],
+    [
+     "q",
+     "The keys are ___ the table.",
+     [
+      "on",
+      "in",
+      "at"
+     ],
+     0,
+     "Posé sur une surface → on."
+    ],
+    [
+     "q",
+     "The cat is ___ the bed.",
+     [
+      "under",
+      "between",
+      "at"
+     ],
+     0,
+     "Sous → under."
+    ],
+    [
+     "e",
+     "There is two cars outside.",
+     1,
+     "are",
+     "Deux voitures → there are."
+    ],
+    [
+     "e",
+     "The bank is next of the station.",
+     4,
+     "to",
+     "À côté de → next to."
+    ],
+    [
+     "v",
+     "There aren't any shops here.",
+     true,
+     "",
+     "Négation au pluriel → there aren't any."
+    ],
+    [
+     "o",
+     "There is a map on the wall.",
+     "Il y a un plan sur le mur."
+    ]
+   ]
+  },
+  {
+   "id": "comparer",
+   "niveau": "A2",
+   "ico": "📏",
+   "titre": "Comparatifs et superlatifs",
+   "resume": "bigger, the best…",
+   "fiche": "<div class='bloc'><h4>Adjectif court → -er / the -est</h4><p class='ex'>tall → tall<b>er</b> than → the tall<b>est</b></p><p class='ex'>big → big<b>ger</b> · easy → eas<b>ier</b></p></div><div class='bloc'><h4>Adjectif long → more / the most</h4><p class='ex'>expensive → <b>more</b> expensive → <b>the most</b> expensive</p></div><div class='bloc'><h4>Les irréguliers</h4><p class='ex'>good → <b>better</b> → <b>the best</b> · bad → <b>worse</b> → <b>the worst</b></p><p class='ex'>Égalité : as fast <b>as</b> me</p></div><div class='astuce'>💡 « plus grand <b>que</b> » = bigger <b>than</b>. Jamais « that » !</div>",
+   "items": [
+    [
+     "q",
+     "My brother is ___ than me.",
+     [
+      "tall",
+      "taller",
+      "more tall"
+     ],
+     1,
+     "Adjectif court → taller."
+    ],
+    [
+     "q",
+     "This hotel is ___ than the other one.",
+     [
+      "expensiver",
+      "more expensive",
+      "most expensive"
+     ],
+     1,
+     "Adjectif long → more expensive."
+    ],
+    [
+     "q",
+     "It's the ___ day of my life!",
+     [
+      "better",
+      "best",
+      "good"
+     ],
+     1,
+     "good → better → the best."
+    ],
+    [
+     "q",
+     "She is as fast ___ her sister.",
+     [
+      "than",
+      "as",
+      "like"
+     ],
+     1,
+     "Égalité → as … as."
+    ],
+    [
+     "e",
+     "London is bigger that Paris.",
+     3,
+     "than",
+     "« que » dans une comparaison = than."
+    ],
+    [
+     "e",
+     "This is the more beautiful city.",
+     3,
+     "most",
+     "Superlatif d'un adjectif long → the most."
+    ],
+    [
+     "v",
+     "Today is worse than yesterday.",
+     true,
+     "",
+     "bad → worse → the worst."
+    ],
+    [
+     "o",
+     "He is the best player in the team.",
+     "C'est le meilleur joueur de l'équipe."
+    ]
+   ]
+  },
+  {
+   "id": "quantite",
+   "niveau": "A2",
+   "ico": "🔢",
+   "titre": "Much, many, some, any",
+   "resume": "les quantités",
+   "fiche": "<div class='bloc'><h4>many ou much ?</h4><p class='ex'><b>many</b> + ce qui se compte : many cars, many people</p><p class='ex'><b>much</b> + ce qui ne se compte pas : much money, much time, much water</p><p class='ex'><b>a lot of</b> marche avec tout.</p></div><div class='bloc'><h4>some ou any ?</h4><p class='ex'><b>some</b> dans une phrase affirmative : I have some friends.</p><p class='ex'><b>any</b> dans une négation ou une question : I don't have any money. Do you have any questions?</p></div><div class='astuce'>💡 Ces mots ne prennent jamais de « s » : information, advice, news, luggage, furniture.</div>",
+   "items": [
+    [
+     "q",
+     "How ___ money do you have?",
+     [
+      "many",
+      "much",
+      "lot"
+     ],
+     1,
+     "money ne se compte pas → much."
+    ],
+    [
+     "q",
+     "How ___ brothers do you have?",
+     [
+      "many",
+      "much",
+      "lot"
+     ],
+     0,
+     "On peut les compter → many."
+    ],
+    [
+     "q",
+     "Do you have ___ questions?",
+     [
+      "some",
+      "any",
+      "a"
+     ],
+     1,
+     "Question → any."
+    ],
+    [
+     "q",
+     "I'd like ___ water, please.",
+     [
+      "some",
+      "any",
+      "many"
+     ],
+     0,
+     "Affirmation ou demande polie → some."
+    ],
+    [
+     "e",
+     "I don't have some time.",
+     3,
+     "any",
+     "Négation → any."
+    ],
+    [
+     "e",
+     "Can you give me some advices?",
+     5,
+     "advice",
+     "advice ne prend jamais de s."
+    ],
+    [
+     "v",
+     "There are a lot of people.",
+     true,
+     "",
+     "a lot of marche avec tout."
+    ],
+    [
+     "o",
+     "I have a few friends in London.",
+     "J'ai quelques amis à Londres."
+    ]
+   ]
+  },
+  {
+   "id": "perfect",
+   "niveau": "B1",
+   "ico": "🔗",
+   "titre": "Le present perfect",
+   "resume": "have + participe, for / since",
+   "fiche": "<div class='bloc'><h4>have / has + participe passé</h4><p>Il relie le passé au présent :</p><p class='ex'>Expérience : <b>Have</b> you ever <b>been</b> to London? · I<b>'ve never eaten</b> sushi.</p><p class='ex'>Résultat visible : I<b>'ve lost</b> my keys!</p><p class='ex'>Ça dure encore : I<b>'ve lived</b> here <b>for</b> 3 years / <b>since</b> 2021.</p></div><div class='bloc'><h4>for ou since ?</h4><p class='ex'><b>for</b> + une durée (for two hours) · <b>since</b> + un point de départ (since Monday)</p></div><div class='astuce'>💡 « J'habite ici <b>depuis</b> 3 ans » = I <b>have lived</b> here for 3 years. Avec une date précise (yesterday, in 2019), on repasse au prétérit.</div>",
+   "items": [
+    [
+     "q",
+     "I ___ in Lyon since 2020.",
+     [
+      "live",
+      "have lived",
+      "lived"
+     ],
+     1,
+     "Depuis + ça dure encore → present perfect."
+    ],
+    [
+     "q",
+     "Have you ever ___ to New York?",
+     [
+      "be",
+      "been",
+      "went"
+     ],
+     1,
+     "Participe passé de be → been."
+    ],
+    [
+     "q",
+     "She has worked here ___ ten years.",
+     [
+      "since",
+      "for",
+      "during"
+     ],
+     1,
+     "Durée → for."
+    ],
+    [
+     "q",
+     "I ___ him yesterday.",
+     [
+      "have seen",
+      "saw",
+      "seen"
+     ],
+     1,
+     "Moment précis (yesterday) → prétérit."
+    ],
+    [
+     "e",
+     "I have finish my homework.",
+     2,
+     "finished",
+     "have + participe passé : finished."
+    ],
+    [
+     "e",
+     "He has lived here since five years.",
+     4,
+     "for",
+     "Durée → for five years."
+    ],
+    [
+     "v",
+     "I have never eaten sushi.",
+     true,
+     "",
+     "Expérience de vie → present perfect."
+    ],
+    [
+     "o",
+     "Have you finished your work?",
+     "As-tu fini ton travail ?"
+    ]
+   ]
+  },
+  {
+   "id": "modaux",
+   "niveau": "B1",
+   "ico": "🚦",
+   "titre": "Les modaux",
+   "resume": "can, must, should, have to",
+   "fiche": "<div class='bloc'><table><tr><td>can</td><td>pouvoir, savoir faire</td></tr><tr><td>must</td><td>devoir (obligation forte)</td></tr><tr><td>have to</td><td>être obligé (règle extérieure)</td></tr><tr><td>mustn't</td><td>interdit !</td></tr><tr><td>don't have to</td><td>pas obligé</td></tr><tr><td>should</td><td>conseil (devrais)</td></tr><tr><td>might</td><td>peut-être</td></tr></table></div><div class='bloc'><h4>La règle d'or</h4><p class='ex'>Modal + verbe <b>sans to, sans s</b> : She <b>can swim</b>. You <b>should go</b>.</p></div><div class='astuce'>💡 Attention au piège : <b>mustn't</b> = c'est interdit, mais <b>don't have to</b> = ce n'est pas nécessaire.</div>",
+   "items": [
+    [
+     "q",
+     "You ___ smoke here. It's forbidden.",
+     [
+      "mustn't",
+      "don't have to",
+      "might"
+     ],
+     0,
+     "Interdiction → mustn't."
+    ],
+    [
+     "q",
+     "It's Sunday, you ___ get up early.",
+     [
+      "mustn't",
+      "don't have to",
+      "can't"
+     ],
+     1,
+     "Pas obligé → don't have to."
+    ],
+    [
+     "q",
+     "You look tired. You ___ go to bed.",
+     [
+      "should",
+      "must to",
+      "might to"
+     ],
+     0,
+     "Conseil → should."
+    ],
+    [
+     "q",
+     "She ___ swim very well.",
+     [
+      "can",
+      "cans",
+      "can to"
+     ],
+     0,
+     "Un modal ne prend jamais de s."
+    ],
+    [
+     "e",
+     "He can speaks three languages.",
+     2,
+     "speak",
+     "Après un modal → forme de base."
+    ],
+    [
+     "e",
+     "You should to see a doctor.",
+     2,
+     "(à supprimer)",
+     "should + verbe sans to : You should see a doctor."
+    ],
+    [
+     "v",
+     "It might rain later.",
+     true,
+     "",
+     "might = peut-être."
+    ],
+    [
+     "o",
+     "You don't have to come.",
+     "Tu n'es pas obligé de venir."
+    ]
+   ]
+  },
+  {
+   "id": "if",
+   "niveau": "B1",
+   "ico": "🤔",
+   "titre": "Les phrases avec if",
+   "resume": "if + will, if + would",
+   "fiche": "<div class='bloc'><h4>Situation possible</h4><p class='ex'>If + présent, <b>will</b> + verbe</p><p class='ex'>If it rains, I<b>'ll stay</b> home.</p></div><div class='bloc'><h4>Situation imaginaire</h4><p class='ex'>If + prétérit, <b>would</b> + verbe</p><p class='ex'>If I <b>had</b> money, I <b>would travel</b>. · If I <b>were</b> you, I'd call her.</p></div><div class='astuce'>💡 Comme en français (« si je <s>serais</s> »), on ne met <b>jamais</b> will ou would juste après if.</div>",
+   "items": [
+    [
+     "q",
+     "If it rains, I ___ at home.",
+     [
+      "stay",
+      "will stay",
+      "would stay"
+     ],
+     1,
+     "If + présent → will."
+    ],
+    [
+     "q",
+     "If I ___ rich, I would buy a boat.",
+     [
+      "am",
+      "were",
+      "will be"
+     ],
+     1,
+     "Imaginaire → If + prétérit : were."
+    ],
+    [
+     "q",
+     "If you heat ice, it ___.",
+     [
+      "melts",
+      "would melt",
+      "melted"
+     ],
+     0,
+     "Vérité générale : if + présent, présent."
+    ],
+    [
+     "q",
+     "What would you do if you ___ the lottery?",
+     [
+      "win",
+      "won",
+      "will win"
+     ],
+     1,
+     "Imaginaire → prétérit : won."
+    ],
+    [
+     "e",
+     "If I will see him, I'll tell him.",
+     2,
+     "(à supprimer)",
+     "Pas de will après if : If I see him…"
+    ],
+    [
+     "e",
+     "If I had time, I will help you.",
+     5,
+     "would",
+     "If + prétérit → would."
+    ],
+    [
+     "v",
+     "If I were you, I would call her.",
+     true,
+     "",
+     "« If I were you » = à ta place."
+    ],
+    [
+     "o",
+     "I would travel if I had more money.",
+     "Je voyagerais si j'avais plus d'argent."
+    ]
+   ]
+  },
+  {
+   "id": "temps",
+   "niveau": "B1",
+   "ico": "📅",
+   "titre": "In, on, at (le temps)",
+   "resume": "heures, jours, mois",
+   "fiche": "<div class='bloc'><table><tr><td>at</td><td>une heure, un moment : at 8, at noon, at night</td></tr><tr><td>on</td><td>un jour, une date : on Monday, on 3 May, on my birthday</td></tr><tr><td>in</td><td>mois, année, saison, partie de journée : in July, in 2024, in summer, in the morning</td></tr></table></div><div class='astuce'>💡 Pas de préposition devant <b>this, next, last, every</b> : See you next week. I work every day.</div>",
+   "items": [
+    [
+     "q",
+     "The match is ___ Saturday.",
+     [
+      "in",
+      "on",
+      "at"
+     ],
+     1,
+     "Jour → on."
+    ],
+    [
+     "q",
+     "I was born ___ 1998.",
+     [
+      "in",
+      "on",
+      "at"
+     ],
+     0,
+     "Année → in."
+    ],
+    [
+     "q",
+     "The film starts ___ 9 pm.",
+     [
+      "in",
+      "on",
+      "at"
+     ],
+     2,
+     "Heure → at."
+    ],
+    [
+     "q",
+     "I study better ___ the morning.",
+     [
+      "in",
+      "on",
+      "at"
+     ],
+     0,
+     "in the morning, mais at night."
+    ],
+    [
+     "e",
+     "See you on next week.",
+     2,
+     "(à supprimer)",
+     "Pas de préposition avant next : See you next week."
+    ],
+    [
+     "e",
+     "My birthday is in 5 May.",
+     3,
+     "on",
+     "Date précise → on."
+    ],
+    [
+     "v",
+     "I go skiing in winter.",
+     true,
+     "",
+     "Saison → in."
+    ],
+    [
+     "o",
+     "We usually play at night.",
+     "Nous jouons en général la nuit."
+    ]
+   ]
+  },
+  {
+   "id": "pastcont",
+   "niveau": "B1",
+   "ico": "🎬",
+   "titre": "Le passé en -ing",
+   "resume": "was / were + -ing",
+   "fiche": "<div class='bloc'><h4>was / were + verbe-ing</h4><p>Une action <b>en cours</b> dans le passé : c'est le décor.</p><p class='ex'>At 8 pm, I <b>was watching</b> TV.</p></div><div class='bloc'><h4>Souvent interrompue par un prétérit</h4><p class='ex'>I <b>was sleeping</b> when the phone <b>rang</b>.</p><p class='ex'><b>While</b> she was cooking, I set the table.</p></div><div class='astuce'>💡 Pense à un film : le past continuous = la scène qui se déroule, le prétérit = l'événement qui la coupe.</div>",
+   "items": [
+    [
+     "q",
+     "I ___ TV when you called.",
+     [
+      "watched",
+      "was watching",
+      "am watching"
+     ],
+     1,
+     "Action en cours interrompue → was watching."
+    ],
+    [
+     "q",
+     "They ___ playing football at 5 pm.",
+     [
+      "was",
+      "were",
+      "are"
+     ],
+     1,
+     "They → were."
+    ],
+    [
+     "q",
+     "While she was cooking, the phone ___.",
+     [
+      "was ringing",
+      "rang",
+      "rings"
+     ],
+     1,
+     "L'événement court qui interrompt → prétérit."
+    ],
+    [
+     "q",
+     "What ___ you doing at midnight?",
+     [
+      "was",
+      "were",
+      "did"
+     ],
+     1,
+     "You → were."
+    ],
+    [
+     "e",
+     "I was walk home when it started to rain.",
+     2,
+     "walking",
+     "was + -ing : walking."
+    ],
+    [
+     "e",
+     "We was having dinner.",
+     1,
+     "were",
+     "We → were."
+    ],
+    [
+     "v",
+     "It was raining all day yesterday.",
+     true,
+     "",
+     "Action en cours sur une période passée."
+    ],
+    [
+     "o",
+     "I was sleeping when you called.",
+     "Je dormais quand tu as appelé."
+    ]
+   ]
+  },
+  {
+   "id": "passif",
+   "niveau": "B2",
+   "ico": "🔄",
+   "titre": "La voix passive",
+   "resume": "is made, was built…",
+   "fiche": "<div class='bloc'><h4>be (au bon temps) + participe passé</h4><table><tr><td>présent</td><td>It <b>is made</b> in China.</td></tr><tr><td>prétérit</td><td>It <b>was built</b> in 1900.</td></tr><tr><td>present perfect</td><td>It <b>has been sold</b>.</td></tr><tr><td>futur</td><td>It <b>will be done</b> tomorrow.</td></tr></table><p class='ex'>L'auteur de l'action : <b>by</b> → written <b>by</b> Shakespeare.</p></div><div class='astuce'>💡 On l'utilise beaucoup quand on ne sait pas (ou peu importe) qui fait l'action : My bike was stolen.</div>",
+   "items": [
+    [
+     "q",
+     "This bridge ___ in 1890.",
+     [
+      "built",
+      "was built",
+      "is building"
+     ],
+     1,
+     "Passif au prétérit → was built."
+    ],
+    [
+     "q",
+     "English ___ all over the world.",
+     [
+      "speaks",
+      "is spoken",
+      "is speaking"
+     ],
+     1,
+     "Passif au présent → is spoken."
+    ],
+    [
+     "q",
+     "The winner ___ tomorrow.",
+     [
+      "will announce",
+      "will be announced",
+      "is announce"
+     ],
+     1,
+     "Passif au futur → will be + participe."
+    ],
+    [
+     "q",
+     "The car has ___ stolen.",
+     [
+      "be",
+      "been",
+      "being"
+     ],
+     1,
+     "Present perfect passif → has been stolen."
+    ],
+    [
+     "e",
+     "The letter was write by my grandmother.",
+     3,
+     "written",
+     "be + participe passé : written."
+    ],
+    [
+     "e",
+     "The windows are cleaned from a company.",
+     4,
+     "by",
+     "L'auteur de l'action → by."
+    ],
+    [
+     "v",
+     "My phone was stolen last night.",
+     true,
+     "",
+     "Passif au prétérit."
+    ],
+    [
+     "o",
+     "The match was cancelled because of the rain.",
+     "Le match a été annulé à cause de la pluie."
+    ]
+   ]
+  },
+  {
+   "id": "indirect",
+   "niveau": "B2",
+   "ico": "💬",
+   "titre": "Le discours indirect",
+   "resume": "he said that…",
+   "fiche": "<div class='bloc'><h4>On recule d'un temps</h4><table><tr><td>\"I am tired.\"</td><td>He said he <b>was</b> tired.</td></tr><tr><td>\"I will come.\"</td><td>She said she <b>would</b> come.</td></tr><tr><td>\"I can help.\"</td><td>He said he <b>could</b> help.</td></tr></table></div><div class='bloc'><h4>say ou tell ?</h4><p class='ex'>She <b>said</b> (that)… · She <b>told me</b> (that)… <i>(tell + quelqu'un)</i></p></div><div class='astuce'>💡 Dans une question indirecte, plus d'inversion ni de do : He asked where <b>I lived</b> (pas « where did I live »).</div>",
+   "items": [
+    [
+     "q",
+     "He said he ___ tired.",
+     [
+      "is",
+      "was",
+      "be"
+     ],
+     1,
+     "Présent → prétérit au discours indirect."
+    ],
+    [
+     "q",
+     "She ___ me she was busy.",
+     [
+      "said",
+      "told",
+      "says"
+     ],
+     1,
+     "tell + quelqu'un : she told me."
+    ],
+    [
+     "q",
+     "They said they ___ come later.",
+     [
+      "will",
+      "would",
+      "can"
+     ],
+     1,
+     "will → would."
+    ],
+    [
+     "q",
+     "He asked me where I ___.",
+     [
+      "lived",
+      "do live",
+      "did live"
+     ],
+     0,
+     "Pas d'inversion dans une question indirecte."
+    ],
+    [
+     "e",
+     "She said me that she was ill.",
+     1,
+     "told",
+     "say ne prend pas de complément : she told me."
+    ],
+    [
+     "e",
+     "He asked where did I work.",
+     3,
+     "(à supprimer)",
+     "Question indirecte sans did : He asked where I worked."
+    ],
+    [
+     "v",
+     "She said she could help us.",
+     true,
+     "",
+     "can → could."
+    ],
+    [
+     "o",
+     "He told me he was hungry.",
+     "Il m'a dit qu'il avait faim."
+    ]
+   ]
+  },
+  {
+   "id": "relatifs",
+   "niveau": "B2",
+   "ico": "🧩",
+   "titre": "Who, which, whose",
+   "resume": "les pronoms relatifs",
+   "fiche": "<div class='bloc'><table><tr><td>who</td><td>pour une personne</td></tr><tr><td>which</td><td>pour une chose</td></tr><tr><td>that</td><td>les deux (très courant à l'oral)</td></tr><tr><td>whose</td><td>dont / de qui (possession)</td></tr><tr><td>where</td><td>où (un lieu)</td></tr></table><p class='ex'>The man <b>whose</b> car was stolen… <i>(l'homme dont la voiture…)</i></p></div><div class='astuce'>💡 Quand le relatif est complément, on peut le supprimer : The film (that) I saw was great.</div>",
+   "items": [
+    [
+     "q",
+     "The woman ___ lives next door is a doctor.",
+     [
+      "which",
+      "who",
+      "whose"
+     ],
+     1,
+     "Personne → who."
+    ],
+    [
+     "q",
+     "The car ___ I bought is red.",
+     [
+      "who",
+      "which",
+      "whose"
+     ],
+     1,
+     "Chose → which (ou that)."
+    ],
+    [
+     "q",
+     "That's the man ___ son plays for Arsenal.",
+     [
+      "who",
+      "whose",
+      "which"
+     ],
+     1,
+     "Possession (son fils) → whose."
+    ],
+    [
+     "q",
+     "This is the town ___ I grew up.",
+     [
+      "where",
+      "which",
+      "who"
+     ],
+     0,
+     "Lieu → where."
+    ],
+    [
+     "e",
+     "The book who I read was great.",
+     2,
+     "which",
+     "Chose → which / that."
+    ],
+    [
+     "e",
+     "The girl which I met was nice.",
+     2,
+     "who",
+     "Personne → who / that."
+    ],
+    [
+     "v",
+     "The film I watched was boring.",
+     true,
+     "",
+     "Le relatif complément peut disparaître."
+    ],
+    [
+     "o",
+     "The man who called you is my boss.",
+     "L'homme qui t'a appelé est mon patron."
+    ]
+   ]
+  },
+  {
+   "id": "ingto",
+   "niveau": "B2",
+   "ico": "⚖️",
+   "titre": "Verbe + -ing ou + to",
+   "resume": "enjoy doing, want to do",
+   "fiche": "<div class='bloc'><h4>+ -ing</h4><p class='ex'>enjoy, finish, avoid, mind, can't stand, look forward to, et après une préposition (for, of, about…)</p><p class='ex'>I enjoy <b>reading</b>. · Thanks for <b>helping</b> me.</p></div><div class='bloc'><h4>+ to</h4><p class='ex'>want, decide, hope, need, plan, would like, learn</p><p class='ex'>I want <b>to go</b>. · She decided <b>to stay</b>.</p></div><div class='astuce'>💡 Le sens change avec stop : I stopped <b>smoking</b> (j'ai arrêté de fumer) ≠ I stopped <b>to smoke</b> (je me suis arrêté pour fumer).</div>",
+   "items": [
+    [
+     "q",
+     "I enjoy ___ football.",
+     [
+      "play",
+      "to play",
+      "playing"
+     ],
+     2,
+     "enjoy + -ing."
+    ],
+    [
+     "q",
+     "She decided ___ abroad.",
+     [
+      "living",
+      "to live",
+      "live"
+     ],
+     1,
+     "decide + to."
+    ],
+    [
+     "q",
+     "I'm looking forward to ___ you.",
+     [
+      "see",
+      "seeing",
+      "saw"
+     ],
+     1,
+     "look forward to + -ing (ici, to est une préposition)."
+    ],
+    [
+     "q",
+     "He stopped ___ ten years ago, he doesn't smoke now.",
+     [
+      "smoking",
+      "to smoke",
+      "smoke"
+     ],
+     0,
+     "stop + -ing = arrêter de faire."
+    ],
+    [
+     "e",
+     "I want going home.",
+     2,
+     "to go",
+     "want + to."
+    ],
+    [
+     "e",
+     "Thank you for help me.",
+     3,
+     "helping",
+     "Après une préposition → -ing."
+    ],
+    [
+     "v",
+     "Would you mind closing the window?",
+     true,
+     "",
+     "mind + -ing."
+    ],
+    [
+     "o",
+     "I hope to see you soon.",
+     "J'espère te voir bientôt."
+    ]
+   ]
+  },
+  {
+   "id": "regrets",
+   "niveau": "B2",
+   "ico": "🕰️",
+   "titre": "Regrets : if I had…, I wish",
+   "resume": "le passé imaginaire",
+   "fiche": "<div class='bloc'><h4>Refaire le passé</h4><p class='ex'>If + <b>had</b> + participe, <b>would have</b> + participe</p><p class='ex'>If I <b>had known</b>, I <b>would have come</b>. <i>(Si j'avais su, je serais venu.)</i></p></div><div class='bloc'><h4>I wish</h4><p class='ex'>Regret sur le présent → prétérit : I wish I <b>were</b> taller.</p><p class='ex'>Regret sur le passé → past perfect : I wish I <b>had studied</b> more.</p></div><div class='astuce'>💡 Même règle qu'avant : jamais « would » après if. If you <b>had</b> asked (pas « would have asked »).</div>",
+   "items": [
+    [
+     "q",
+     "If I had known, I ___ you.",
+     [
+      "would help",
+      "would have helped",
+      "had helped"
+     ],
+     1,
+     "Passé imaginaire → would have + participe."
+    ],
+    [
+     "q",
+     "If she ___ earlier, she wouldn't have missed the train.",
+     [
+      "left",
+      "had left",
+      "would leave"
+     ],
+     1,
+     "If + past perfect."
+    ],
+    [
+     "q",
+     "I wish I ___ taller.",
+     [
+      "am",
+      "were",
+      "will be"
+     ],
+     1,
+     "Regret sur le présent → I wish + prétérit."
+    ],
+    [
+     "q",
+     "I wish I ___ that. I'm sorry.",
+     [
+      "didn't say",
+      "hadn't said",
+      "don't say"
+     ],
+     1,
+     "Regret sur le passé → I wish + past perfect."
+    ],
+    [
+     "e",
+     "If you would have asked, I would have said yes.",
+     2,
+     "had",
+     "Jamais would après if : If you had asked…"
+    ],
+    [
+     "e",
+     "I wish I have more free time.",
+     3,
+     "had",
+     "I wish + prétérit : had."
+    ],
+    [
+     "v",
+     "If we had left earlier, we would have caught the bus.",
+     true,
+     "",
+     "if + had + participe, would have + participe."
+    ],
+    [
+     "o",
+     "If I had studied, I would have passed.",
+     "Si j'avais étudié, j'aurais réussi."
+    ]
+   ]
+  }
+ ]
+}

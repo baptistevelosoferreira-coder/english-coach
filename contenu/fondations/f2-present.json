@@ -1,0 +1,46 @@
+{
+  "id": "f2",
+  "titre": "Le présent simple",
+  "ico": "🔁",
+  "niveau": "A1",
+  "objectif": "Décrire ce que fait une entreprise et ta routine",
+  "dialogue": {
+    "titre": "What we do at Brightside",
+    "contexte": "Emma explique à Lucas qui fait quoi dans l'agence.",
+    "surligner": ["create", "designs", "manage", "writes", "works", "post", "needs", "works", "sells"],
+    "lignes": [
+      ["Emma", "At Brightside, we create campaigns for small brands.", "Chez Brightside, nous créons des campagnes pour de petites marques."],
+      ["Emma", "Sam designs the visuals and I manage the clients.", "Sam conçoit les visuels et je gère les clients."],
+      ["Lucas", "And who writes the posts?", "Et qui écrit les posts ?"],
+      ["Emma", "Priya writes the posts. She works from home on Fridays.", "Priya écrit les posts. Elle travaille de chez elle le vendredi."],
+      ["Lucas", "I usually post on Instagram every day.", "En général, je publie sur Instagram tous les jours."],
+      ["Emma", "Perfect! Our new client sells coffee and needs fresh ideas every week.", "Parfait ! Notre nouveau client vend du café et a besoin d'idées nouvelles chaque semaine."],
+      ["Sam", "And the coffee machine never works on Mondays!", "Et la machine à café ne marche jamais le lundi !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Quand l'utiliser ?</h4><p>Pour les <b>habitudes</b>, les <b>vérités générales</b> et ce que fait une entreprise : every day, usually, always, never, on Mondays…</p><p class='ex'>We <b>create</b> campaigns. · I <b>post</b> every day.</p></div><div class='bloc'><h4>Le piège : he / she / it → + s</h4><p class='ex'>she work<b>s</b> · he manage<b>s</b> · it need<b>s</b></p><p class='ex'>Après s, sh, ch, x, o → <b>-es</b> : watch<b>es</b>, go<b>es</b>, do<b>es</b></p><p class='ex'>Consonne + y → <b>-ies</b> : study → stud<b>ies</b> · Mais : play → play<b>s</b></p><p class='ex'>Irrégulier : have → <b>has</b></p></div><div class='bloc'><h4>Prononcer le -s</h4><p class='ex'>/s/ : works, helps · /z/ : sells, plays · /ɪz/ : manages, watches</p></div><div class='bloc'><h4>La place de always, usually, never…</h4><p class='ex'>Avant le verbe : I <b>always</b> check my emails.</p><p class='ex'>Mais après be : She is <b>always</b> late.</p></div><div class='astuce'>💡 Le -s de la 3e personne est facile à comprendre… et l'un des plus longs à devenir automatique, même pour les bons élèves. Il reviendra souvent dans tes révisions !</div>",
+  "exercices": [
+    { "type": "choix", "texte": "She ___ the social media accounts.", "options": ["manage", "manages", "managing"], "bonne": 1, "explication": "She → verbe + s." },
+    { "type": "choix", "texte": "We ___ campaigns for small brands.", "options": ["create", "creates", "creating"], "bonne": 0, "explication": "We → pas de s." },
+    { "type": "saisie", "texte": "Priya ___ the posts. (write)", "sous": "Priya écrit les posts.", "reponses": ["writes"], "explication": "Priya = she → writes." },
+    { "type": "saisie", "texte": "The agency ___ ten clients. (have)", "sous": "L'agence a dix clients.", "reponses": ["has"], "explication": "have → has avec he/she/it." },
+    { "type": "saisie", "texte": "He ___ the numbers every morning. (watch)", "sous": "Il regarde les chiffres chaque matin.", "reponses": ["watches"], "explication": "Après ch → -es : watches." },
+    { "type": "saisie", "texte": "Our intern ___ marketing. (study)", "sous": "Notre stagiaire étudie le marketing.", "reponses": ["studies"], "explication": "Consonne + y → -ies : studies." },
+    { "type": "erreur", "texte": "Sam design the visuals.", "k": 1, "correction": "designs", "explication": "Sam = he → designs." },
+    { "type": "choix", "consigne": "Quelle phrase est correcte ?", "texte": "Place de « always »", "options": ["She is always late.", "She always is late."], "bonne": 0, "explication": "Avec be, l'adverbe se place après : is always." },
+    { "type": "vf", "texte": "He never answer the phone.", "vrai": false, "correction": "He never answers the phone.", "explication": "He → answers, même avec never." },
+    { "type": "ordre", "texte": "I always check my emails first.", "fr": "Je vérifie toujours mes e-mails en premier." },
+    { "type": "ecoute", "texte": "She works from home on Fridays." }
+  ],
+  "production": [
+    { "consigne": "Décris ta routine d'étudiant en 3 phrases (avec every day, usually, never…).", "modele": "I usually wake up at 7. I study marketing every day. I never work on Sundays.", "verifs": ["Si je parle de quelqu'un d'autre (he / she), j'ai mis le -s", "Les mots usually / never / always sont avant le verbe"] }
+  ],
+  "cartes": [
+    { "id": "f2-1", "texte": "She ___ the clients. (manage)", "sous": "Elle gère les clients.", "reponses": ["manages"] },
+    { "id": "f2-2", "texte": "He ___ a meeting every Monday. (have)", "sous": "Il a une réunion chaque lundi.", "reponses": ["has"] },
+    { "id": "f2-3", "texte": "Everything ___ well. (go)", "sous": "Tout se passe bien.", "reponses": ["goes"] },
+    { "id": "f2-4", "texte": "Our client ___ new ideas. (need)", "sous": "Notre client a besoin de nouvelles idées.", "reponses": ["needs"] },
+    { "id": "f2-5", "texte": "My manager ___ the numbers. (watch)", "sous": "Ma responsable surveille les chiffres.", "reponses": ["watches"] },
+    { "id": "f2-6", "texte": "Priya ___ the market. (study)", "sous": "Priya étudie le marché.", "reponses": ["studies"] }
+  ]
+}

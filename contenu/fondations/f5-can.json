@@ -1,0 +1,47 @@
+{
+  "id": "f5",
+  "titre": "Can, could et l'impératif",
+  "ico": "🙋",
+  "niveau": "A2",
+  "objectif": "Demander poliment, proposer et donner une consigne",
+  "dialogue": {
+    "titre": "The client meeting",
+    "contexte": "Première réunion avec la cliente de la marque de cosmétiques.",
+    "surligner": ["can you", "Can I", "you can", "don't interrupt", "can't", "We can", "Send", "Could you", "Let's"],
+    "lignes": [
+      ["Emma", "Lucas, can you take notes during the meeting?", "Lucas, tu peux prendre des notes pendant la réunion ?"],
+      ["Lucas", "Sure. Can I ask questions too?", "Bien sûr. Je peux aussi poser des questions ?"],
+      ["Emma", "Yes, you can. But don't interrupt the client.", "Oui. Mais n'interromps pas la cliente."],
+      ["Client", "We can't spend more than ten thousand pounds.", "Nous ne pouvons pas dépenser plus de dix mille livres."],
+      ["Emma", "No problem. We can start with social media ads.", "Pas de problème. Nous pouvons commencer par des pubs sur les réseaux sociaux."],
+      ["Client", "Great. Send me a proposal by Friday, please.", "Parfait. Envoyez-moi une proposition d'ici vendredi, s'il vous plaît."],
+      ["Emma", "Of course. Could you share your brand guidelines?", "Bien sûr. Pourriez-vous nous transmettre votre charte graphique ?"],
+      ["Client", "Yes. Let's meet again next week.", "Oui. Revoyons-nous la semaine prochaine."]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>can = pouvoir, savoir faire</h4><p class='ex'>I <b>can</b> speak Spanish. · We <b>can't</b> spend more.</p><p class='ex'>Question : <b>Can</b> you help me?</p><p class='ex'>Règle d'or : can + verbe <b>sans to et sans s</b> → She can <b>speak</b>.</p></div><div class='bloc'><h4>could = plus poli</h4><p class='ex'><b>Could</b> you send me the file, please? <i>(Pourriez-vous…)</i></p><p>Avec un client ou un supérieur, préfère <b>could</b>.</p></div><div class='bloc'><h4>L'impératif</h4><p class='ex'>Le verbe seul : <b>Send</b> me the file. · <b>Check</b> the numbers.</p><p class='ex'>Négatif : <b>Don't</b> interrupt. · Proposer : <b>Let's</b> start! <i>(Commençons !)</i></p></div><div class='astuce'>💡 Un impératif seul peut sembler sec en anglais. Ajoute please, ou transforme en question : Could you…?</div>",
+  "exercices": [
+    { "type": "choix", "texte": "She ___ speak three languages.", "options": ["can", "cans", "can to"], "bonne": 0, "explication": "can ne prend jamais de s ni de to." },
+    { "type": "erreur", "texte": "He can speaks Spanish.", "k": 2, "correction": "speak", "explication": "Après can, le verbe reste à la base." },
+    { "type": "erreur", "texte": "You can to call me tomorrow.", "k": 2, "correction": "(à supprimer)", "explication": "Pas de to après can : You can call me." },
+    { "type": "choix", "texte": "___ you send me the file, please?", "options": ["Could", "Do", "Are"], "bonne": 0, "explication": "Demande polie → Could you…?" },
+    { "type": "saisie", "texte": "___ the report today. (send → ordre)", "sous": "Envoie le rapport aujourd'hui.", "reponses": ["Send"], "explication": "Impératif = le verbe seul." },
+    { "type": "saisie", "texte": "___ late for the meeting! (ordre négatif : be)", "sous": "Ne sois pas en retard à la réunion !", "reponses": ["Don't be"], "explication": "Impératif négatif : Don't + verbe." },
+    { "type": "saisie", "texte": "___ have a coffee! (proposer)", "sous": "Prenons un café !", "reponses": ["Let's"], "explication": "Let's + verbe = proposer de faire quelque chose ensemble." },
+    { "type": "choix", "consigne": "Laquelle est la plus polie pour un client ?", "texte": "Tu veux le fichier.", "options": ["Send me the file.", "Could you send me the file, please?", "You send me the file."], "bonne": 1, "explication": "Could you… please? est la formule polie." },
+    { "type": "vf", "texte": "We can't spend more money.", "vrai": true, "correction": "", "explication": "can't + verbe à la base." },
+    { "type": "ordre", "texte": "Can you help me with this slide?", "fr": "Tu peux m'aider avec cette diapo ?" },
+    { "type": "ecoute", "texte": "Could you repeat that, please?" }
+  ],
+  "production": [
+    { "consigne": "Écris 2 demandes polies à un collègue ou à un client (avec Can you… ? ou Could you… ?).", "modele": "Could you send me the presentation, please? Can you check my email before I send it?", "verifs": ["Can / Could + sujet + verbe sans to", "J'ai ajouté please pour être poli"] }
+  ],
+  "cartes": [
+    { "id": "f5-1", "texte": "She ___ speak Spanish.", "sous": "Elle sait parler espagnol.", "reponses": ["can"] },
+    { "id": "f5-2", "texte": "We ___ spend more.", "sous": "Nous ne pouvons pas dépenser plus.", "reponses": ["can't", "cannot"] },
+    { "id": "f5-3", "texte": "___ you repeat that, please? (poli)", "sous": "Pourriez-vous répéter, s'il vous plaît ?", "reponses": ["Could"] },
+    { "id": "f5-4", "texte": "___ interrupt the client!", "sous": "N'interromps pas le client !", "reponses": ["Don't"] },
+    { "id": "f5-5", "texte": "___ start the meeting.", "sous": "Commençons la réunion.", "reponses": ["Let's"] },
+    { "id": "f5-6", "texte": "Can he ___ tomorrow? (come)", "sous": "Est-ce qu'il peut venir demain ?", "reponses": ["come"] }
+  ]
+}

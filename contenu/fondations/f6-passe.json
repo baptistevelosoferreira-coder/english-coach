@@ -1,0 +1,46 @@
+{
+  "id": "f6",
+  "titre": "Le passé : was / were et les verbes en -ed",
+  "ico": "⏪",
+  "niveau": "A2",
+  "objectif": "Raconter ce qui s'est passé et présenter des résultats",
+  "dialogue": {
+    "titre": "Monday debrief",
+    "contexte": "Lundi matin, l'équipe fait le bilan du lancement du week-end.",
+    "surligner": ["was", "were", "posted", "answered", "Were", "increased", "watched", "looked", "wasn't"],
+    "lignes": [
+      ["Emma", "How was the launch on Saturday?", "Comment s'est passé le lancement samedi ?"],
+      ["Priya", "It was great! We were really busy.", "C'était super ! On a été vraiment débordés."],
+      ["Priya", "We posted twelve videos and we answered 300 comments.", "On a publié douze vidéos et répondu à 300 commentaires."],
+      ["Emma", "Wow! Were the customers happy?", "Waouh ! Les clients étaient contents ?"],
+      ["Priya", "Yes, they were. Sales increased by 20%.", "Oui. Les ventes ont augmenté de 20 %."],
+      ["Lucas", "I watched the live stream. It looked amazing.", "J'ai regardé le live. Ça avait l'air génial."],
+      ["Emma", "Well done, team! I wasn't there, but I'm proud of you.", "Bravo l'équipe ! Je n'étais pas là, mais je suis fière de vous."]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Le passé de be</h4><table><tr><td>I / he / she / it</td><td><b>was</b></td></tr><tr><td>you / we / they</td><td><b>were</b></td></tr></table><p class='ex'>Négation : wasn't, weren't · Question : <b>Were</b> you there?</p></div><div class='bloc'><h4>Verbes réguliers : + ed</h4><p class='ex'>post → post<b>ed</b> · like → lik<b>ed</b> · stop → sto<b>pped</b> · study → stud<b>ied</b></p><p>Même forme pour toutes les personnes : I worked, she worked, they worked.</p></div><div class='bloc'><h4>Prononcer le -ed</h4><p class='ex'>/t/ : worked, watched · /d/ : played, answered · /ɪd/ (on entend une syllabe en plus) : wanted, started — seulement après t ou d.</p></div><div class='bloc'><h4>Un seul temps pour trois temps français</h4><p class='ex'>I watched = j'ai regardé / je regardais / je regardai</p><p>On l'utilise pour un moment <b>terminé</b> : yesterday, last week, on Saturday, in 2020, two days ago.</p></div><div class='astuce'>💡 Ne prononce pas « work-ed » en deux syllabes : on dit /wɜːkt/, comme « workt ».</div>",
+  "exercices": [
+    { "type": "choix", "texte": "The meeting ___ very long.", "options": ["was", "were"], "bonne": 0, "explication": "The meeting = it → was." },
+    { "type": "choix", "texte": "The customers ___ happy.", "options": ["was", "were"], "bonne": 1, "explication": "Pluriel → were." },
+    { "type": "saisie", "texte": "We ___ twelve videos. (post)", "sous": "Nous avons publié douze vidéos.", "reponses": ["posted"], "explication": "Régulier : + ed." },
+    { "type": "saisie", "texte": "Sales ___ last month. (increase)", "sous": "Les ventes ont augmenté le mois dernier.", "reponses": ["increased"], "explication": "Se termine par e → on ajoute seulement d." },
+    { "type": "saisie", "texte": "She ___ the results. (study)", "sous": "Elle a étudié les résultats.", "reponses": ["studied"], "explication": "Consonne + y → -ied." },
+    { "type": "saisie", "texte": "They ___ the campaign in June. (stop)", "sous": "Ils ont arrêté la campagne en juin.", "reponses": ["stopped"], "explication": "Verbe court en consonne-voyelle-consonne → on double : stopped." },
+    { "type": "erreur", "texte": "The clients was very happy.", "k": 2, "correction": "were", "explication": "Pluriel → were." },
+    { "type": "choix", "consigne": "Dans quel verbe le -ed se prononce /ɪd/ (une syllabe en plus) ?", "texte": "Écoute dans ta tête…", "options": ["worked", "played", "started"], "bonne": 2, "explication": "Après t ou d, le -ed se prononce /ɪd/ : star-ted." },
+    { "type": "vf", "texte": "I watched the video yesterday.", "vrai": true, "correction": "", "explication": "Moment terminé (yesterday) → prétérit." },
+    { "type": "ordre", "texte": "Was the launch a success?", "fr": "Le lancement a-t-il été un succès ?" },
+    { "type": "ecoute", "texte": "We answered all the comments." }
+  ],
+  "production": [
+    { "consigne": "Raconte ton dernier week-end en 3 phrases (was / were + verbes en -ed).", "modele": "Last weekend was great. I watched a film and I played football. My friends were at my place on Sunday.", "verifs": ["was avec I / he / she, were avec we / they / you", "Mes verbes réguliers se terminent par -ed"] }
+  ],
+  "cartes": [
+    { "id": "f6-1", "texte": "The launch ___ a success.", "sous": "Le lancement a été un succès.", "reponses": ["was"] },
+    { "id": "f6-2", "texte": "We ___ very busy.", "sous": "Nous étions très occupés.", "reponses": ["were"] },
+    { "id": "f6-3", "texte": "They ___ late yesterday. (work)", "sous": "Ils ont travaillé tard hier.", "reponses": ["worked"] },
+    { "id": "f6-4", "texte": "She ___ the data. (study)", "sous": "Elle a étudié les données.", "reponses": ["studied"] },
+    { "id": "f6-5", "texte": "Sales ___ last month. (drop)", "sous": "Les ventes ont baissé le mois dernier.", "reponses": ["dropped"] },
+    { "id": "f6-6", "texte": "___ you at the meeting?", "sous": "Tu étais à la réunion ?", "reponses": ["Were"] }
+  ]
+}

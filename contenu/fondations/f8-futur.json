@@ -1,0 +1,46 @@
+{
+  "id": "f8",
+  "titre": "Le futur : will et going to",
+  "ico": "🔮",
+  "niveau": "A2",
+  "objectif": "Parler de projets, de prévisions et proposer ton aide",
+  "dialogue": {
+    "titre": "Planning the next campaign",
+    "contexte": "L'équipe prépare la prochaine campagne de la marque de cosmétiques.",
+    "surligner": ["we're going to launch", "Are we going to use", "will work", "I'll design", "I'll prepare", "won't be", "is going to love"],
+    "lignes": [
+      ["Emma", "Next month, we're going to launch a new campaign.", "Le mois prochain, nous allons lancer une nouvelle campagne."],
+      ["Lucas", "Are we going to use influencers?", "Est-ce qu'on va faire appel à des influenceurs ?"],
+      ["Emma", "Yes. I think it will work well with young people.", "Oui. Je pense que ça marchera bien auprès des jeunes."],
+      ["Sam", "I'll design the visuals.", "Je m'occupe des visuels."],
+      ["Lucas", "And I'll prepare the budget, if you want.", "Et je préparerai le budget, si tu veux."],
+      ["Emma", "Perfect. Don't worry, it won't be too complicated.", "Parfait. Ne t'inquiète pas, ce ne sera pas trop compliqué."],
+      ["Emma", "The client is going to love it!", "La cliente va adorer !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>will + verbe</h4><p>Décision prise <b>sur le moment</b>, proposition, promesse, opinion sur l'avenir (I think…).</p><p class='ex'>The phone is ringing. — I<b>'ll</b> answer it! · I <b>won't</b> be late, I promise.</p><p class='ex'>I think it <b>will</b> work.</p></div><div class='bloc'><h4>be going to + verbe</h4><p>Un <b>projet déjà décidé</b>, ou quelque chose qu'on voit arriver.</p><p class='ex'>We<b>'re going to</b> launch a campaign next month.</p><p class='ex'>Look at the numbers! Sales <b>are going to</b> drop.</p></div><div class='bloc'><h4>Formes</h4><p class='ex'>will not = <b>won't</b> · Question : <b>Will</b> you come? · <b>Are</b> you <b>going to</b> come?</p></div><div class='astuce'>💡 Jamais de to après will : I will <b>help</b> you (pas « will to help »). Et n'oublie pas be avec going to : she <b>is</b> going to…</div>",
+  "exercices": [
+    { "type": "choix", "texte": "The phone is ringing. — I ___ answer it!", "options": ["'ll", "am going to"], "bonne": 0, "explication": "Décision prise à l'instant → will ('ll)." },
+    { "type": "choix", "texte": "It's in the plan: we ___ launch the campaign in May.", "options": ["will", "are going to"], "bonne": 1, "explication": "Projet déjà décidé → going to." },
+    { "type": "choix", "texte": "I think the campaign ___ work.", "options": ["will", "is going", "goes to"], "bonne": 0, "explication": "Opinion sur l'avenir (I think…) → will." },
+    { "type": "saisie", "texte": "I ___ you, don't worry. (help)", "sous": "Je vais t'aider, ne t'inquiète pas.", "reponses": ["will help"], "explication": "Proposition / promesse → will." },
+    { "type": "saisie", "texte": "It ___ expensive. (not / be)", "sous": "Ce ne sera pas cher.", "reponses": ["won't be"], "explication": "will not → won't." },
+    { "type": "saisie", "texte": "They ___ a new product. (projet : launch)", "sous": "Ils vont lancer un nouveau produit.", "reponses": ["are going to launch"], "explication": "Projet → be going to + verbe." },
+    { "type": "erreur", "texte": "I will to call you tomorrow.", "k": 2, "correction": "(à supprimer)", "explication": "Pas de to après will : I will call you." },
+    { "type": "erreur", "texte": "She going to present the results.", "k": 1, "correction": "is going", "explication": "Il manque be : She is going to…" },
+    { "type": "vf", "texte": "Will you come to the meeting?", "vrai": true, "correction": "", "explication": "Question : Will + sujet + verbe." },
+    { "type": "ordre", "texte": "We are going to hire an intern.", "fr": "Nous allons embaucher un stagiaire." },
+    { "type": "ecoute", "texte": "I'll send you the details tomorrow." }
+  ],
+  "production": [
+    { "consigne": "Décris tes projets pour l'année prochaine en 3 phrases (going to et will).", "modele": "Next year, I'm going to do an internship in London. I think it will be a great experience. I'll improve my English!", "verifs": ["going to pour un projet décidé, avec am / is / are", "Pas de to après will"] }
+  ],
+  "cartes": [
+    { "id": "f8-1", "texte": "I ___ you back. (décision : call)", "sous": "Je te rappelle.", "reponses": ["will call"] },
+    { "id": "f8-2", "texte": "We ___ launch it in May. (projet)", "sous": "Nous allons le lancer en mai.", "reponses": ["are going to"] },
+    { "id": "f8-3", "texte": "It ___ be easy. (négation)", "sous": "Ce ne sera pas facile.", "reponses": ["won't", "will not"] },
+    { "id": "f8-4", "texte": "I think sales ___ increase.", "sous": "Je pense que les ventes vont augmenter.", "reponses": ["will"] },
+    { "id": "f8-5", "texte": "___ you help me tomorrow?", "sous": "Tu m'aideras demain ?", "reponses": ["Will"] },
+    { "id": "f8-6", "texte": "She is going ___ the results. (present)", "sous": "Elle va présenter les résultats.", "reponses": ["to present"] }
+  ]
+}

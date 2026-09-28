@@ -1,0 +1,269 @@
+{
+  "_info": "Test de positionnement : 6 questions par niveau (A1 → B2). « lien » = module des Fondations ou point de grammaire à recommander si la question est ratée.",
+  "questions": [
+    {
+      "niveau": "A1",
+      "texte": "My sister ___ a student.",
+      "options": [
+        "is",
+        "are",
+        "am"
+      ],
+      "bonne": 0,
+      "lien": "f1"
+    },
+    {
+      "niveau": "A1",
+      "texte": "He ___ in a bank.",
+      "options": [
+        "work",
+        "works",
+        "working"
+      ],
+      "bonne": 1,
+      "lien": "f2"
+    },
+    {
+      "niveau": "A1",
+      "texte": "___ you like coffee?",
+      "options": [
+        "Do",
+        "Does",
+        "Are"
+      ],
+      "bonne": 0,
+      "lien": "f3"
+    },
+    {
+      "niveau": "A1",
+      "texte": "I ___ speak Chinese.",
+      "options": [
+        "can't",
+        "don't can",
+        "not can"
+      ],
+      "bonne": 0,
+      "lien": "f5"
+    },
+    {
+      "niveau": "A1",
+      "texte": "There ___ two meeting rooms.",
+      "options": [
+        "is",
+        "are",
+        "have"
+      ],
+      "bonne": 1,
+      "lien": "thereis"
+    },
+    {
+      "niveau": "A1",
+      "texte": "Paul and Anna love ___ job.",
+      "options": [
+        "his",
+        "her",
+        "their"
+      ],
+      "bonne": 2,
+      "lien": "pronoms"
+    },
+    {
+      "niveau": "A2",
+      "texte": "Look! The boss ___ to the client.",
+      "options": [
+        "talks",
+        "is talking",
+        "talk"
+      ],
+      "bonne": 1,
+      "lien": "f4"
+    },
+    {
+      "niveau": "A2",
+      "texte": "Yesterday we ___ to a trade fair.",
+      "options": [
+        "go",
+        "went",
+        "gone"
+      ],
+      "bonne": 1,
+      "lien": "f7"
+    },
+    {
+      "niveau": "A2",
+      "texte": "She didn't ___ the email.",
+      "options": [
+        "send",
+        "sent",
+        "sends"
+      ],
+      "bonne": 0,
+      "lien": "f7"
+    },
+    {
+      "niveau": "A2",
+      "texte": "Our product is ___ than theirs.",
+      "options": [
+        "cheaper",
+        "more cheap",
+        "cheapest"
+      ],
+      "bonne": 0,
+      "lien": "comparer"
+    },
+    {
+      "niveau": "A2",
+      "texte": "How ___ money do we have for the campaign?",
+      "options": [
+        "many",
+        "much",
+        "lot"
+      ],
+      "bonne": 1,
+      "lien": "quantite"
+    },
+    {
+      "niveau": "A2",
+      "texte": "I think the campaign ___ work.",
+      "options": [
+        "will",
+        "is",
+        "going"
+      ],
+      "bonne": 0,
+      "lien": "f8"
+    },
+    {
+      "niveau": "B1",
+      "texte": "I ___ in this company since 2022.",
+      "options": [
+        "work",
+        "have worked",
+        "am working"
+      ],
+      "bonne": 1,
+      "lien": "perfect"
+    },
+    {
+      "niveau": "B1",
+      "texte": "You ___ share this document. It's confidential.",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "needn't"
+      ],
+      "bonne": 0,
+      "lien": "modaux"
+    },
+    {
+      "niveau": "B1",
+      "texte": "If the client agrees, we ___ start on Monday.",
+      "options": [
+        "will",
+        "would",
+        "are"
+      ],
+      "bonne": 0,
+      "lien": "if"
+    },
+    {
+      "niveau": "B1",
+      "texte": "I was writing the report when the phone ___.",
+      "options": [
+        "rang",
+        "was ringing",
+        "rings"
+      ],
+      "bonne": 0,
+      "lien": "pastcont"
+    },
+    {
+      "niveau": "B1",
+      "texte": "The meeting is ___ Monday ___ 10 am.",
+      "options": [
+        "on / at",
+        "in / at",
+        "at / on"
+      ],
+      "bonne": 0,
+      "lien": "temps"
+    },
+    {
+      "niveau": "B1",
+      "texte": "« I'm currently looking for a job. » Currently veut dire…",
+      "options": [
+        "actuellement",
+        "finalement",
+        "éventuellement"
+      ],
+      "bonne": 0,
+      "lien": "es-fauxamis"
+    },
+    {
+      "niveau": "B2",
+      "texte": "The new product ___ in 2024.",
+      "options": [
+        "launched",
+        "was launched",
+        "has launch"
+      ],
+      "bonne": 1,
+      "lien": "passif"
+    },
+    {
+      "niveau": "B2",
+      "texte": "The client told us she ___ happy with the results.",
+      "options": [
+        "is",
+        "was",
+        "be"
+      ],
+      "bonne": 1,
+      "lien": "indirect"
+    },
+    {
+      "niveau": "B2",
+      "texte": "That's the agency ___ campaign won an award.",
+      "options": [
+        "who",
+        "whose",
+        "which"
+      ],
+      "bonne": 1,
+      "lien": "relatifs"
+    },
+    {
+      "niveau": "B2",
+      "texte": "I'm looking forward to ___ with you.",
+      "options": [
+        "work",
+        "working",
+        "worked"
+      ],
+      "bonne": 1,
+      "lien": "ingto"
+    },
+    {
+      "niveau": "B2",
+      "texte": "If we had started earlier, we ___ the deadline.",
+      "options": [
+        "would meet",
+        "would have met",
+        "had met"
+      ],
+      "bonne": 1,
+      "lien": "regrets"
+    },
+    {
+      "niveau": "B2",
+      "texte": "« Although it was expensive, we bought it. » Although veut dire…",
+      "options": [
+        "bien que",
+        "parce que",
+        "donc"
+      ],
+      "bonne": 0,
+      "lien": "es-liaison"
+    }
+  ]
+}

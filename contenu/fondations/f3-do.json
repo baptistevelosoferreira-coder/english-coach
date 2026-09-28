@@ -1,0 +1,47 @@
+{
+  "id": "f3",
+  "titre": "Questions et négations : do / does",
+  "ico": "❓",
+  "niveau": "A1",
+  "objectif": "Poser des questions à un client et dire ce que tu ne fais pas",
+  "dialogue": {
+    "titre": "At the coffee machine",
+    "contexte": "Sam et Lucas discutent du nouveau client de l'agence.",
+    "surligner": ["Do", "don't", "Does", "does", "doesn't", "do"],
+    "lignes": [
+      ["Sam", "Do you drink coffee, Lucas?", "Tu bois du café, Lucas ?"],
+      ["Lucas", "No, I don't. I prefer tea.", "Non. Je préfère le thé."],
+      ["Sam", "Does Emma know about the new client?", "Est-ce qu'Emma est au courant pour le nouveau client ?"],
+      ["Lucas", "I don't know. Where does she sit?", "Je ne sais pas. Où est-ce qu'elle s'assoit ?"],
+      ["Sam", "Over there. But she doesn't like surprises on Mondays!", "Là-bas. Mais elle n'aime pas les surprises le lundi !"],
+      ["Lucas", "What does the new client sell?", "Qu'est-ce qu'il vend, le nouveau client ?"],
+      ["Sam", "Organic cosmetics. Do you want to join the project?", "Des cosmétiques bio. Tu veux rejoindre le projet ?"],
+      ["Lucas", "Yes, I do!", "Oui !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Le français n'a pas d'équivalent</h4><p>Au présent simple, pour poser une question ou faire une négation, l'anglais ajoute un petit outil : <b>do</b> (ou <b>does</b> avec he / she / it).</p></div><div class='bloc'><h4>Négation</h4><p class='ex'>I <b>don't</b> drink coffee. · She <b>doesn't</b> like surprises.</p></div><div class='bloc'><h4>Question</h4><p class='ex'><b>Do</b> you work on Saturdays? · <b>Does</b> he speak English?</p><p class='ex'>Avec un mot interrogatif : <b>What do</b> you sell? · <b>Where does</b> she work?</p><p class='ex'>Réponses courtes : Yes, I <b>do</b>. · No, she <b>doesn't</b>.</p></div><div class='astuce'>💡 Le -s ne peut être qu'à <b>un seul</b> endroit : soit sur le verbe (she like<b>s</b>), soit sur does (doe<b>s</b> she like?). Jamais les deux : « does she like<s>s</s> ».</div>",
+  "exercices": [
+    { "type": "choix", "texte": "___ you work on Saturdays?", "options": ["Do", "Does", "Are"], "bonne": 0, "explication": "You → Do." },
+    { "type": "choix", "texte": "___ Emma like surprises?", "options": ["Do", "Does", "Is"], "bonne": 1, "explication": "Emma = she → Does." },
+    { "type": "choix", "texte": "She ___ like long meetings.", "options": ["don't", "doesn't", "isn't"], "bonne": 1, "explication": "She → doesn't." },
+    { "type": "erreur", "texte": "Does she likes the logo?", "k": 2, "correction": "like", "explication": "Après does, le verbe perd son -s." },
+    { "type": "erreur", "texte": "He don't answer emails.", "k": 1, "correction": "doesn't", "explication": "He → doesn't." },
+    { "type": "saisie", "consigne": "Mets la phrase à la forme négative", "texte": "We sell cosmetics.", "reponses": ["We don't sell cosmetics."], "explication": "We → don't + verbe." },
+    { "type": "saisie", "consigne": "Mets la phrase à la forme négative", "texte": "He works on Fridays.", "reponses": ["He doesn't work on Fridays."], "explication": "He → doesn't + verbe sans s." },
+    { "type": "saisie", "consigne": "Transforme en question", "texte": "She speaks Spanish.", "reponses": ["Does she speak Spanish?"], "explication": "Does + sujet + verbe sans s." },
+    { "type": "choix", "texte": "Do you like marketing? — Yes, I ___.", "options": ["do", "like", "am"], "bonne": 0, "explication": "Réponse courte : Yes, I do." },
+    { "type": "ordre", "texte": "Where does your manager work?", "fr": "Où travaille ta responsable ?" },
+    { "type": "ecoute", "texte": "What do they sell?" }
+  ],
+  "production": [
+    { "consigne": "Écris 3 questions que tu poserais à un nouveau client (avec do / does).", "modele": "What do you sell? Who do you target? Does your brand use Instagram?", "verifs": ["Question = Do / Does + sujet + verbe sans -s", "J'ai mis un point d'interrogation"] }
+  ],
+  "cartes": [
+    { "id": "f3-1", "texte": "___ you use TikTok?", "sous": "Tu utilises TikTok ?", "reponses": ["Do"] },
+    { "id": "f3-2", "texte": "___ the client like the logo?", "sous": "Le client aime le logo ?", "reponses": ["Does"] },
+    { "id": "f3-3", "texte": "She ___ on Mondays. (not / work)", "sous": "Elle ne travaille pas le lundi.", "reponses": ["doesn't work"] },
+    { "id": "f3-4", "texte": "We ___ print ads. (not / use)", "sous": "Nous n'utilisons pas de pubs papier.", "reponses": ["don't use"] },
+    { "id": "f3-5", "texte": "What ___ your company sell?", "sous": "Que vend ton entreprise ?", "reponses": ["does"] },
+    { "id": "f3-6", "texte": "Does he ___ English? (speak)", "sous": "Est-ce qu'il parle anglais ?", "reponses": ["speak"] }
+  ]
+}

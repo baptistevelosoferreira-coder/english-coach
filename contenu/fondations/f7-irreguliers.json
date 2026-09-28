@@ -1,0 +1,48 @@
+{
+  "id": "f7",
+  "titre": "Le passé : did et les verbes irréguliers",
+  "ico": "🧳",
+  "niveau": "A2",
+  "objectif": "Poser des questions sur le passé et utiliser les verbes irréguliers courants",
+  "dialogue": {
+    "titre": "Back from the trade fair",
+    "contexte": "Emma revient d'un salon professionnel à Paris.",
+    "surligner": ["Did you go", "went", "met", "Did you find", "didn't sign", "gave", "did you think", "took", "bought"],
+    "lignes": [
+      ["Lucas", "Did you go to the trade fair in Paris?", "Tu es allée au salon à Paris ?"],
+      ["Emma", "Yes, I went on Thursday. I met a lot of brands.", "Oui, j'y suis allée jeudi. J'ai rencontré beaucoup de marques."],
+      ["Lucas", "Did you find new clients?", "Tu as trouvé de nouveaux clients ?"],
+      ["Emma", "I didn't sign any contracts, but I gave out fifty business cards!", "Je n'ai signé aucun contrat, mais j'ai distribué cinquante cartes de visite !"],
+      ["Lucas", "What did you think of the stands?", "Qu'est-ce que tu as pensé des stands ?"],
+      ["Emma", "They were beautiful. I took a lot of photos.", "Ils étaient magnifiques. J'ai pris plein de photos."],
+      ["Emma", "And I bought some French cheese for the team!", "Et j'ai acheté du fromage français pour l'équipe !"]
+    ]
+  },
+  "fiche": "<div class='bloc'><h4>Question et négation : did</h4><p class='ex'><b>Did</b> you go? · I <b>didn't</b> sign. · What <b>did</b> you think?</p><p>Après did / didn't, le verbe revient à sa <b>forme de base</b> : Did you <b>go</b>? (jamais « did you went »).</p></div><div class='bloc'><h4>Les irréguliers, par familles</h4><table><tr><td>ne changent pas</td><td>put, cut, let, cost, hit</td></tr><tr><td>-ought / -aught</td><td>buy → bought, bring → brought, think → thought, teach → taught</td></tr><tr><td>-ew</td><td>know → knew, grow → grew, fly → flew, throw → threw</td></tr><tr><td>-ent / -ld / -id</td><td>send → sent, spend → spent, sell → sold, tell → told, pay → paid, say → said</td></tr><tr><td>voyelle qui change</td><td>meet → met, get → got, take → took, write → wrote, speak → spoke, win → won</td></tr><tr><td>à part</td><td>go → went, see → saw, make → made, give → gave, find → found, come → came</td></tr></table></div><div class='astuce'>💡 Apprends-les par familles de sons plutôt que dans l'ordre alphabétique : ton cerveau retient mieux ce qui se ressemble.</div>",
+  "exercices": [
+    { "type": "choix", "texte": "I ___ to Paris last week.", "options": ["go", "went", "gone"], "bonne": 1, "explication": "go → went au prétérit." },
+    { "type": "choix", "texte": "Did you ___ the client?", "options": ["meet", "met"], "bonne": 0, "explication": "Après did → forme de base." },
+    { "type": "paires", "consigne": "Associe chaque verbe à son prétérit", "paires": [["buy", "bought"], ["take", "took"], ["meet", "met"], ["send", "sent"], ["think", "thought"]] },
+    { "type": "saisie", "texte": "She ___ a new laptop. (buy)", "sous": "Elle a acheté un nouvel ordinateur.", "reponses": ["bought"], "explication": "buy → bought (famille -ought)." },
+    { "type": "saisie", "texte": "We ___ 500 products. (sell)", "sous": "Nous avons vendu 500 produits.", "reponses": ["sold"], "explication": "sell → sold." },
+    { "type": "saisie", "texte": "They ___ too much money. (spend)", "sous": "Ils ont dépensé trop d'argent.", "reponses": ["spent"], "explication": "spend → spent." },
+    { "type": "erreur", "texte": "Did you went to the meeting?", "k": 2, "correction": "go", "explication": "Après did → forme de base." },
+    { "type": "saisie", "consigne": "Mets la phrase à la forme négative", "texte": "I signed the contract.", "reponses": ["I didn't sign the contract."], "explication": "didn't + forme de base (sign, sans -ed)." },
+    { "type": "saisie", "consigne": "Transforme en question", "texte": "She sent the email.", "reponses": ["Did she send the email?"], "explication": "Did + sujet + forme de base." },
+    { "type": "ordre", "texte": "What did you think of the presentation?", "fr": "Qu'as-tu pensé de la présentation ?" },
+    { "type": "ecoute", "texte": "I took a lot of photos." }
+  ],
+  "production": [
+    { "consigne": "Raconte une expérience (stage, voyage, projet) en 3 phrases avec des verbes irréguliers.", "modele": "Last year, I went to London. I met a lot of people and I spoke English every day. I bought too many books!", "verifs": ["J'ai utilisé au moins 2 verbes irréguliers", "Après did / didn't, j'ai mis la forme de base"] }
+  ],
+  "cartes": [
+    { "id": "f7-1", "texte": "I ___ to the fair. (go)", "sous": "Je suis allé au salon.", "reponses": ["went"] },
+    { "id": "f7-2", "texte": "She ___ the CEO. (meet)", "sous": "Elle a rencontré le PDG.", "reponses": ["met"] },
+    { "id": "f7-3", "texte": "We ___ 500 units. (sell)", "sous": "Nous avons vendu 500 unités.", "reponses": ["sold"] },
+    { "id": "f7-4", "texte": "He ___ the samples. (bring)", "sous": "Il a apporté les échantillons.", "reponses": ["brought"] },
+    { "id": "f7-5", "texte": "They didn't ___ the contract. (sign)", "sous": "Ils n'ont pas signé le contrat.", "reponses": ["sign"] },
+    { "id": "f7-6", "texte": "What ___ you think?", "sous": "Qu'est-ce que tu en as pensé ?", "reponses": ["did"] },
+    { "id": "f7-7", "texte": "I ___ notes. (take)", "sous": "J'ai pris des notes.", "reponses": ["took"] },
+    { "id": "f7-8", "texte": "She ___ the proposal. (send)", "sous": "Elle a envoyé la proposition.", "reponses": ["sent"] }
+  ]
+}
