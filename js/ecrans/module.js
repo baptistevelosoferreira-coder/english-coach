@@ -3,7 +3,8 @@
 // 3. S'entraîner (du plus facile au plus dur)  4. Produire (écrire sur soi)
 import { $, $$, echapper, jour } from "../util.js";
 import { parler, parlerSuite, silence } from "../voix.js";
-import { etat, sauver, gagnerXP } from "../store.js";
+import { etat, sauver, gagnerXP, noterErreur } from "../store.js";
+import { analyserTexte, rendreAnalyse } from "../analyse.js";
 import { C, cartesDe } from "../contenu.js";
 import { ajouterCartes } from "../srs.js";
 import { depuisJSON } from "../exercices.js";
@@ -82,28 +83,68 @@ function produire(m, n) {
     <div class="carte">
       <b>✍️ À toi d'écrire</b>
       <p>${echapper(p.consigne)}</p>
-      <textarea id="texte" rows="4" placeholder="Écris en anglais…" spellcheck="false"></textarea>
+      <textarea id="texte" rows="5" placeholder="Écris en anglais…" spellcheck="false"></textarea>
     </div>
+    <div id="analyse"></div>
     <div id="comparaison"></div>
     <p class="muet petit">Écrire toi-même, c'est ce qui fait passer une règle de « je la connais » à « je sais l'utiliser ».</p>`,
-    `<button class="btn principal" id="comparer" disabled>Comparer avec un modèle</button>`);
+    `<button class="btn principal" id="analyser" disabled>✨ Analyser mon texte</button>`);
   const t = $("#texte");
-  t.oninput = () => { $("#comparer").disabled = t.value.trim().length < 3; };
-  $("#comparer").onclick = () => {
-    t.disabled = true;
-    etat.productions.push({ module: m.id, date: jour(), texte: t.value.trim() });
-    sauver();
+  const bas = $(".bas-fixe");
+  t.oninput = () => { const b = $("#analyser"); if (b) b.disabled = t.value.trim().length < 3; };
+  const dernier = n === m.production.length - 1;
+
+  const afficherModele = () => {
     $("#comparaison").innerHTML = `<div class="carte modele">
-        <div class="ligne"><b>📝 Un exemple de réponse</b><button class="haut-parleur petit" id="hp">🔊</button></div>
+        <div class="ligne"><b>📝 Un exemple de réponse</b><button class="haut-parleur petit" id="hp" aria-label="Écouter">🔊</button></div>
         <p class="en">${echapper(p.modele)}</p>
         <b>Vérifie ta phrase :</b>
         ${p.verifs.map((v, i) => `<label class="verif"><input type="checkbox" id="v${i}"> ${echapper(v)}</label>`).join("")}
       </div>`;
     $("#hp").onclick = () => parler(p.modele);
-    const dernier = n === m.production.length - 1;
-    $(".bas-fixe").innerHTML = `<button class="btn principal" id="fin">${dernier ? "Terminer le module" : "Suivant"}</button>`;
-    $("#fin").onclick = () => (dernier ? terminer(m) : produire(m, n + 1));
   };
+
+  const boutonsFin = () => {
+    bas.innerHTML = `<div class="rangee"><button class="btn" id="reecrire">Réécrire</button><button class="btn principal" id="fin">${dernier ? "Terminer le module" : "Suivant"}</button></div>`;
+    $("#fin").onclick = () => (dernier ? terminer(m) : produire(m, n + 1));
+    $("#reecrire").onclick = () => {
+      t.disabled = false; t.focus();
+      $("#analyse").innerHTML = ""; $("#comparaison").innerHTML = "";
+      bas.innerHTML = `<button class="btn principal" id="analyser">✨ Analyser mon texte</button>`;
+      $("#analyser").onclick = analyser;
+    };
+  };
+
+  const analyser = async () => {
+    const texte = t.value.trim();
+    if (texte.length < 3) return;
+    t.disabled = true;
+    const ctl = new AbortController();
+    $("#analyse").innerHTML = `<div class="carte analyse attente"><div class="sablier">⏳</div>
+        <div><b>Analyse de ton texte en cours…</b><p class="muet petit">Cela prend en général de 10 à 30 secondes.</p></div></div>`;
+    bas.innerHTML = `<button class="btn" id="annuler">Annuler</button>`;
+    $("#annuler").onclick = () => ctl.abort();
+    let r;
+    try {
+      r = await analyserTexte({ texte, consigne: p.consigne, theme: m.titre }, ctl.signal);
+    } catch (e) {
+      // Annulé : on revient à l'écriture
+      t.disabled = false;
+      $("#analyse").innerHTML = "";
+      bas.innerHTML = `<button class="btn principal" id="analyser">✨ Analyser mon texte</button>`;
+      $("#analyser").onclick = analyser;
+      return;
+    }
+    etat.productions.push({ module: m.id, date: jour(), texte, note: r.note ?? null, fautes: r.corrections?.length ?? null });
+    (r.corrections || []).forEach((c) => noterErreur(c.regle));
+    sauver();
+    $("#analyse").innerHTML = rendreAnalyse(r);
+    $$("#analyse [data-dire]").forEach((b) => (b.onclick = () => parler(b.dataset.dire)));
+    afficherModele();
+    boutonsFin();
+    $("#analyse").scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  $("#analyser").onclick = analyser;
 }
 
 function terminer(m) {
